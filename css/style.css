@@ -81,6 +81,7 @@ a {
   background: #0F25AE;
   width: inherit;
   opacity: 0.85;
+  z-index: 100;
 }
 
 nav ul {
