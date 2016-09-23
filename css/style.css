@@ -2,7 +2,7 @@
 
 body {
   min-width: 768px;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 1.25;
   font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 400;
@@ -17,7 +17,7 @@ h1 {
 }
 
 h2 {
-  font-size: 21px;
+  font-size: 24px;
   font-weight: 700;
 }
 
@@ -38,20 +38,20 @@ a {
 .main-header {
   position: relative;
   z-index: 10;
-  width: 768px;
+  width: 1024px;
   margin: auto;
   background: #0F25AE;
 }
 
 .container-page {
-  width: 768px;
+  width: 1024px;
   margin: auto;
   margin-top: 6px;
   background: #4458D6;
 }
 
 .main-footer-page {
-  width: 768px;
+  width: 1024px;
   margin: auto;
   background: #0F25AE;
   opacity: 0.9;
@@ -100,10 +100,11 @@ nav ul li {
   padding: 20px 0px;
   text-decoration: none;
   color: white;
+  font-size: 18px;
 }
 
 .link {
-  margin-left: 60px;
+  margin-left: 90px;
 } 
 
 .main-navigation ul li a:hover {
@@ -139,10 +140,11 @@ nav ul li {
 /*ОСНОВНАЯ ЧАСТЬ*/
 
 .image-1 {
-  height: 431px;
+  height: 575px;
   width: 100%;
   background: #66CCFF url("../img/background-photo.png");
   margin-top: 60px;
+  background-size: 100%
 }
 
 .fig {
@@ -152,14 +154,14 @@ nav ul li {
 /*МИССИЯ СТУДИИ*/
 
 .block-1 {
-  margin-top: 45px;
+  margin-top: 40px;
   letter-spacing: -0.25px;
   color: white;
 }
 
 .block-2 {
-  margin-top: 32px;
-  margin-bottom: 25px;
+  margin-top: 30px;
+  margin-bottom: 30px;
   color: white;
 }
 
@@ -173,12 +175,13 @@ nav ul li {
 /*Текст красной шапочки*/
 
 .block-3 {
+  position: relative;
   float: left;
-  width: 255px;
-  height: 256px;
+  width: 340px;
+  height: 390px;
   color: white;
   background: #6B7AD6;
-  margin-left: 5px;
+  margin-left: 15px;
 }
 
 .block-3 a {
@@ -196,16 +199,42 @@ nav ul li {
 }
 
 .near-photo-text-1 {
-  padding: 0px 10px;
-  line-height: 1.1;
+  padding: 0px 30px;
+  line-height: 1.25;
   margin-top: 30px;
 }
 
 .near-photo-text-2 {
   padding-top: 5px;
-  line-height: 1.5;
+  line-height: 1.25;
   padding: 0px 10px 0px 10px;
   text-transform: none;
+}
+
+/*Кнопка подробнее*/
+
+.sort-column-1-link {
+  position:absolute;
+  bottom: 20px;
+  left: 28%;
+  margin-top: 20px;
+  padding: 5px 17px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #051471;
+  border-radius: 5px;
+}
+
+.sort-column-1-link:hover {
+  background-color: #020C49;
+}
+
+.sort-column-1-link:active {
+  background-color: #182055;
+}
+
+.sort-column-1-link:active span {
+  opacity: 0.5;
 }
 
 /*Фотки красной шапочки*/
@@ -238,37 +267,46 @@ nav ul li {
 
 .block-5 {
   float: left;
-  height: 256px;
-  width: 501px;
+  height: 355px;
+  width: 670px;
 }
 
 .block-5-1 {
   float: left;
-  margin-left: 5px;
-  margin-top: 20px;
+  margin-left: 15px;
+  border-radius: 10px;
 }
 
 .block-5-2 {
-  float: right;
-  margin-right: 5px;
-  margin-top: 20px;
+  float: left;
+  margin-left: 15px;
+  border-radius: 10px;
 }
 
 .block-5-3 {
   float: left;
-  margin-left: 5px;
-  margin-top: 22px;
+  margin-left: 15px;
+  margin-top: 15px;
+  border-radius: 10px;
+}
+
+.block-5-4 {
+  float: left;
+  margin-left: 15px;
+  margin-top: 15px;
+  border-radius: 10px;
 }
 
 /*Текст дикого острова*/
 
 .block-6 {
-  float: left;
-  width: 255px;
-  height: 256px;
+  position: relative;
+  float: right;
+  width: 340px;
+  height: 390px;
   color: white;
   background: #6B7AD6;
-  margin-right: 5px;
+  margin-right: 14px;
 }
 
 .block-6 a {
@@ -285,6 +323,13 @@ nav ul li {
   color: #bdbbbc;
 }
 
+.near-photo-text-3 {
+  padding-top: 5px;
+  line-height: 1.25;
+  padding: 0px 10px 0px 10px;
+  text-transform: none;
+}
+
 /*КОНАН*/
 
 .features-3 {
@@ -296,12 +341,13 @@ nav ul li {
 /*ТЕКСТ КОНАНА*/
 
 .block-7 {
+  position: relative;
   float: left;
-  width: 255px;
-  height: 256px;
+  width: 340px;
+  height: 390px;
   color: white;
   background: #6B7AD6;
-  margin-left: 5px;
+  margin-left: 15px;
 }
 
 .block-7 a {
@@ -357,7 +403,7 @@ hr {
   border-top: 5px double #333;
   color: #333;
   text-align: center;
-  margin: 10px 0px 10px 0px;
+  margin: 25px 0px 25px 0px;
 }
 
 hr::after {
@@ -372,12 +418,12 @@ hr::after {
 }
 
 .hr-first {
-  margin: -2px 0px 10px 0px;
+  margin: -2px 0px 25px 0px;
   border-top: none;
 }
 
 .hr-last {
-  margin: 10px 0px 0px -1px;
+  margin: 25px 0px 0px -1px;
   border-top: none;
 }
 
@@ -387,7 +433,7 @@ hr::after {
 
 .footer-visit {
   float: left;
-  margin: 44px 0px 50px 60px;
+  margin: 44px 0px 50px 140px;
 }
 
 .footer-visit h2 {
@@ -399,7 +445,7 @@ hr::after {
 
 .footer-social {
   float: left;
-  margin: 36px 0px 0px 112px;
+  margin: 36px 0px 0px 115px;
 }
 
 .social-btn-twit {
@@ -407,6 +453,15 @@ hr::after {
   width: 31px;
   height: 31px;
   padding: 17px 0px 0px 15px;
+  background: #81b3d2;
+}
+
+.social-btn-vk {
+  float: left;
+  width: 33px;
+  height: 34px;
+  margin-left: 6px;
+  padding: 14px 0px 0px 14px;
   background: #81b3d2;
 }
 
@@ -444,7 +499,7 @@ hr::after {
 
 .academy-link {
   float: left;
-  margin: 40px 0px 0px 84px;
+  margin: 40px 0px 0px 140px;
 }
 
 .footer-copyright-text {
@@ -460,7 +515,7 @@ hr::after {
 .footer-copyright-icon {
   float: left;
   margin-left: 8px;
-  margin-top: -4px;
+  margin-top: -8px;
 }
 
 .footer-copyright-icon a {
@@ -508,7 +563,7 @@ hr::after {
     margin: 0;
     width: 85%;
     min-width: 320px;
-    max-width: 730px;
+    max-width: 800px;
 /* фиксированное позиционирование, окно стабильно при прокрутке */
     position: fixed;
     padding: 15px;
@@ -540,7 +595,7 @@ hr::after {
     -ms-transform: translate(-50%, 0);
     -o-transform: translate(-50%, 0);
     transform: translate(-50%, 0);
-    top: 15%;
+    top: 20%;
 }
 /* формируем кнопку закрытия */
 .close {
