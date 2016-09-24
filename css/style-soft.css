@@ -140,11 +140,11 @@ nav ul li {
 /*ОСНОВНАЯ ЧАСТЬ*/
 
 .image-1 {
-  height: 575px;
+  height: 558px;
   width: 100%;
-  background: #66CCFF url("../img/background-photo.png");
+  background: #66CCFF url("../img/soft-nlbb.png");
   margin-top: 60px;
-  background-size: 100%
+  background-size: 100%;
 }
 
 .fig {
@@ -165,230 +165,7 @@ nav ul li {
   color: white;
 }
 
-/*Красная шапочка*/
 
-.features-1 {
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-/*Текст красной шапочки*/
-
-.block-3 {
-  position: relative;
-  float: left;
-  width: 340px;
-  height: 390px;
-  color: white;
-  background: #6B7AD6;
-  margin-left: 15px;
-}
-
-.block-3 a {
-  display: block;
-  text-decoration: none;
-  color: white;
-}
-
-.block-3 a:hover {
-  color: #669ec0;
-}
-
-.block-3 a:active {
-  color: #bdbbbc;
-}
-
-.near-photo-text-1 {
-  padding: 0px 30px;
-  line-height: 1.25;
-  margin-top: 30px;
-}
-
-.near-photo-text-2 {
-  padding-top: 5px;
-  line-height: 1.25;
-  padding: 0px 10px 0px 10px;
-  text-transform: none;
-  text-align: left;
-  text-indent: 15px;
-}
-
-/*Кнопка подробнее*/
-
-.sort-column-1-link {
-  position:absolute;
-  bottom: 20px;
-  left: 28%;
-  margin-top: 20px;
-  padding: 10px 25px;
-  text-decoration: none;
-  color: #fff;
-  background-color: #051471;
-  border-radius: 5px;
-}
-
-.sort-column-1-link:hover {
-  background-color: #020C49;
-}
-
-.sort-column-1-link:active {
-  background-color: #182055;
-}
-
-.sort-column-1-link:active span {
-  opacity: 0.5;
-}
-
-/*Фотки красной шапочки*/
-
-.block-4-1 {
-  float: left;
-  margin-left: 5px;
-}
-
-.block-4-2 {
-  float: left;
-  margin-left: 5px;
-}
-
-.block-4-3 {
-  float: left;
-  margin-left: 5px;
-  margin-top: 8px;
-}
-
-/*Дикий остров*/
-
-.features-2 {
-  width: 100%;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-/*Фотки дикого острова*/
-
-.block-5 {
-  float: left;
-  height: 355px;
-  width: 670px;
-}
-
-.block-5-1 {
-  float: left;
-  margin-left: 15px;
-  border-radius: 10px;
-}
-
-.block-5-2 {
-  float: left;
-  margin-left: 15px;
-  border-radius: 10px;
-}
-
-.block-5-3 {
-  float: left;
-  margin-left: 15px;
-  margin-top: 15px;
-  border-radius: 10px;
-}
-
-.block-5-4 {
-  float: left;
-  margin-left: 15px;
-  margin-top: 15px;
-  border-radius: 10px;
-}
-
-/*Текст дикого острова*/
-
-.block-6 {
-  position: relative;
-  float: right;
-  width: 340px;
-  height: 390px;
-  color: white;
-  background: #6B7AD6;
-  margin-right: 14px;
-}
-
-.block-6 a {
-  display: block;
-  text-decoration: none;
-  color: white;
-}
-
-.block-6 a:hover {
-  color: #669ec0;
-}
-
-.block-6 a:active {
-  color: #bdbbbc;
-}
-
-/*КОНАН*/
-
-.features-3 {
-  width: 100%;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-/*ТЕКСТ КОНАНА*/
-
-.block-7 {
-  position: relative;
-  float: left;
-  width: 340px;
-  height: 390px;
-  color: white;
-  background: #6B7AD6;
-  margin-left: 15px;
-}
-
-.block-7 a {
-  display: block;
-  text-decoration: none;
-  color: white;
-}
-
-.block-7 a:hover {
-  color: #669ec0;
-}
-
-.block-7 a:active {
-  color: #bdbbbc;
-}
-
-/*ФОТКИ КОНАНА*/
-
-.block-8-1 {
-  float: left;
-  margin-left: 5px;
-}
-
-.block-8-2 {
-  float: left;
-  margin-left: 5px;
-}
-
-.block-8-3 {
-  float: left;
-  margin-left: 5px;
-  margin-top: 8px;
-}
-
-/*БЛОК ВИДЕО*/
-
-.block-9 {
-  display: block;
-  color: white;
-  margin: 30px 0px;
-}
-
-.block-10 {
-  display: block;
-  margin-bottom: 20px;
-}
 
 /*РАЗДЕЛИТЕЛЬНАЯ ПОЛОСКА*/
 
@@ -413,7 +190,7 @@ hr::after {
 }
 
 .hr-first {
-  margin: -2px 0px 25px 0px;
+  margin: 2px 0px 25px 0px;
   border-top: none;
 }
 
@@ -527,8 +304,6 @@ hr::after {
 .footer-copyright-icon a:active {
   color: #bdbbbc;
 }
-
-
 
 /* ЧЕСТНО СПИЖЖЕННЫЙ КОД ДЛЯ ПОПАПОВ ФОТОК */
 /* Базовые стили слоя затемнения и модального окна  */
