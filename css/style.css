@@ -221,7 +221,39 @@ nav ul li {
 .sort-column-1-link {
   position:absolute;
   bottom: 20px;
-  left: 28%;
+  left: 5%;
+  width: 100px;
+  margin-top: 20px;
+  padding: 10px 25px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #051471;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.sort-column-1-link p {
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+  line-height: 1.5;
+}
+
+.sort-column-1-link:hover {
+  background-color: #4458D6;
+  color: white !important;
+}
+
+.sort-column-1-link:active p {
+  opacity: 0.5;
+}
+
+/*Кнопка steam*/
+
+.steam-btn {
+  position:absolute;
+  bottom: 20px;
+  left: 56%;
   margin-top: 20px;
   padding: 10px 25px;
   text-decoration: none;
@@ -230,12 +262,12 @@ nav ul li {
   border-radius: 5px;
 }
 
-.sort-column-1-link:hover {
+.steam-btn:hover {
   background-color: #4458D6;
   color: white !important;
 }
 
-.sort-column-1-link:active span {
+.steam-btn:active {
   opacity: 0.5;
 }
 

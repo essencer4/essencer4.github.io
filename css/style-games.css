@@ -165,7 +165,7 @@ nav ul li {
   background-image: url("../img/island-background.png");
   background-repeat: space;
   background-position: 50% 100%;
-  background-size: 125%;
+  background-size: 135%;
 }
 
 .steam {
@@ -203,6 +203,28 @@ nav ul li {
   margin-left: 4px;
   border-radius: 10px;
   margin-bottom: 50px;
+}
+
+/*Кнопка подробнее*/
+
+.sort-column-1-link {
+  display: inline-block;
+  margin-top: 20px;
+  margin-left: 35%;
+  padding: 10px 25px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #051471;
+  border-radius: 5px;
+}
+
+.sort-column-1-link:hover {
+  background-color: #4458D6;
+  color: white !important;
+}
+
+.sort-column-1-link:active span {
+  opacity: 0.5;
 }
 
 /*РАЗДЕЛИТЕЛЬНАЯ ПОЛОСКА*/
