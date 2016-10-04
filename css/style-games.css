@@ -162,10 +162,17 @@ nav ul li {
   margin: 20px;
   padding: 15px;
   border-radius: 20px;
-  background-image: url("../img/island-background.png");
   background-repeat: space;
   background-position: 50% 100%;
-  background-size: 135%;
+  background-size: 165%;
+}
+
+.background-image-1 {
+  background-image: url("../img/island-background.png");
+}
+
+.background-image-2 {
+  background-image: url("../img/island-background.png");
 }
 
 .steam {
