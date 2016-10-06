@@ -8,6 +8,7 @@ body {
   font-weight: 400;
   text-transform: uppercase;
   color: black;
+  /*background: linear-gradient(to top, #269926, #008500);*/
   background-color: #051471;
 }
 
@@ -261,7 +262,7 @@ hr::after {
 }
 
 .hr-last {
-  margin: 25px 0px 0px -1px;
+  margin: 25px 0px 5px 0px;
 }
 
 /*ФУТЕР*/
