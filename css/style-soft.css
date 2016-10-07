@@ -73,7 +73,7 @@ a {
 .main-navigation {
   float: left;
   height: 20px;
-  margin: 0px 0px 40px 70px;
+  margin: 0px 0px 40px 120px;
 }
 
 .fixed-menu {
@@ -131,8 +131,20 @@ nav ul li {
 
 .index-logo {
   position: absolute;
-  top: 6%;
+  top: 0%;
   left: 3%;
+  width: 116px;
+  height: 58px;
+  padding: 1px 10px;
+}
+
+.index-logo:hover {
+  background-color: #051471;
+  color: white !important;
+}
+
+.index-logo:active {
+  opacity: 0.5;
 }
 
 
