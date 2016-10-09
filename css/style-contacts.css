@@ -156,6 +156,7 @@ nav ul li {
 
 .white-block {
   background-color: white;
+  height: 1500px
   margin: 20px;
   padding: 15px;
   border-radius: 20px;
@@ -168,7 +169,7 @@ nav ul li {
   float: left;
   width: 400px;
   height: 700px;
-  margin-left: 40px;
+  margin-left: 60px;
   margin-top: 20px;
 }
 
@@ -185,15 +186,15 @@ nav ul li {
   width: 400px;
   height: 700px;
   margin-left: 40px;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 .youtube-group {
   float: left;
   width: 400px;
   height: 700px;
-  margin-left: 40px;
-  margin-top: 40px;
+  margin-left: 60px;
+  margin-top: 20px;
 }
 
 /*ОСНОВНАЯ ЧАСТЬ*/
