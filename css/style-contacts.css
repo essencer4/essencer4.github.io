@@ -160,6 +160,20 @@ nav ul li {
   background-size: 165%;
 }
 
+.vk-group {
+  float: left;
+  width: 400px;
+  height: 600px;
+  margin-left: 40px;
+}
+
+.fb-group {
+  float: left;
+  width: 400px;
+  height: 600px;
+  margin-left: 40px;
+}
+
 /*ОСНОВНАЯ ЧАСТЬ*/
 
 .image-1 {
