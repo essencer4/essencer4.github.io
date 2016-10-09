@@ -158,7 +158,6 @@ nav ul li {
   background-color: white;
   margin: 20px;
   padding: 15px;
-  height: 1400px;
   border-radius: 20px;
   background-repeat: space;
   background-position: 50% 100%;
@@ -168,7 +167,7 @@ nav ul li {
 .vk-group {
   float: left;
   width: 400px;
-  height: 600px;
+  height: 700px;
   margin-left: 40px;
   margin-top: 20px;
 }
@@ -176,7 +175,7 @@ nav ul li {
 .fb-group {
   float: left;
   width: 400px;
-  height: 600px;
+  height: 700px;
   margin-left: 40px;
   margin-top: 20px;
 }
@@ -184,7 +183,7 @@ nav ul li {
 .twit-group {
   float: left;
   width: 400px;
-  height: 600px;
+  height: 700px;
   margin-left: 40px;
   margin-top: 40px;
 }
@@ -192,7 +191,7 @@ nav ul li {
 .youtube-group {
   float: left;
   width: 400px;
-  height: 600px;
+  height: 700px;
   margin-left: 40px;
   margin-top: 40px;
 }
