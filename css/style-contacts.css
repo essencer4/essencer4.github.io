@@ -21,6 +21,11 @@ h2 {
   font-weight: 700;
 }
 
+h3{
+  text-transform: none;
+  font-size: 24px;
+}
+
 a {
   font-weight: 900;
 }
@@ -165,6 +170,7 @@ nav ul li {
   width: 400px;
   height: 600px;
   margin-left: 40px;
+  margin-top: 20px;
 }
 
 .fb-group {
@@ -172,6 +178,7 @@ nav ul li {
   width: 400px;
   height: 600px;
   margin-left: 40px;
+  margin-top: 20px;
 }
 
 .twit-group {
@@ -179,7 +186,15 @@ nav ul li {
   width: 400px;
   height: 600px;
   margin-left: 40px;
-  margin-top: 20px;
+  margin-top: 40px;
+}
+
+.youtube-group {
+  float: left;
+  width: 400px;
+  height: 600px;
+  margin-left: 40px;
+  margin-top: 40px;
 }
 
 /*ОСНОВНАЯ ЧАСТЬ*/
