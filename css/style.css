@@ -10,9 +10,9 @@ body {
   color: black;
   background-color: #051471;
   zoom: 75%;
-  background-image: url("../img/nature.jpg");
+  background-image: url("../img/nature-3.jpg");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-attachment: fixed;
 }
 
@@ -62,6 +62,7 @@ a {
   opacity: 0.9;
   margin-top: -6px;
   z-index: 1;
+  margin-bottom: 900px;
 }
 
 
