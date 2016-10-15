@@ -10,6 +10,10 @@ body {
   color: black;
   background-color: #051471;
   zoom: 75%;
+  background-image: url("../img/nature.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment: fixed;
 }
 
 h1 {
@@ -155,7 +159,7 @@ nav ul li {
 .image-1 {
   height: 575px;
   width: 100%;
-  background: #66CCFF url("../img/background-photo.png");
+  background: #66CCFF url("../img/background-photo.jpg");
   margin-top: 60px;
   background-size: 100%
 }
@@ -430,13 +434,11 @@ hr::after {
 }
 
 .hr-first {
-  margin: -2px 0px 25px 0px;
-  border-top: none;
+  margin: 0px 0px 25px 0px;
 }
 
 .hr-last {
-  margin: 25px 0px 0px -1px;
-  border-top: none;
+  margin: 25px 0px 5px 0px;
 }
 
 /*ФУТЕР*/

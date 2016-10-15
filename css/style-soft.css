@@ -155,7 +155,7 @@ nav ul li {
 .image-1 {
   height: 552px;
   width: 100%;
-  background: #66CCFF url("../img/soft-nlbb.png");
+  background: #66CCFF url("../img/soft-nlbb.jpg");
   margin-top: 60px;
   background-size: 100%;
 }
@@ -276,7 +276,6 @@ hr::after {
 
 .hr-first {
   margin: 2px 0px 25px 0px;
-  border-top: none;
 }
 
 .hr-last {
