@@ -184,11 +184,15 @@ nav ul li {
 }
 
 .background-image-1 {
-  background-image: url("../img/island-background.png");
+  background-image: url("../img/island-background.jpg");
 }
 
 .background-image-2 {
-  background-image: url("../img/island-background.png");
+  background-image: url("../img/island-background.jpg");
+}
+
+.background-image-3 {
+  background-image: url("../img/island-background.jpg");
 }
 
 .steam {

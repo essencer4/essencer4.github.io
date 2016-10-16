@@ -53,6 +53,10 @@ a {
   margin: auto;
   margin-top: 6px;
   background: #4458D6;
+  border: 3px solid black;
+  border-top-style: none;
+  border-bottom-style: none;
+  box-sizing: border-box;
 }
 
 .main-footer-page {
@@ -63,6 +67,9 @@ a {
   margin-top: -6px;
   z-index: 1;
   margin-bottom: 900px;
+  border: 3px solid black;
+  border-top-style: none;
+  box-sizing: border-box;
 }
 
 
@@ -88,6 +95,10 @@ a {
   width: inherit;
   opacity: 0.85;
   z-index: 100;
+  border: 3px solid black;
+  border-top-style: none;
+  border-bottom-style: none;
+  box-sizing: border-box;
 }
 
 nav ul {
@@ -320,7 +331,7 @@ nav ul li {
 .block-5 {
   float: left;
   height: 355px;
-  width: 670px;
+  width: 660px;
 }
 
 .block-5-1 {
