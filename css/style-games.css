@@ -199,19 +199,19 @@ nav ul li {
   border-radius: 20px;
   background-repeat: space;
   background-position: 50% 100%;
-  background-size: 165%;
+  background-size: 125%;
 }
 
 .background-image-1 {
-  background-image: url("../img/island-background.jpg");
+  background-image: url("../img/games-white-block-red-background.jpg");
 }
 
 .background-image-2 {
-  background-image: url("../img/island-background.jpg");
+  background-image: url("../img/games-white-block-island-background.jpg");
 }
 
 .background-image-3 {
-  background-image: url("../img/island-background.jpg");
+  background-image: url("../img/games-white-block-barbarian-background.jpg");
 }
 
 .steam {
