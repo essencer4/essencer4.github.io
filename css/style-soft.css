@@ -274,7 +274,7 @@ ol li {
 /*РАЗДЕЛИТЕЛЬНАЯ ПОЛОСКА*/
 
 hr {
-  padding: 0;
+  padding: 2px;
   border: none;
   border-top: 5px double #333;
   color: #333;
@@ -299,7 +299,6 @@ hr::after {
 
 .hr-last {
   margin: 25px 0px 0px -1px;
-  border-top: none;
 }
 
 /*ФУТЕР*/
