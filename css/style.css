@@ -10,7 +10,7 @@ body {
   color: black;
   background-color: #051471;
   zoom: 75%;
-  background-image: url("../img/nature-3.jpg");
+  background-image: url("../img/nature.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -120,8 +120,12 @@ nav ul li {
   font-size: 18px;
 }
 
+.link-first {
+  margin-left: 85px;
+} 
+
 .link {
-  margin-left: 90px;
+  margin-left: 60px;
 } 
 
 .main-navigation ul li a:hover {
@@ -171,7 +175,7 @@ nav ul li {
 .image-1 {
   height: 575px;
   width: 100%;
-  background: #66CCFF url("../img/background-photo.jpg");
+  background: #66CCFF url("../img/background-index.jpg");
   margin-top: 60px;
   background-size: 100%
 }

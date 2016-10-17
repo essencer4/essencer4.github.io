@@ -11,6 +11,10 @@ body {
   /*background: linear-gradient(to top, #269926, #008500);*/
   background-color: #051471;
   zoom: 75%;
+  background-image: url("../img/nature.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 h1 {
@@ -50,6 +54,10 @@ a {
   margin: auto;
   margin-top: 6px;
   background: #4458D6;
+  border: 3px solid black;
+  border-top-style: none;
+  border-bottom-style: none;
+  box-sizing: border-box;
 }
 
 .main-footer-page {
@@ -59,6 +67,10 @@ a {
   opacity: 0.9;
   margin-top: -6px;
   z-index: 1;
+  margin-bottom: 900px;
+  border: 3px solid black;
+  border-top-style: none;
+  box-sizing: border-box;
 }
 
 
@@ -84,6 +96,10 @@ a {
   width: inherit;
   opacity: 0.85;
   z-index: 100;
+  border: 3px solid black;
+  border-top-style: none;
+  border-bottom-style: none;
+  box-sizing: border-box;
 }
 
 nav ul {
@@ -105,8 +121,12 @@ nav ul li {
   font-size: 18px;
 }
 
+.link-first {
+  margin-left: 85px;
+} 
+
 .link {
-  margin-left: 90px;
+  margin-left: 60px;
 } 
 
 .main-navigation ul li a:hover {
@@ -166,7 +186,7 @@ nav ul li {
 .image-1 {
   height: 552px;
   width: 100%;
-  background: #66CCFF url("../img/soft-nlbb.jpg");
+  background: #66CCFF url("../img/background-games.jpg");
   margin-top: 60px;
   background-size: 100%;
 }
@@ -277,7 +297,7 @@ hr::after {
 }
 
 .hr-first {
-  margin: 1px 0px 25px 0px;
+  margin: -17px 0px 25px 0px;
 }
 
 .hr-last {
