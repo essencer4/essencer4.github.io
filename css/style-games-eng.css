@@ -125,11 +125,11 @@ nav ul li {
 }
 
 .link-first {
-  margin-left: 75px;
+  margin-left: 100px;
 } 
 
 .link {
-  margin-left: 45px;
+  margin-left: 60px;
 } 
 
 .main-navigation ul li a:hover {
@@ -202,7 +202,7 @@ nav ul li {
   border-radius: 20px;
   background-repeat: space;
   background-position: 50% 100%;
-  background-size: 125%;
+  background-size: 140%;
 }
 
 .background-image-1 {

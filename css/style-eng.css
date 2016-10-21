@@ -8,8 +8,7 @@ body {
   font-weight: 400;
   text-transform: uppercase;
   color: black;
-  /*background: linear-gradient(to top, #269926, #008500);*/
-  background-color: #051471;
+  background-color: #00472E;
   zoom: 75%;
   background-image: url("../img/nature.jpg");
   background-repeat: no-repeat;
@@ -125,11 +124,11 @@ nav ul li {
 }
 
 .link-first {
-  margin-left: 75px;
+  margin-left: 100px;
 } 
 
 .link {
-  margin-left: 45px;
+  margin-left: 60px;
 } 
 
 .main-navigation ul li a:hover {
@@ -172,99 +171,152 @@ nav ul li {
   opacity: 0.5;
 }
 
-.fig {
-  text-align: center; /* Выравнивание по центру */ 
-}
-
-.clearfix::after {
-  display: table;
-  content: "";
-  clear: both;
-}
-
 
 
 /*ОСНОВНАЯ ЧАСТЬ*/
 
 .image-1 {
-  height: 552px;
+  height: 575px;
   width: 100%;
-  background: #66CCFF url("../img/background-games.jpg");
+  background: #66CCFF url("../img/background-index.jpg");
   margin-top: 60px;
 }
 
-/*ДИКИЙ ОСТРОВ*/
-
-.white-block {
-  background-color: white;
-  margin: 20px;
-  padding: 15px;
-  border-radius: 20px;
-  background-repeat: space;
-  background-position: 50% 100%;
-  background-size: 125%;
+.fig {
+  text-align: center; /* Выравнивание по центру */ 
 }
 
-.background-image-1 {
-  background-image: url("../img/games-white-block-red-background.jpg");
+.switch-lang {
+  float: right; 
+  text-decoration: none;
+  color: #fff;
+  background-color: #051471;
+  border-radius: 40px 5px;
+  text-align: center;
+  opacity: 0.75;
+  text-transform: none;
 }
 
-.background-image-2 {
-  background-image: url("../img/games-white-block-island-background.jpg");
+.switch-lang p {
+  text-align: center;
+  margin: 0px;
+  padding: 20px 40px;
+  line-height: 1.5;
+  font-size: 32px;
+  letter-spacing: 1.5px;
 }
 
-.background-image-3 {
-  background-image: url("../img/games-white-block-barbarian-background.jpg");
+.switch-lang:hover {
+  background-color: #4458D6;
+  color: white !important;
 }
 
-.steam {
-  margin-top: 30px;
+.switch-lang:active p {
+  opacity: 0.5;
 }
 
-.text-1 {
+.eng-switch {
+  margin: 470px 25px 0px 0px; 
+}
+
+.rus-switch {
+  position: relative; 
+  margin: 365px 25px 0px 0px;
+  left: 160px;
+}
+
+/*МИССИЯ СТУДИИ*/
+
+.block-1 {
+  margin-top: 40px;
+  letter-spacing: -0.25px;
+  color: white;
+}
+
+.block-2 {
   margin-top: 30px;
   margin-bottom: 30px;
-  color: black;
+  color: white;
   text-transform: none;
-  text-align: justify;
   text-indent: 15px;
 }
 
-.white-block ul li {
+/*Красная шапочка*/
+
+.features-1 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/*Текст красной шапочки*/
+
+.block-3 {
+  position: relative;
+  float: left;
+  width: 340px;
+  height: 390px;
+  color: white;
+  background: #6B7AD6;
+  margin-left: 15px;
+}
+
+.title-link {
+  display: block;
+  text-decoration: none;
+  color: white;
+}
+
+.title-link:hover {
+  color: #051471;
+}
+
+.title-link:active {
+  color: #bdbbbc;
+}
+
+.near-photo-text-1 {
+  padding: 0px 42px;
+  line-height: 1.25;
+  margin-top: 30px;
+}
+
+.near-photo-text-11 {
+  padding: 0px 30px;
+  line-height: 1.25;
+  margin-top: 30px;
+}
+
+.near-photo-text-2 {
+  padding-top: 5px;
+  line-height: 1.25;
+  padding: 0px 10px 0px 10px;
   text-transform: none;
-}
-
-.img-1 {
-  float: left;
-  border-radius: 10px;
-  margin-bottom: 50px;
-}
-
-.img-2 {
-  float: left;
-  margin-left: 4px;
-  border-radius: 10px;
-  margin-bottom: 50px;
-}
-
-.img-3 {
-  float: left;
-  margin-left: 4px;
-  border-radius: 10px;
-  margin-bottom: 50px;
+  text-align: justify;
+  text-indent: 15px;
+  white-space: pre-line;
 }
 
 /*Кнопка подробнее*/
 
 .sort-column-1-link {
-  display: inline-block;
+  position:absolute;
+  bottom: 20px;
+  left: 5%;
+  width: 100px;
   margin-top: 20px;
-  margin-left: 35%;
   padding: 10px 25px;
   text-decoration: none;
   color: #fff;
   background-color: #051471;
   border-radius: 5px;
+  text-align: center;
+}
+
+.sort-column-1-link p {
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+  line-height: 1.5;
 }
 
 .sort-column-1-link:hover {
@@ -272,8 +324,154 @@ nav ul li {
   color: white !important;
 }
 
-.sort-column-1-link:active span {
+.sort-column-1-link:active p {
   opacity: 0.5;
+}
+
+/*Кнопка steam*/
+
+.steam-btn {
+  position:absolute;
+  bottom: 20px;
+  left: 56%;
+  margin-top: 20px;
+  padding: 10px 25px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #051471;
+  border-radius: 5px;
+}
+
+.steam-btn:hover {
+  background-color: #4458D6;
+  color: white !important;
+}
+
+.steam-btn:active {
+  opacity: 0.5;
+}
+
+/*Фотки красной шапочки*/
+
+.block-4-1 {
+  float: left;
+  margin-left: 5px;
+}
+
+.block-4-2 {
+  float: left;
+  margin-left: 5px;
+}
+
+.block-4-3 {
+  float: left;
+  margin-left: 5px;
+  margin-top: 8px;
+}
+
+/*Дикий остров*/
+
+.features-2 {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/*Фотки дикого острова*/
+
+.block-5 {
+  float: left;
+  height: 355px;
+  width: 660px;
+}
+
+.block-5-1 {
+  float: left;
+  margin-left: 15px;
+  border-radius: 10px;
+}
+
+.block-5-2 {
+  float: left;
+  margin-left: 15px;
+  border-radius: 10px;
+}
+
+.block-5-3 {
+  float: left;
+  margin-left: 15px;
+  margin-top: 15px;
+  border-radius: 10px;
+}
+
+.block-5-4 {
+  float: left;
+  margin-left: 15px;
+  margin-top: 15px;
+  border-radius: 10px;
+}
+
+/*Текст дикого острова*/
+
+.block-6 {
+  position: relative;
+  float: right;
+  width: 340px;
+  height: 390px;
+  color: white;
+  background: #6B7AD6;
+  margin-right: 14px;
+}
+
+/*КОНАН*/
+
+.features-3 {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/*ТЕКСТ КОНАНА*/
+
+.block-7 {
+  position: relative;
+  float: left;
+  width: 340px;
+  height: 390px;
+  color: white;
+  background: #6B7AD6;
+  margin-left: 15px;
+}
+
+/*ФОТКИ КОНАНА*/
+
+.block-8-1 {
+  float: left;
+  margin-left: 5px;
+}
+
+.block-8-2 {
+  float: left;
+  margin-left: 5px;
+}
+
+.block-8-3 {
+  float: left;
+  margin-left: 5px;
+  margin-top: 8px;
+}
+
+/*БЛОК ВИДЕО*/
+
+.block-9 {
+  display: block;
+  color: white;
+  margin: 30px 0px;
+}
+
+.block-10 {
+  display: block;
+  margin-bottom: 20px;
 }
 
 /*РАЗДЕЛИТЕЛЬНАЯ ПОЛОСКА*/
@@ -299,7 +497,7 @@ hr::after {
 }
 
 .hr-first {
-  margin: -17px 0px 25px 0px;
+  margin: 0px 0px 25px 0px;
 }
 
 .hr-last {
