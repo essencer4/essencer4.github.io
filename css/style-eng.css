@@ -117,7 +117,6 @@ nav ul li {
   padding: 18px 0px;
   text-decoration: none;
   color: white;
-  font-size: 18px;
   letter-spacing: 2.5px;
   text-transform: none;
   font-size: 21px;
@@ -128,7 +127,7 @@ nav ul li {
 } 
 
 .link {
-  margin-left: 60px;
+  margin-left: 68px;
 } 
 
 .main-navigation ul li a:hover {
@@ -217,12 +216,20 @@ nav ul li {
 
 .eng-switch {
   margin: 470px 25px 0px 0px; 
+  border-bottom: 8px solid white;
+  border-right: 4px solid white;
 }
 
 .rus-switch {
   position: relative; 
   margin: 365px 25px 0px 0px;
   left: 160px;
+  border-bottom: 8px solid white;
+  border-right: 4px solid white;
+}
+
+.switch-activated {
+  text-decoration: underline;
 }
 
 /*МИССИЯ СТУДИИ*/
@@ -610,6 +617,10 @@ hr::after {
   color: #bdbbbc;
 }
 
+.metrika {
+  float: right;
+  margin: 85px 10px 0px 0px;
+}
 
 
 /* ЧЕСТНО СПИЖЖЕННЫЙ КОД ДЛЯ ПОПАПОВ ФОТОК */

@@ -8,7 +8,6 @@ body {
   font-weight: 400;
   text-transform: uppercase;
   color: black;
-  /*background: linear-gradient(to top, #269926, #008500);*/
   background-color: #051471;
   zoom: 75%;
   background-image: url("../img/nature.jpg");
@@ -75,7 +74,7 @@ a {
 
 
 /*======================================
-    Первая страница
+      Первая страница
 =======================================*/
 
 
@@ -124,11 +123,11 @@ nav ul li {
 }
 
 .link-first {
-  margin-left: 75px;
+  margin-left: 100px;
 } 
 
 .link {
-  margin-left: 45px;
+  margin-left: 68px;
 } 
 
 .main-navigation ul li a:hover {
@@ -169,6 +168,17 @@ nav ul li {
 
 .index-logo:active {
   opacity: 0.5;
+}
+
+
+
+/*ОСНОВНАЯ ЧАСТЬ*/
+
+.image-1 {
+  height: 552px;
+  width: 100%;
+  background: #66CCFF url("../img/background-soft.jpg");
+  margin-top: 60px;
 }
 
 .fig {
@@ -222,52 +232,48 @@ nav ul li {
   text-decoration: underline;
 }
 
+/*ЗАГОЛОВОК*/
+
 .clearfix::after {
   display: table;
   content: "";
   clear: both;
 }
 
-
-
-/*ОСНОВНАЯ ЧАСТЬ*/
-
-.image-1 {
-  height: 552px;
-  width: 100%;
-  background: #66CCFF url("../img/background-games.jpg");
-  margin-top: 60px;
+.block-1 {
+  margin-top: 40px;
+  letter-spacing: -0.25px;
+  color: white;
 }
 
-/*ДИКИЙ ОСТРОВ*/
+/*ФОТКИ*/
 
-.white-block {
-  background-color: white;
-  margin: 20px;
-  padding: 15px;
-  border-radius: 20px;
-  background-repeat: space;
-  background-position: 50% 100%;
-  background-size: 125%;
-}
-
-.background-image-1 {
-  background-image: url("../img/games-white-block-red-background.jpg");
-}
-
-.background-image-2 {
-  background-image: url("../img/games-white-block-island-background.jpg");
-}
-
-.background-image-3 {
-  background-image: url("../img/games-white-block-barbarian-background.jpg");
-}
-
-.steam {
+.block-2{
   margin-top: 30px;
+  margin-bottom: 30px;
 }
 
-.text-1 {
+.soft-image-1 {
+  float: left;
+  margin-left: 25px;
+  border-radius: 10px;
+}
+
+.soft-image-2 {
+  float: left;
+  margin-left: 15px;
+  border-radius: 10px;
+}
+
+.soft-image-3 {
+  float: left;
+  margin-left: 15px;
+  border-radius: 10px;
+}
+
+/*ТЕКСТ*/
+
+.block-3 {
   margin-top: 30px;
   margin-bottom: 30px;
   color: black;
@@ -276,36 +282,29 @@ nav ul li {
   text-indent: 15px;
 }
 
-.white-block ul li {
+.white-block{
+  background-color: white;
+  margin: 20px;
+  padding: 15px;
+  border-radius: 20px;
+}
+
+ol li {
   text-transform: none;
+  margin: 10px 0px;
+  text-align: justify;
 }
 
-.img-1 {
-  float: left;
-  border-radius: 10px;
-  margin-bottom: 50px;
+.lesson-one{
+  margin-top: 50px;
 }
 
-.img-2 {
-  float: left;
-  margin-left: 4px;
-  border-radius: 10px;
-  margin-bottom: 50px;
-}
 
-.img-3 {
-  float: left;
-  margin-left: 4px;
-  border-radius: 10px;
-  margin-bottom: 50px;
-}
+/*Кнопка скачать прогу*/
 
-/*Кнопка подробнее*/
-
-.sort-column-1-link {
+.nlbb-download-link {
   display: inline-block;
-  margin-top: 20px;
-  margin-left: 35%;
+  margin: 20px 0px 20px 270px;
   padding: 10px 25px;
   text-decoration: none;
   color: #fff;
@@ -313,19 +312,18 @@ nav ul li {
   border-radius: 5px;
 }
 
-.sort-column-1-link:hover {
+.nlbb-download-link:hover {
   background-color: #4458D6;
-  color: white !important;
 }
 
-.sort-column-1-link:active span {
+.nlbb-download-link:active span {
   opacity: 0.5;
 }
 
 /*РАЗДЕЛИТЕЛЬНАЯ ПОЛОСКА*/
 
 hr {
-  padding: 0;
+  padding: 2px;
   border: none;
   border-top: 5px double #333;
   color: #333;
@@ -345,11 +343,11 @@ hr::after {
 }
 
 .hr-first {
-  margin: -17px 0px 25px 0px;
+  margin: 2px 0px 25px 0px;
 }
 
 .hr-last {
-  margin: 25px 0px 5px 0px;
+  margin: 25px 0px 0px -1px;
 }
 
 /*ФУТЕР*/

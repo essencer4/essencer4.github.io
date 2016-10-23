@@ -114,18 +114,20 @@ nav ul li {
 
 .main-navigation ul li a {
   display: block;
-  padding: 20px 0px;
+  padding: 18px 0px;
   text-decoration: none;
   color: white;
-  font-size: 18px;
+  letter-spacing: 2.5px;
+  text-transform: none;
+  font-size: 21px;
 }
 
 .link-first {
-  margin-left: 85px;
+  margin-left: 75px;
 } 
 
 .link {
-  margin-left: 60px;
+  margin-left: 45px;
 } 
 
 .main-navigation ul li a:hover {
@@ -181,6 +183,53 @@ nav ul li {
 
 .fig {
   text-align: center; /* Выравнивание по центру */ 
+}
+
+.switch-lang {
+  float: right; 
+  text-decoration: none;
+  color: #fff;
+  background-color: #051471;
+  border-radius: 40px 5px;
+  text-align: center;
+  opacity: 0.75;
+  text-transform: none;
+}
+
+.switch-lang p {
+  text-align: center;
+  margin: 0px;
+  padding: 20px 40px;
+  line-height: 1.5;
+  font-size: 32px;
+  letter-spacing: 1.5px;
+}
+
+.switch-lang:hover {
+  background-color: #4458D6;
+  color: white !important;
+}
+
+.switch-lang:active p {
+  opacity: 0.5;
+}
+
+.eng-switch {
+  margin: 445px 25px 0px 0px; 
+  border-bottom: 8px solid white;
+  border-right: 4px solid white;
+}
+
+.rus-switch {
+  position: relative; 
+  margin: 340px 25px 0px 0px;
+  left: 160px;
+  border-bottom: 8px solid white;
+  border-right: 4px solid white;
+}
+
+.switch-activated {
+  text-decoration: underline;
 }
 
 /*ЗАГОЛОВОК*/
