@@ -264,14 +264,14 @@ nav ul li {
 }
 
 .eng-switch {
-  margin: 445px 25px 0px 0px; 
+  margin: 465px 25px 0px 0px; 
   border-bottom: 8px solid white;
   border-right: 4px solid white;
 }
 
 .rus-switch {
   position: relative; 
-  margin: 340px 25px 0px 0px;
+  margin: 360px 25px 0px 0px;
   left: 160px;
   border-bottom: 8px solid white;
   border-right: 4px solid white;
