@@ -604,6 +604,10 @@ hr::after {
   color: #bdbbbc;
 }
 
+.metrika {
+  float: right;
+  margin: 85px 10px 0px 0px;
+}
 
 
 /* ЧЕСТНО СПИЖЖЕННЫЙ КОД ДЛЯ ПОПАПОВ ФОТОК */
