@@ -8,9 +8,7 @@ body {
   font-weight: 400;
   text-transform: uppercase;
   color: black;
-  /*background: linear-gradient(to top, #269926, #008500);*/
   background-color: #051471;
-  zoom: 75%;
   background-image: url("../img/nature.jpg");
   background-repeat: no-repeat;
   background-size: cover;

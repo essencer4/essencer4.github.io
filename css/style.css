@@ -2,14 +2,13 @@
 
 body {
   min-width: 768px;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 1.25;
   font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 400;
   text-transform: uppercase;
   color: black;
   background-color: #00472E;
-  zoom: 75%;
   background-image: url("../img/nature.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -22,7 +21,7 @@ h1 {
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 700;
 }
 
@@ -43,13 +42,13 @@ a {
 .main-header {
   position: relative;
   z-index: 10;
-  width: 1024px;
+  width: 768px;
   margin: auto;
   background: #0F25AE;
 }
 
 .container-page {
-  width: 1024px;
+  width: 768px;
   margin: auto;
   margin-top: 6px;
   background: #4458D6;
@@ -60,16 +59,17 @@ a {
 }
 
 .main-footer-page {
-  width: 1024px;
+  width: 768px;
   margin: auto;
   background: #0F25AE;
   opacity: 0.9;
+  margin-bottom: 625px;
   margin-top: -6px;
   z-index: 1;
-  margin-bottom: 900px;
   border: 3px solid black;
   border-top-style: none;
   box-sizing: border-box;
+  border-radius: 1px 1px 40px 40px;
 }
 
 
@@ -114,20 +114,20 @@ nav ul li {
 
 .main-navigation ul li a {
   display: block;
-  padding: 18px 0px;
+  padding: 20px 0px;
   text-decoration: none;
   color: white;
   letter-spacing: 2.5px;
   text-transform: none;
-  font-size: 21px;
+  font-size: 16px;
 }
 
 .link-first {
-  margin-left: 75px;
+  margin-left: 25px;
 } 
 
 .link {
-  margin-left: 45px;
+  margin-left: 25px;
 } 
 
 .main-navigation ul li a:hover {
@@ -155,7 +155,7 @@ nav ul li {
 .index-logo {
   position: absolute;
   top: 0%;
-  left: 3%;
+  left: 0%;
   width: 116px;
   height: 58px;
   padding: 1px 10px;
@@ -175,7 +175,7 @@ nav ul li {
 /*ОСНОВНАЯ ЧАСТЬ*/
 
 .image-1 {
-  height: 575px;
+  height: 432px;
   width: 100%;
   background: #66CCFF url("../img/background-index.jpg");
   margin-top: 60px;
@@ -199,9 +199,9 @@ nav ul li {
 .switch-lang p {
   text-align: center;
   margin: 0px;
-  padding: 20px 40px;
+  padding: 15px 30px;
   line-height: 1.5;
-  font-size: 32px;
+  font-size: 24px;
   letter-spacing: 1.5px;
 }
 
@@ -215,14 +215,14 @@ nav ul li {
 }
 
 .eng-switch {
-  margin: 470px 25px 0px 0px; 
+  margin: 345px 15px 0px 0px; 
   border-bottom: 8px solid white;
   border-right: 4px solid white;
 }
 
 .rus-switch {
   position: relative; 
-  margin: 365px 25px 0px 0px;
+  margin: 260px 50px 0px 0px;
   left: 160px;
   border-bottom: 8px solid white;
   border-right: 4px solid white;
@@ -260,11 +260,10 @@ nav ul li {
 .block-3 {
   position: relative;
   float: left;
-  width: 340px;
-  height: 390px;
+  width: 255px;
   color: white;
   background: #6B7AD6;
-  margin-left: 15px;
+  margin-left: 10px;
 }
 
 .title-link {
@@ -282,9 +281,9 @@ nav ul li {
 }
 
 .near-photo-text-1 {
-  padding: 0px 42px;
+  padding: 0px 25px;
   line-height: 1.25;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .near-photo-text-2 {
@@ -294,18 +293,16 @@ nav ul li {
   text-transform: none;
   text-align: justify;
   text-indent: 15px;
-  white-space: pre-line;
+  margin: 0px;
 }
 
 /*Кнопка подробнее*/
 
 .sort-column-1-link {
-  position:absolute;
-  bottom: 20px;
-  left: 5%;
-  width: 100px;
-  margin-top: 20px;
-  padding: 10px 25px;
+  float: left;
+  width: 75px;
+  margin: 15px 10px;
+  padding: 11px 20px;
   text-decoration: none;
   color: #fff;
   background-color: #051471;
@@ -318,6 +315,7 @@ nav ul li {
   margin: 0px;
   padding: 0px;
   line-height: 1.5;
+  font-size: 13px;
 }
 
 .sort-column-1-link:hover {
@@ -332,11 +330,9 @@ nav ul li {
 /*Кнопка steam*/
 
 .steam-btn {
-  position:absolute;
-  bottom: 20px;
-  left: 56%;
-  margin-top: 20px;
-  padding: 10px 25px;
+  float: left;
+  margin: 15px 10px;
+  padding: 10px 20px;
   text-decoration: none;
   color: #fff;
   background-color: #051471;
@@ -352,24 +348,6 @@ nav ul li {
   opacity: 0.5;
 }
 
-/*Фотки красной шапочки*/
-
-.block-4-1 {
-  float: left;
-  margin-left: 5px;
-}
-
-.block-4-2 {
-  float: left;
-  margin-left: 5px;
-}
-
-.block-4-3 {
-  float: left;
-  margin-left: 5px;
-  margin-top: 8px;
-}
-
 /*Дикий остров*/
 
 .features-2 {
@@ -382,32 +360,33 @@ nav ul li {
 
 .block-5 {
   float: left;
-  height: 355px;
-  width: 660px;
+  width: 495px;
 }
 
 .block-5-1 {
   float: left;
-  margin-left: 15px;
+  margin-left: 10px;
   border-radius: 10px;
+  margin-top: 5px
 }
 
 .block-5-2 {
   float: left;
-  margin-left: 15px;
+  margin-left: 10px;
   border-radius: 10px;
+  margin-top: 5px
 }
 
 .block-5-3 {
   float: left;
-  margin-left: 15px;
+  margin-left: 10px;
   margin-top: 15px;
   border-radius: 10px;
 }
 
 .block-5-4 {
   float: left;
-  margin-left: 15px;
+  margin-left: 10px;
   margin-top: 15px;
   border-radius: 10px;
 }
@@ -417,11 +396,10 @@ nav ul li {
 .block-6 {
   position: relative;
   float: right;
-  width: 340px;
-  height: 390px;
+  width: 255px;
   color: white;
   background: #6B7AD6;
-  margin-right: 14px;
+  margin-right: 10px;
 }
 
 /*КОНАН*/
@@ -437,29 +415,10 @@ nav ul li {
 .block-7 {
   position: relative;
   float: left;
-  width: 340px;
-  height: 390px;
+  width: 255px;
   color: white;
   background: #6B7AD6;
-  margin-left: 15px;
-}
-
-/*ФОТКИ КОНАНА*/
-
-.block-8-1 {
-  float: left;
-  margin-left: 5px;
-}
-
-.block-8-2 {
-  float: left;
-  margin-left: 5px;
-}
-
-.block-8-3 {
-  float: left;
-  margin-left: 5px;
-  margin-top: 8px;
+  margin-left: 10px;
 }
 
 /*БЛОК ВИДЕО*/
@@ -511,7 +470,7 @@ hr::after {
 
 .footer-visit {
   float: left;
-  margin: 50px 0px 50px 140px;
+  margin: 45px 0px 0px 70px;
 }
 
 .footer-visit h2 {
@@ -523,7 +482,7 @@ hr::after {
 
 .footer-social {
   float: left;
-  margin: 36px 0px 0px 93px;
+  margin: 25px 0px 20px 71px;
 }
 
 .social-btn-twit {
@@ -577,7 +536,7 @@ hr::after {
 
 .academy-link {
   float: left;
-  margin: 46px 0px 0px 140px;
+  margin: 15px 0px 0px 70px;
 }
 
 .footer-copyright-text {
@@ -593,7 +552,7 @@ hr::after {
 .footer-copyright-icon {
   float: left;
   margin-left: 8px;
-  margin-top: -8px;
+  margin-top: -4px;
 }
 
 .footer-copyright-icon a {
@@ -609,11 +568,6 @@ hr::after {
 
 .footer-copyright-icon a:active {
   color: #bdbbbc;
-}
-
-.metrika {
-  float: right;
-  margin: 85px 10px 0px 0px;
 }
 
 
@@ -647,7 +601,7 @@ hr::after {
   margin: 0;
   width: 85%;
   min-width: 320px;
-  max-width: 1000px;
+  max-width: 720px;
 /* фиксированное позиционирование, окно стабильно при прокрутке */
   position: fixed;
   padding: 15px;

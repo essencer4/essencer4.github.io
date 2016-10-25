@@ -4,7 +4,7 @@ jQuery(function(f){
 
     f(window).scroll(function(){
 
-        element['fade'+ (f(this).scrollTop() > 2550 ? 'Out': 'In')](500);          
+        element['fade'+ (f(this).scrollTop() > 2600 ? 'Out': 'In')](500);          
 
     });
 
