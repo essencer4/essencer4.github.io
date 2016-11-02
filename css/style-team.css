@@ -448,7 +448,7 @@ hr::after {
   font-size: 14px;
   z-index: 20;
   margin: 0;
-  width: 85%;
+  width: 30%;
   min-width: 320px;
   max-width: 720px;
 /* фиксированное позиционирование, окно стабильно при прокрутке */
@@ -483,7 +483,7 @@ hr::after {
   -ms-transform: translate(-50%, 0);
   -o-transform: translate(-50%, 0);
   transform: translate(-50%, 0);
-  top: 12%;
+  top: 8%;
 }
 
 /* формируем кнопку закрытия */
