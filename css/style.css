@@ -11,7 +11,7 @@ body {
   background-color: #00472E;
   background-image: url("../img/nature.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 115%;
   background-attachment: fixed;
 }
 
@@ -56,6 +56,9 @@ a {
   border-top-style: none;
   border-bottom-style: none;
   box-sizing: border-box;
+  background-image: url("../img/2222.jpg");
+  background-repeat: repeat;
+  background-size: auto;
 }
 
 .main-footer-page {
@@ -241,18 +244,22 @@ nav ul li {
 }
 
 .block-2 {
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin: 30px 15px 30px 15px;
+  padding: 10px 5px;
   color: white;
   text-transform: none;
   text-indent: 15px;
+  background-color: #0F25AE;
+  border-radius: 10px;
 }
 
 /*Красная шапочка*/
 
 .features-1 {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  height: 300px;
+  margin-top: -25px;
+  margin-bottom: -25px;
+  padding: 20px 0px;
 }
 
 /*Текст красной шапочки*/

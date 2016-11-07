@@ -177,7 +177,7 @@ nav ul li {
 .image-1 {
   height: 432px;
   width: 100%;
-  background: #66CCFF url("../img/background-soft.jpg");
+  background: #66CCFF url("../img/background-team.jpg");
   margin-top: 60px;
 }
 
@@ -259,7 +259,6 @@ nav ul li {
 .block-2 {
   height: 230px;
   width: 700px;
-  border: 1px solid black;
 }
 
 .soft-image-1 {
