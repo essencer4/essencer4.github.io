@@ -1,0 +1,551 @@
+/* Space out content a bit */
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 14px;
+  line-height: 1.25;
+  font-family: "PT Sans", "Arial", sans-serif !important;
+  font-weight: 400;
+  color: black;
+  background-color: #00472E;
+  background-image: url("../img/nature.jpg");
+  background-repeat: no-repeat;
+  background-size: 115%;
+  background-attachment: fixed;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+a {
+  font-weight: 900;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Custom page header */
+.header {
+  border-bottom: 1px solid #e5e5e5;
+}
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+  padding-bottom: 19px;
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+/* Customize container */
+@media (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+}
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+.jumbotron .btn {
+  font-size: 21px;
+  padding: 14px 24px;
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+}
+.marketing p + h4 {
+  margin-top: 28px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
+
+.navbar-default {
+  max-width: 730px;
+}
+
+.navbar-default {
+  margin: 0 auto;
+}
+
+
+
+.clearfix::after {
+  display: table;
+  content: "";
+  clear: both;
+}
+
+.container-page {
+  margin: auto;
+  margin-top: 6px;
+  background: #4458D6;
+  border: 3px solid black;
+  border-top-style: none;
+  border-bottom-style: none;
+  box-sizing: border-box;
+  background-image: url("../img/2222.jpg");
+  background-repeat: repeat;
+  background-size: auto;
+}
+
+.main-footer-page {
+  margin: auto;
+  background: #0F25AE;
+  opacity: 0.9;
+  margin-bottom: 50px;
+  margin-top: -6px;
+  z-index: 1;
+  border: 3px solid black;
+  border-top-style: none;
+  box-sizing: border-box;
+  border-radius: 1px 1px 40px 40px;
+}
+
+/*ОСНОВНАЯ ЧАСТЬ*/
+
+.image-1 {
+  margin-top: 30px;
+}
+
+.fig {
+  text-align: center; /* Выравнивание по центру */ 
+}
+
+.switch-lang {
+  float: right; 
+  text-decoration: none;
+  color: #fff;
+  background-color: #051471;
+  border-radius: 40px 5px;
+  text-align: center;
+  opacity: 0.75;
+  text-transform: none;
+}
+
+.switch-lang p {
+  text-align: center;
+  margin: 0px;
+  padding: 15px 30px;
+  line-height: 1.5;
+  font-size: 24px;
+  letter-spacing: 1.5px;
+}
+
+.switch-lang:hover {
+  background-color: #4458D6;
+  color: white !important;
+}
+
+.switch-lang:active p {
+  opacity: 0.5;
+}
+
+.eng-switch {
+  margin: -85px 10px 0px 0px; 
+  border-bottom: 8px solid white;
+  border-right: 4px solid white;
+}
+
+.rus-switch {
+  position: relative; 
+  margin: -170px 170px 0px 0px;
+  left: 160px;
+  border-bottom: 8px solid white;
+  border-right: 4px solid white;
+}
+
+.switch-activated {
+  text-decoration: underline;
+}
+
+/*РАЗДЕЛИТЕЛЬНАЯ ПОЛОСКА*/
+
+hr {
+  padding: 0;
+  border: none;
+  border-top: 5px double #333;
+  color: #333;
+  text-align: center;
+  margin: 25px 0px 25px 0px;
+}
+
+hr::after {
+  content: "❄";
+  display: inline-block;
+  position: relative;
+  top: -0.7em;
+  font-size: 1.5em;
+  z-index: 1;
+  padding: 0px 0.25em;
+  background: rgb(107, 122, 214);
+}
+
+.hr-first {
+  margin: 0px 0px 25px 0px;
+}
+
+.hr-last {
+  margin: 25px 0px 5px 0px;
+}
+
+/*МИССИЯ СТУДИИ*/
+
+.block-1 {
+  margin-top: 40px;
+  letter-spacing: -0.25px;
+  color: white;
+}
+
+.block-2 {
+  margin: 30px 15px 30px 15px;
+  padding: 10px 5px;
+  color: white;
+  text-transform: none;
+  text-indent: 15px;
+  background-color: #0F25AE;
+  border-radius: 10px;
+}
+
+/*Красная шапочка*/
+
+.features-1 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 0px 10px;
+}
+
+/*Текст красной шапочки*/
+
+.block-3 {
+  position: relative;
+  float: left;
+  color: white;
+  background: #6B7AD6;
+}
+
+.title-link {
+  display: block;
+  text-decoration: none;
+  color: white;
+}
+
+.title-link:hover {
+  color: #051471;
+}
+
+.title-link:active {
+  color: #bdbbbc;
+}
+
+.near-photo-text-1 {
+  padding: 0px 25px;
+  line-height: 1.25;
+  margin-top: 20px;
+}
+
+.near-photo-text-2 {
+  padding-top: 5px;
+  line-height: 1.25;
+  padding: 0px 10px 0px 10px;
+  text-transform: none;
+  text-align: justify;
+  text-indent: 15px;
+  margin: 20px 0;
+}
+
+/*Кнопка подробнее*/
+
+.sort-column-1-link { 
+  display: inline-block;
+  width: 140px;
+  margin: 15px 10px;
+  padding: 15px 30px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #051471;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.sort-column-1-link p {
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+  line-height: 1.5;
+  font-size: 13px;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.sort-column-1-link:hover {
+  background-color: #4458D6;
+  color: white !important;
+}
+
+.sort-column-1-link:active p {
+  opacity: 0.5;
+}
+
+/*Кнопка steam*/
+
+.steam-btn {
+  display: inline-block;
+  position: relative;
+  top: -9px;
+  margin: 15px 10px;
+  padding: 16px 30px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #051471;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.steam-btn:hover {
+  background-color: #4458D6;
+  color: white !important;
+}
+
+.steam-btn:active {
+  opacity: 0.5;
+}
+
+/*Дикий остров*/
+
+.features-2 {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/*Фотки дикого острова*/
+
+.block-5 {
+  float: left;
+  width: 495px;
+}
+/*
+.block-5-1 {
+  margin: 5px 0px 0px 2px;
+}
+
+.block-5-2 {
+  margin: 0px 0px 0px 5px;
+}
+
+.block-5-3 {
+  margin: 0px 0px 0px 5px;
+}
+
+.block-5-4 {
+  margin: 0px 0px 0px 5px;
+}
+*/
+/*Текст дикого острова*/
+
+.block-6 {
+  position: relative;
+  float: right;
+  width: 255px;
+  color: white;
+  background: #6B7AD6;
+  margin-right: 10px;
+}
+
+
+/*БЛОК ВИДЕО*/
+
+.block-9 {
+  display: block;
+  color: white;
+  margin: 30px 45px;
+  padding: 10px 5px;
+  background-color: #0F25AE;
+  border-radius: 10px;
+}
+
+.block-10 {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.block-11 {
+  display: block;
+  margin-bottom: 20px;
+}
+
+/*ФУТЕР*/
+
+/*ВИЗИТ СЕДОНА*/
+
+.footer-visit {
+  margin: 30px 0px 0px 0px;
+}
+
+.footer-visit h2 {
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+}
+
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*СОЦИАЛЬНЫЕ КНОПКИ*/
+
+.footer-social {
+  margin: 15px auto;
+  display: inline-block;
+  width: 220px;
+}
+
+.social-btn-twit {
+  float: left;
+  padding: 18px 15px 15px 18px;
+  background: #051471;
+}
+
+.social-btn-vk {
+  float: left;
+  margin-left: 2px;
+  padding: 17px 15px 17px 15px;
+  background: #051471;
+}
+
+.social-btn-fb {
+  float: left;
+  margin-left: 2px;
+  padding: 15px 20px 16px 20px;
+  background: #051471;
+}
+
+.social-btn-youtube {
+  float: left;
+  margin-left: 2px;
+  padding: 17px 15px 16px 15px;
+  background: #051471;
+}
+
+.social-btn:hover {
+  background-color: #669ec0;
+}
+
+.social-btn:active {
+  background-color: #5496bd;
+}
+
+.social-btn:active img {
+  opacity: 0.3;
+}
+
+/*КТО СДЕЛАЛ*/
+
+.academy-link {
+  display: inline-block;
+  width: 120px;
+  text-align: center;
+  margin: 25px 0px 15px 0px;
+}
+
+.footer-copyright-text {
+  float: left;
+  margin-top: 10px;
+  color: white;
+}
+
+.footer-copyright-text p {
+  margin: 0px;
+}
+
+.footer-copyright-icon {
+  float: left;
+  margin-left: 8px;
+  margin-top: 9px;
+}
+
+.footer-copyright-icon a {
+  float: left;
+  display: block;
+  text-decoration: none;
+  color: white;
+}
+
+.footer-copyright-icon a:hover {
+  color: #669ec0;
+}
+
+.footer-copyright-icon a:active {
+  color: #bdbbbc;
+}
+
+
+
+
+.block-33 h2{
+  margin: 0;     
+  color: #666;
+  padding-top: 90px;
+  font-size: 52px;
+  font-family: "trebuchet ms", sans-serif;    
+}
+
+.block-33 .item{
+  background: #333;    
+  text-align: center;
+}
+
+.block-33 .carousel{
+  margin-top: 20px;
+}
+
+.carousel-indicators {
+  bottom: 5px;
+}
