@@ -11,7 +11,7 @@ body {
   background-color: #00472E;
   background-image: url("../img/nature.jpg");
   background-repeat: no-repeat;
-  background-size: 115%;
+  background-size: content;
   background-attachment: fixed;
 }
 
