@@ -309,7 +309,7 @@ ol li {
 }
 
 .lesson-one {
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 .sort-column-1-link {
@@ -343,6 +343,38 @@ ol li {
   background-position: 50% 125%;
   background-size: 125%;
   background-repeat: no-repeat;
+}
+
+.background-image-3 {
+  background: #FFFFFF url("../img/others-games-3-background.jpg");
+  background-position: 50% 55%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.donations {
+  float: right;
+  width: 250px;
+}
+
+.donations-1 {
+  float: left;
+  margin: 20px 5px 5px 55px;
+  width: 130px;
+  height: 65px;
+  border: none;
+}
+
+.donations-2 {
+  float: left;
+  margin: 20px 5px 5px 23px;
+  width: 195px;
+  height: 65px;
+  border: none;
+}
+
+.link-1 {
+  text-decoration: none;
 }
 
 /*РАЗДЕЛИТЕЛЬНАЯ ПОЛОСКА*/
