@@ -117,7 +117,8 @@ nav ul li {
 
 .main-navigation ul li a {
   display: block;
-  padding: 20px 0px;
+  height: 15px;
+  padding: 20px 10px;
   text-decoration: none;
   color: white;
   letter-spacing: 2.5px;
@@ -126,11 +127,11 @@ nav ul li {
 }
 
 .link-first {
-  margin-left: 45px;
+  margin-left: 40px;
 } 
 
 .link {
-  margin-left: 45px;
+  margin-left: 25px;
 } 
 
 .main-navigation ul li a:hover {
@@ -151,6 +152,12 @@ nav ul li {
 
 .main-header ul li .main-navigation-active-link:active {
   color: #CCCCCC;
+}
+
+.active-header-link {
+  background-color: #4458D6;
+  border-bottom: 5px solid white;
+  box-sizing: content-box;
 }
 
 /*ЛОГО*/
