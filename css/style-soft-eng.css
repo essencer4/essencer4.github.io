@@ -114,20 +114,25 @@ nav ul li {
 
 .main-navigation ul li a {
   display: block;
+  height: 15px;
+  width: 100px;
   padding: 20px 0px;
   text-decoration: none;
   color: white;
   letter-spacing: 2.5px;
   text-transform: none;
   font-size: 16px;
+  text-align: center;
+  border-left: 3px solid #051471;
+  border-right: 3px solid #051471;
 }
 
 .link-first {
-  margin-left: 45px;
+  margin-left: 25px;
 } 
 
 .link {
-  margin-left: 45px;
+  margin-left: -6px;
 } 
 
 .main-navigation ul li a:hover {
@@ -148,6 +153,12 @@ nav ul li {
 
 .main-header ul li .main-navigation-active-link:active {
   color: #CCCCCC;
+}
+
+.active-header-link {
+  background-color: #4458D6;
+  border-bottom: 5px solid white;
+  box-sizing: content-box;
 }
 
 /*ЛОГО*/

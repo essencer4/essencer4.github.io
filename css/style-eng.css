@@ -118,20 +118,24 @@ nav ul li {
 .main-navigation ul li a {
   display: block;
   height: 15px;
-  padding: 20px 10px;
+  width: 100px;
+  padding: 20px 0px;
   text-decoration: none;
   color: white;
   letter-spacing: 2.5px;
   text-transform: none;
   font-size: 16px;
+  text-align: center;
+  border-left: 3px solid #051471;
+  border-right: 3px solid #051471;
 }
 
 .link-first {
-  margin-left: 40px;
+  margin-left: 25px;
 } 
 
 .link {
-  margin-left: 25px;
+  margin-left: -6px;
 } 
 
 .main-navigation ul li a:hover {
