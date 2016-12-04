@@ -437,8 +437,15 @@ nav ul li {
 
 .block-9 {
   display: block;
+  width: 635px;
   color: white;
-  margin: 30px 0px;
+  margin: 30px 15px 30px 60px;
+  padding: 10px 5px;
+  color: white;
+  text-transform: none;
+  text-indent: 15px;
+  background-color: #0F25AE;
+  border-radius: 10px;
 }
 
 .block-10 {
