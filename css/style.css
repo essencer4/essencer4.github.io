@@ -1,20 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=PT+Sans&subset=latin,cyrillic);
 
-body {
-  min-width: 768px;
-  font-size: 14px;
-  line-height: 1.25;
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-weight: 400;
-  text-transform: uppercase;
-  color: black;
-  background-color: #00472E;
-  background-image: url("../img/nature.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-}
-
 h1 {
   font-size: 30px;
   font-weight: 700;
@@ -31,7 +16,22 @@ a {
 
 
 
-/*ОСНОВА*/
+/*ОСНОВНЫЕ ЭЛЕМЕНТЫ СТРАНИЦЫ*/
+
+.page {
+  min-width: 768px;
+  font-size: 14px;
+  line-height: 1.25;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: black;
+  background-color: #00472E;
+  background-image: url("../img/nature.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
 
 .clearfix::after {
   display: table;
@@ -40,11 +40,14 @@ a {
 }
 
 .main-header {
-  position: relative;
-  z-index: 10;
   width: 768px;
   margin: auto;
+  position: relative;
+  z-index: 10;
   background: #0F25AE;
+  display: table;
+  content: "";
+  clear: both;
 }
 
 .container-page {
@@ -58,7 +61,7 @@ a {
   box-sizing: border-box;
   background-image: url("../img/2222.jpg");
   background-repeat: repeat;
-  background-size: auto;
+  background-size: : auto;
 }
 
 .main-footer-page {
@@ -86,13 +89,13 @@ a {
 
 /*ВЕРХНЕЕ МЕНЮ - 4 КНОПКИ И ЛОГО*/
 
-.main-navigation {
+.main-nav {
   float: left;
   height: 20px;
   margin: 0px 0px 40px 120px;
 }
 
-.fixed-menu {
+.main-header__fixed-menu {
   position: fixed;
   background: #0F25AE;
   width: inherit;
@@ -104,18 +107,18 @@ a {
   box-sizing: border-box;
 }
 
-nav ul {
-  margin: 0px;
+.main-nav__list {
+  margin: 0 0 0 15px;
   padding: 0px;
   list-style: none;
 }
 
-nav ul li {
+.main-nav__list li {
   display: inline-block;
   vertical-align: top;
 }
 
-.main-navigation ul li a {
+.main-nav__list li a {
   display: block;
   width: 100px;
   padding: 18px 0px;
@@ -130,31 +133,27 @@ nav ul li {
   border-right: 3px solid #051471;
 }
 
-.link-first {
-  margin-left: 15px;
-}
-
-.main-navigation ul li a:hover {
+.main-nav__list li a:hover {
   color: #669ec0;
 }
 
-.main-navigation ul li a:active {
+.main-nav__list li a:active {
   color: #bdbbbc;
 }
 
-.main-header ul li .main-navigation-active-link {
+.main-nav__list li .main-navigation-active-link {
   color: #766357;
 }
 
-.main-header ul li .main-navigation-active-link:hover {
+.main-nav__list li .main-navigation-active-link:hover {
   color: #604e43;
 }
 
-.main-header ul li .main-navigation-active-link:active {
+.main-nav__list li .main-navigation-active-link:active {
   color: #CCCCCC;
 }
 
-.active-header-link {
+.main-nav__active-link {
   background-color: #4458D6;
   border-bottom: 5px solid white;
   box-sizing: content-box;
@@ -162,7 +161,7 @@ nav ul li {
 
 /*ЛОГО*/
 
-.index-logo {
+.main-header__index-logo {
   position: absolute;
   top: 0%;
   left: 0%;
@@ -171,12 +170,12 @@ nav ul li {
   padding: 1px 10px;
 }
 
-.index-logo:hover {
+.main-header__index-logo:hover {
   background-color: #051471;
   color: white !important;
 }
 
-.index-logo:active {
+.main-header__index-logo:active {
   opacity: 0.5;
 }
 
