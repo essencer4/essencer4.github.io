@@ -448,7 +448,7 @@ hr::after {
 
 .academy-link {
   float: left;
-  margin: 25px 0% 0px 10%;
+  margin: 15px 5% 0px 5%;
   width: 20%;
 }
 
@@ -848,6 +848,6 @@ hr::after {
 
 .metrika {
   float: left;
-  width: 100%;
-  margin: 0 auto 10px 0;
+  width: 15%;
+  margin: 0 5% 10px 7%;
 }
