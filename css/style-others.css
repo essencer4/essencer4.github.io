@@ -359,6 +359,13 @@ ol li {
   background-repeat: no-repeat;
 }
 
+.background-image-4 {
+  background: #FFFFFF url("../img/steam-background.jpg");
+  background-position: 50% 55%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
 .donations {
   float: right;
   width: 250px;
