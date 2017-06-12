@@ -248,7 +248,7 @@ nav ul li {
 }
 
 .block-1 {
-  margin-top: 40px;
+  margin-top: 50px;
   letter-spacing: -0.25px;
   color: white;
 }
@@ -268,8 +268,18 @@ nav ul li {
   width: 700px;
 }
 
+.block-3 {
+  height: 200px;
+  width: 700px;
+}
+
 .soft-image-1 {
   float: left;
+  margin: 10px 0px 0px 10px;
+}
+
+.soft-image-2 {
+  float: right;
   margin: 10px 0px 0px 10px;
 }
 
@@ -286,6 +296,25 @@ nav ul li {
   text-indent: 10px;
   text-transform: none;
   padding: 0px 10px;
+}
+
+.text-3 {
+  width: 675px;
+  float: left;
+  text-indent: 10px;
+  text-transform: none;
+  padding: 0px 10px;
+}
+
+.text-4 {
+  width: 675px;
+  float: left;
+  text-indent: 10px;
+  text-transform: none;
+  padding: 0px 10px;
+  font-size: 14px;
+  color: grey;
+  margin: -5px 0px 10px 0px;
 }
 
 /*РАЗДЕЛИТЕЛЬНАЯ ПОЛОСКА*/

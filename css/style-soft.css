@@ -1,6 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=PT+Sans&subset=latin,cyrillic);
 
 body {
+  min-width: 768px;
   font-size: 14px;
   line-height: 1.25;
   font-family: "PT Sans", "Arial", sans-serif;
@@ -39,17 +40,16 @@ a {
 }
 
 .main-header {
-  max-width: 1200px;
-  width: 100%;
   position: relative;
   z-index: 10;
+  width: 768px;
   margin: auto;
   background: #0F25AE;
 }
 
 .container-page {
-  max-width: 1200px;
-  margin: 0 2%;
+  width: 768px;
+  margin: auto;
   margin-top: 6px;
   background: #4458D6;
   border: 3px solid black;
@@ -59,8 +59,8 @@ a {
 }
 
 .main-footer-page {
-  max-width: 1200px;
-  margin: 0 2%;
+  width: 768px;
+  margin: auto;
   background: #0F25AE;
   opacity: 0.9;
   margin-bottom: 625px;
@@ -70,7 +70,6 @@ a {
   border-top-style: none;
   box-sizing: border-box;
   border-radius: 1px 1px 40px 40px;
-  width: 96%;;
 }
 
 
@@ -92,7 +91,6 @@ a {
 
 .fixed-menu {
   position: fixed;
-  max-width: 1200px;
   background: #0F25AE;
   width: inherit;
   opacity: 0.85;
@@ -186,9 +184,7 @@ nav ul li {
 .image-1 {
   height: 432px;
   width: 100%;
-  background-color: #66CCFF;
-  background-image: url("../img/background-soft.jpg");
-  background-size: cover;
+  background: #66CCFF url("../img/background-soft.jpg");
   margin-top: 60px;
 }
 
@@ -252,10 +248,9 @@ nav ul li {
 }
 
 .block-1 {
-  color: white;
+  margin-top: 40px;
   letter-spacing: -0.25px;
-  width: 100%;
-  margin: auto;
+  color: white;
 }
 
 /*ФОТКИ*/
@@ -267,22 +262,19 @@ nav ul li {
 
 .soft-image-1 {
   float: left;
-  width: 30%;
-  margin-left: 3%;
+  margin-left: 15px;
   border-radius: 10px;
 }
 
 .soft-image-2 {
   float: left;
-  width: 30%;
-  margin-left: 2%;
+  margin-left: 15px;
   border-radius: 10px;
 }
 
 .soft-image-3 {
   float: left;
-  width: 30%;
-  margin-left: 2%;
+  margin-left: 15px;
   border-radius: 10px;
 }
 
@@ -319,13 +311,12 @@ ol li {
 
 .nlbb-download-link {
   display: inline-block;
+  margin: 20px 0px 20px 190px;
+  padding: 10px 25px;
   text-decoration: none;
   color: #fff;
   background-color: #051471;
   border-radius: 5px;
-  width: 40%;
-  padding: 10px 25px;
-  margin: 20px 25% 20px 27%;
 }
 
 .nlbb-download-link:hover {
@@ -373,8 +364,7 @@ hr::after {
 
 .footer-visit {
   float: left;
-  margin: 40px 0% 0px 10%;
-  width: 20%;
+  margin: 45px 0px 0px 70px;
 }
 
 .footer-visit h2 {
@@ -385,51 +375,43 @@ hr::after {
 /*СОЦИАЛЬНЫЕ КНОПКИ*/
 
 .footer-social {
-  float: left;;
-  width: 40%;
-  margin: 25px auto;
-}
-
-.footer-social-position {
-  margin: auto;
-  width: 265px;;
-
+  float: left;
+  margin: 25px 0px 20px 71px;
 }
 
 .social-btn-twit {
+  float: left;
   width: 31px;
   height: 31px;
   padding: 21px 5px 6px 22px;
   background: #051471;
-  margin: 0 2% 0 0%;
-  display: inline-block;
 }
 
 .social-btn-vk {
+  float: left;
   width: 33px;
   height: 34px;
+  margin-left: 6px;
   padding: 22px 6px 2px 19px;
   background: #051471;
-  margin-right: 2%;
-  display: inline-block;
 }
 
 .social-btn-fb {
+  float: left;
   width: 29px;
   height: 35px;
+  margin-left: 6px;
   padding: 18px 6px 5px 23px;
   background: #051471;
-  margin-right: 2%;
-  display: inline-block;
 }
 
 .social-btn-youtube {
+  float: left;
   width: 34px;
-  height: 32px;;
+  height: 32px;
+  margin-left: 6px;
   padding: 21px 5px 5px 19px;
   background: #051471;
-  margin-right: 2%;
-  display: inline-block;
 }
 
 .social-btn:hover {
@@ -448,13 +430,7 @@ hr::after {
 
 .academy-link {
   float: left;
-  margin: 15px 5% 0px 5%;
-  width: 20%;
-}
-
-.academy-link-position {
-  width: 120px;
-  margin: 0 auto;
+  margin: 15px 0px 0px 70px;
 }
 
 .footer-copyright-text {
@@ -487,18 +463,6 @@ hr::after {
 .footer-copyright-icon a:active {
   color: #bdbbbc;
 }
-
-.metrika {
-  float: left;
-  width: 100%;
-  margin: 0 auto 10px 0;
-}
-
-.metrika-position {
-  width: 90px;
-  margin: 0 auto;
-}
-
 
 
 /* ЧЕСТНО СПИЖЖЕННЫЙ КОД ДЛЯ ПОПАПОВ ФОТОК */
@@ -663,191 +627,3 @@ hr::after {
 
 /* параграфы */
 .popup p {margin: 0; padding: 5px 0}
-
-
-
-
-/* МЕДИА ПРАВИЛА ДЛЯ МОБИЛЬНИКОВ */
-
-@media (max-width: 320px) {
-
-.nlbb-download-link {
-  display: inline-block;
-  text-decoration: none;
-  color: #fff;
-  background-color: #051471;
-  border-radius: 5px;
-  width: 70%;
-  margin: 0px;
-  padding: 10px 25px;
-}
-
-.soft-image-1 {
-  float: left;
-  width: 80%;
-  margin: 10px 10%;
-  border-radius: 10px;
-}
-
-.soft-image-2 {
-  float: left;
-  width: 80%;
-  margin: 10px 10%;
-  border-radius: 10px;
-}
-
-.soft-image-3 {
-  float: left;
-  width: 80%;
-  margin: 10px 10%;
-  border-radius: 10px;
-}
-
-.footer-visit {
-  float: left;
-  width: 100%;
-  text-align: center;
-  margin: 40px 0 0 0;
-}
-
-.footer-social {
-  float: left;;
-  width: 100%;
-  margin: 25px auto;
-}
-
-.academy-link {
-  margin: 0px 30% 15px 30%;
-  width: 40%;;
-  text-align: center;
-}
-	
-}
-
-/* МЕДИА ПРАВИЛА ДЛЯ МОБИЛЬНИКОВ */
-
-@media (min-width: 321px) and (max-width: 420px) {
-
-.nlbb-download-link {
-  display: inline-block;
-  text-decoration: none;
-  color: #fff;
-  background-color: #051471;
-  border-radius: 5px;
-  width: 70%;
-  margin: 0px 5%;
-  padding: 10px 25px;
-}
-
-.soft-image-1 {
-  float: left;
-  width: 80%;
-  margin: 10px 10%;
-  border-radius: 10px;
-}
-
-.soft-image-2 {
-  float: left;
-  width: 80%;
-  margin: 10px 10%;
-  border-radius: 10px;
-}
-
-.soft-image-3 {
-  float: left;
-  width: 80%;
-  margin: 10px 10%;
-  border-radius: 10px;
-}
-
-.footer-visit {
-  float: left;
-  width: 100%;
-  text-align: center;
-  margin: 40px 0 0 0;
-}
-
-.footer-social {
-  float: left;;
-  width: 100%;
-  margin: 25px auto;
-}
-
-.academy-link {
-  margin: 0px 30% 10px 32%;
-  width: 40%;;
-  text-align: center;
-}
-  
-}
-
-
-
-/* МЕДИА ПРАВИЛА ДЛЯ ПЛАНШЕТОВ */
-
-@media (min-width: 421px) and (max-width: 768px) {
-
-.soft-image-1 {
-  float: left;
-  width: 80%;
-  margin: 10px 10%;
-  border-radius: 10px;
-}
-
-.soft-image-2 {
-  float: left;
-  width: 80%;
-  margin: 10px 10%;
-  border-radius: 10px;
-}
-
-.soft-image-3 {
-  float: left;
-  width: 80%;
-  margin: 10px 10%;
-  border-radius: 10px;
-}
-
-.footer-visit {
-  float: left;
-  width: 100%;
-  text-align: center;
-  margin: 40px 0 0 0;
-}
-
-.footer-social {
-  float: left;;
-  width: 100%;
-  margin: 25px auto;
-}
-
-.academy-link {
-  margin: 0 0 15px 0;
-  width: 100%;
-  text-align: center;
-}
-	
-}
-
-
-
-/* МЕДИА ПРАВИЛА ДЛЯ ПК СО СРЕДНИМ ЭКРАНОМ */
-
-@media (min-width: 769px) and (max-width: 6000px) {
-
-.nlbb-download-link {
-  display: inline-block;
-  text-decoration: none;
-  color: #fff;
-  background-color: #051471;
-  border-radius: 5px;
-  width: 25%;
-  padding: 10px 25px;
-  margin: 20px 34% 20px 34%;
-}
-
-.metrika {
-  float: left;
-  width: 15%;
-  margin: 0 5% 10px 7%;
-}
