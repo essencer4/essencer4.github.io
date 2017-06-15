@@ -260,6 +260,7 @@ a {
 }
 
 .vk-group {
+  margin: auto;
   width: 760px;
   height: 525px;
 }
