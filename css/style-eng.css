@@ -266,6 +266,11 @@ nav ul li {
   height: 525px;
 }
 
+.fb-center {
+  margin: 0 auto;
+  width: 500px;
+}
+
 /*Красная шапочка*/
 
 .features-1 {
