@@ -367,6 +367,12 @@ nav ul li {
   opacity: 0.5;
 }
 
+.sort-column-1-link-barbarian {
+  margin: 15px 3px 15px 6px;
+  padding: 11px 10px;
+  width: 70px;
+}
+
 /*Кнопка steam*/
 
 .steam-btn {
@@ -386,6 +392,16 @@ nav ul li {
 
 .steam-btn:active {
   opacity: 0.5;
+}
+
+.steam-btn-barbarian {
+  margin: 15px 3px 15px 3px;
+  padding: 10px 9px;
+}
+
+.steam-btn-barbarian-google {
+  margin: 15px 6px 15px 3px;
+  padding: 3px 9px;
 }
 
 /*Дикий остров*/
