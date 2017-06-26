@@ -203,6 +203,9 @@
     float: left;
     width: 100%;
     min-height: 56px; /* Временно для сетки */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
   .main-nav__user-items {
@@ -213,26 +216,6 @@
 
   .main-nav__toggle {
     display: none;
-}
-
-  .main-nav__item:nth-child(1) {
-    float: left;
-    margin-left: 48px;
-}
-
-  .main-nav__item:nth-child(2) {
-    float: left;
-    margin-left: 77px;
-}
-
-  .main-nav__item:nth-child(3) {
-    float: left;
-    margin-left: 209px;
-}
-
-  .main-nav__item:nth-child(4) {
-    float: left;
-    margin-left: 50px;
 }
 
   .main-nav__item a {
@@ -281,26 +264,9 @@
 
   .main-nav__items {
     width: 100%;
-}
-
-  .main-nav__item:nth-child(1) {
-    float: left;
-    margin-left: 60px;
-}
-
-  .main-nav__item:nth-child(2) {
-    float: left;
-    margin-left: 100px;
-}
-
-  .main-nav__item:nth-child(3) {
-    float: left;
-    margin-left: 323px;
-  }
-
-  .main-nav__item:nth-child(4) {
-    float: left;
-    margin-left: 77px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
   .main-nav__item a {

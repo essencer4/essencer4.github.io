@@ -1,75 +1,33 @@
   .page-header {
     position: relative;
     max-width: 100%;
-    min-height: 390px;
+    min-height: 283px;
     background-color: #dbe9f2;
-    background-image: url("../img/bg-back-mobile@1x.jpg");
+    background-image: url("../img/index-header-image-mobile@1x.jpg");
     background-position: 50% 50%;
     background-repeat: no-repeat;
-    background-size: 768px auto;
+    background-size: 320px auto;
     overflow: hidden;
-}
-
-  .page-header--bg-small {
-    min-height: 160px;
-    background-position: 50% 100%;
-}
-
-  .page-header::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url("../img/bg-intro-triangle-mobile.svg");
-    background-position: 50% 100%;
-    background-size: 768px auto;
-    background-repeat: no-repeat;
-}
-
-  .page-header__text-sedona {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
-}
-
-  .page-header__text-sedona--small {
-    top: 46%;
-    width: 230px;
 }
 
 @media (max-width: $mobile-widths) and (min-resolution: $dpi), (max-width: $mobile-widths) and (min-resolution: $dppx) {
   .page-header {
-    background-image: url("../img/bg-back-mobile@2x.jpg");
+    background-image: url("../img/index-header-image-mobile@1x.jpg");
 }
 }
 
 @media (min-width: $tablet-widths) {
   .page-header {
-    min-height: 518px;
-    background-image: url("../img/bg-back-tablet@1x.jpg");
+    min-height: 531px;
+    background-image: url("../img/index-header-image-tablet@1x.jpg");
     background-size: cover;
-}
-
-  .page-header--bg-small {
-    min-height: 290px;
-}
-
-  .page-header::after {
-    background-image: url("../img/bg-intro-triangle-tablet.svg");
-    background-size: 100% auto;
-}
-
-  .page-header__text-sedona {
-    width: 460px;
+    background-size: 768px auto;
 }
 }
 
 @media (min-width: $tablet-width) and (min-resolution: $dpi), (min-width: $tablet-width) and (min-resolution: $dppx) {
   .page-header {
-    background-image: url("../img/bg-back-tablet@2x.jpg");
+    background-image: url("../img/index-header-image-tablet@1x.jpg");
 }
 }
 
@@ -77,25 +35,16 @@
   .page-header {
     box-sizing: border-box;
     width: 100%;
-    max-width: 1200px;
+    min-height: 675px;
     margin: 0 auto;
     padding: 0;
-    background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-image: url("../img/index-header-image-desktop@1x.jpg");
     background-size: 1200px auto;
-}
-
-  .page-header::after {
-    background-image: url("../img/bg-intro-triangle-desktop.svg");
-    background-size: 1201px auto;
-}
-
-  .page-header--bg-small {
-    min-height: 300px;
 }
 }
 
 @media (min-width: $desktop-widths) and (min-resolution: $dpi), (min-width: $desktop-widths) and (min-resolution: $dppx) {
   .page-header {
-    background-image: url("../img/bg-back-desktop@2x.jpg");
+    background-image: url("../img/index-header-image-desktop@1x.jpg");
 }
 }
