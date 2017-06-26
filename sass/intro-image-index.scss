@@ -1,0 +1,38 @@
+  .intro-image-index {
+    height: 390px;
+    width: 100%;
+    background: url(../img/bg-back-mobile@1x.jpg);
+}
+
+  .intro-image-index__vector-text {
+    z-index: 1;
+    padding: 90px 0px;
+    margin: 0px auto;
+    width: 285px;
+}
+
+@media (min-width: $tablet-widths) {
+  .intro-image-index {
+    height: 530px;
+    background: url(../img/bg-back-mobile@1x.jpg);
+    background-repeat: no-repeat;
+    background-size: 136%;
+}
+
+  .intro-image-index__vector-text {
+    padding: 142px 0px;
+}
+}
+
+@media (min-width: $desktop-widths) {
+  .intro-image-index {
+    height: 530px;
+    background: url(../img/bg-back-mobile@1x.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+  .intro-image-index__vector-text {
+    padding: 142px 0px;
+}
+}

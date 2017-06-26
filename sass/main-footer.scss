@@ -1,0 +1,140 @@
+  .main-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 320px;
+    margin: auto;
+    background: $white;
+}
+
+  .main-footer__visit {
+    float: left;
+    width: 100%;
+    margin: 7px 0 20px 0px;
+}
+
+  .main-footer__visit-text {
+    text-align: center;
+    @include title-big;
+}
+
+  .main-footer__social {
+    display: block;
+    width: 160px;
+    padding: 0px 0px 20px 0px;
+    margin: 0 auto;
+}
+
+  .main-footer__social:nth-of-type(1) {
+    padding-left: 20px;
+}
+
+  .main-footer__social-btn {
+    float: left;
+    width: 48px;
+    height: 48px;
+    background: $blue;
+    margin-left: 4px;
+  &:hover {
+    background-color: $blue-hover;
+  }
+  &:active {
+    background-color: $blue-active;
+  }
+}
+
+  .main-footer__social-btn--twit {
+    display: block;
+    width: 32px;
+    padding: 17px 0px 0px 0px;
+    margin: 0 auto;
+}
+
+  .main-footer__social-btn--fb {
+    display: block;
+    width: 32px;
+    padding: 14px 0px 0px 0px;
+    margin: 0 auto;
+}
+
+  .main-footer__social-btn--youtube {
+    display: block;
+    width: 32px;
+    padding: 17px 0px 0px 0px;
+    margin: 0 auto;
+}
+
+  .main-footer__academy-link {
+    @include clearfix;
+    width: 132px;
+    padding: 8px 0px 20px 0px;
+    margin: 0 auto;
+}
+
+  .main-footer__copyright-text {
+    float: left;
+    padding: 0px 0px 0px 0px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+  .main-footer__copyright-icon {
+    float: left;
+    display: inline-block;
+    margin: 11px 0px 0px 10px;
+}
+
+  .main-footer__footer-copyright-icon a {
+    float: left;
+}
+
+@media (min-width: $tablet-widths) {
+  .main-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 768px;
+}
+
+  .main-footer__visit {
+    width: 145px;
+    margin: 18px 0px 20px 0px;
+}
+
+  .main-footer__social {
+    width: 173px;
+    margin: 26px 0px 20px 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+  .main-footer__academy-link {
+    width: 138px;
+    margin: 22px 0px 20px 0px;
+}
+}
+
+@media (min-width: $desktop-widths) {
+  .main-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 1200px;
+}
+
+  .main-footer__visit {
+    width: 165px;
+    margin: 20px 0px 20px 0px;
+}
+
+  .main-footer__social {
+    width: 200px;
+    margin: 27px 0px 20px 9px;
+    padding: 0px 0px 0px 0px;
+}
+
+  .main-footer__academy-link {
+    width: 138px;
+    margin: 25px 0px 20px 0px;
+}
+
+}

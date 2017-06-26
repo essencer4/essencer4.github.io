@@ -1,0 +1,327 @@
+  .main-nav {
+    position: relative;
+    width: 320px;
+    height: 55px; /*временно*/
+    min-height: 50px;
+    margin: 0 auto;
+    background-color: $white;
+}
+
+  .main-nav__toggle {
+    position: absolute;
+    top: 0.5px;
+    right: 0;
+    z-index: 2;
+    display: block;
+    width: 70px;
+    height: 54px;
+    font-size: 0;
+    cursor: pointer;
+    border: none;
+    background-color: $white;
+    &:hover {
+    background-color: $white;
+    }
+    &:active {
+    background-color: $white;
+    }
+}
+
+  .main-nav--closed .main-nav__toggle::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 27px;
+    width: 22px;
+    height: 4px;
+    background-color: $blue;
+    box-shadow: 0 8px 0 0 $blue,
+                0 16px 0 0 $blue;
+}
+
+  .main-nav--closed .main-nav__toggle:active::before {
+    background-color: $blue;
+    box-shadow: 0 8px 0 0 $blue,
+                0 16px 0 0 $blue;
+}
+
+  .main-nav--opened {
+    z-index: 100;
+}
+
+  .main-nav--opened .main-nav__toggle {
+    position: absolute;
+    top: 0.5px;
+    right: 0;
+    z-index: 30;
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 25px;
+      left: 23.5px;
+      width: 28px;
+      height: 4px;
+      background-color: $white;
+    }
+    &::before {
+      transform: rotate(45deg);
+      box-shadow: none;
+    }
+    &::after {
+      transform: rotate(-45deg);
+    }
+    &:active::before,
+    &:active::after {
+      background-color: $white;
+    }
+}
+
+  .main-nav--opened  .main-nav__toggle {
+    background-color: $blue;
+    &:hover {
+      background-color: $blue;
+    }
+    &:active {
+      background-color: $blue;
+    }
+}
+
+  .main-nav__items {
+    /*min-height: 255px;*/
+    font-weight: bold;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+    list-style-type: none;
+}
+
+  .main-nav__item a {
+    display: block;
+    /*padding: 12px 21px;
+    padding-bottom: 13px;*/
+    @include title-medium;
+    letter-spacing: 0.1px;
+    line-height: 24px;
+    color: $white;
+    text-decoration: none;
+    background-color: $blue;
+    border-bottom: 1.25px solid rgba(0, 0, 0, 0.25);
+    box-shadow: inset 0px 0.5px 0px 0px rgba(255, 255, 255, 0.25);
+    text-align: center;
+}
+
+  .main-nav__item a[href] {
+    &:hover {
+      background-color: $blue-hover;
+      border-top-color: $blue-hover;
+    }
+    &:active {
+      background-color: $blue-active;
+      border-top-color: $blue-active;
+    }
+}
+
+@media (max-width: $mobile-widths) {
+  .main-nav__item a {
+    padding: 15.5px 21px;
+}
+
+  .main-nav--closed .main-nav__item {
+    display: none;
+}
+
+  .main-nav--closed .main-nav__item--active a {
+    padding-right: 70px;
+    padding-left: 70px;
+    text-align: center;
+}
+
+  .main-nav--closed .main-nav__user-items {
+    display: none;
+}
+
+  .main-nav--opened .main-nav__wrapper {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    background-color: #6a4d38;
+}
+
+  .main-nav--opened .main-nav__wrapper::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 7px;
+    height: 100%;
+    box-shadow: inset 4px 0 7px -2px rgba(0, 0, 0, 0.4);
+}
+
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
+}
+
+  .main-nav--nojs .main-nav__wrapper {
+    position: static;
+    height: auto;
+}
+
+  .main-nav--nojs .main-nav__item {
+    display: block;
+}
+
+  .main-nav--nojs .main-nav__item--active a {
+    padding-right: 21px;
+    padding-left: 21px;
+    text-align: left;
+}
+
+  .main-nav--nojs .main-nav__user-items {
+    display: block;
+    background-color: #6a4d38;
+  }
+}
+
+@media (min-width: $tablet-widths) {
+  .main-nav {
+    width: auto;
+    min-height: 56px;
+    margin: 0;
+    background-color: $white;
+}
+
+  .main-nav__wrapper {
+    width: 768px;
+    margin: 0 auto;
+    @include clearfix;
+}
+
+  .main-nav__items {
+    float: left;
+    width: 100%;
+    min-height: 56px; /* Временно для сетки */
+}
+
+  .main-nav__user-items {
+    float: right;
+    width: 60px;
+    min-height: 70px; /* Временно для сетки */
+}
+
+  .main-nav__toggle {
+    display: none;
+}
+
+  .main-nav__item:nth-child(1) {
+    float: left;
+    margin-left: 48px;
+}
+
+  .main-nav__item:nth-child(2) {
+    float: left;
+    margin-left: 77px;
+}
+
+  .main-nav__item:nth-child(3) {
+    float: left;
+    margin-left: 209px;
+}
+
+  .main-nav__item:nth-child(4) {
+    float: left;
+    margin-left: 50px;
+}
+
+  .main-nav__item a {
+    padding: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    letter-spacing: 0px;
+    background: none;
+    border: none;
+    color: $black;
+    font-size: 14px;
+}
+
+  .main-nav__item a[href] {
+    &:hover {
+      color: $blue;
+      background-color: $white;
+    }
+    &:active {
+      color: $grey-text-active;
+      background-color: $white;
+    }
+}
+
+  .main-nav__item--active a[href] {
+    color: $active-link;
+    &:hover {
+      color: $active-link-hover;
+      background-color: $white;
+    }
+    &:active {
+      color: $active-link-active;
+      background-color: $white;
+    }
+}
+}
+
+@media (min-width: $desktop-widths) {
+  .main-nav__wrapper {
+    width: 100%;
+  }
+
+  .main-nav {
+    min-height: 58px; /*временно*/
+}
+
+  .main-nav__items {
+    width: 100%;
+}
+
+  .main-nav__item:nth-child(1) {
+    float: left;
+    margin-left: 60px;
+}
+
+  .main-nav__item:nth-child(2) {
+    float: left;
+    margin-left: 100px;
+}
+
+  .main-nav__item:nth-child(3) {
+    float: left;
+    margin-left: 323px;
+  }
+
+  .main-nav__item:nth-child(4) {
+    float: left;
+    margin-left: 77px;
+}
+
+  .main-nav__item a {
+    padding-right: 31px;
+    padding-left: 31px;
+}
+
+  .main-nav__item a[href] {
+    &:hover {
+      color: #000000;
+      background-color: #ffffff;
+    }
+
+    &:active {
+      color: rgba(0, 0, 0, 0.3);
+      background-color: #ffffff;
+      opacity: 1;
+    }
+  }
+
+  .main-nav__user-items {
+    width: 160px;
+  }
+}

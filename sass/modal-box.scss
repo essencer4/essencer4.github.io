@@ -1,0 +1,41 @@
+  .modal-box {
+    display: none;
+  }
+
+  .modal-box__title {
+    color: $black;
+    @include title-medium;
+    line-height: 172%;
+    letter-spacing: 2px;
+    padding: 12px 23px 0px 25px;
+    text-align: center;
+    margin: 0px;
+}
+
+  .modal-box__text {
+    color: $black;
+    line-height: 172%;
+    letter-spacing: 1.6px;
+    padding: 24px 40px 0px 40px;
+    text-align: center;
+    margin: 0px;
+    text-transform: uppercase;
+}
+
+  .modal-box__button {
+    margin: 52px 0px 65px 21px;
+    padding: 14px 73px;
+    @include title-big;
+    letter-spacing: 0.33px;
+    color: $white;
+    background-color: $blue;
+    text-decoration: none;
+    border: none;
+}
+
+  .modal-box__button--mini {
+    margin: 24px 0px 24px 70px;
+    padding: 14px 76px;
+    @include title-medium;
+    letter-spacing: 2.1px;
+}

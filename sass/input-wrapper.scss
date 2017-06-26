@@ -1,0 +1,41 @@
+.input-wrapper {
+  position: relative;
+  padding-right: 60px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    background-color: $grey;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 18px 18px;
+  }
+
+  &--tel {
+    &::before {
+      background-image: url("../img/icons/icon-phone.svg");
+    }
+  }
+
+  &--email {
+    &::before {
+      background-image: url("../img/icons/icon-mail.svg");
+    }
+  }
+}
+
+// DESKTOP
+@media (min-width: $desktop-width) {
+  .input-wrapper {
+    max-width: 260px;
+
+    &:first-of-type {
+      margin-right: 70px;
+    }
+  }
+}

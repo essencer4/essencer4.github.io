@@ -1,0 +1,45 @@
+$mobile-widths: 767px;
+$tablet-widths: 768px;
+$desktop-widths: 1200px;
+
+$mobile-width-only: 767px;
+$tablet-width: 768px;
+$desktop-width: 1200px;
+
+$dpi: 144dpi;
+$dppx: 1.5dppx;
+
+// Measurement
+$padding: 0 20px;
+
+
+// Colors
+$white: #ffffff;
+$white-disabled: rgba(255, 255, 255, 0.3);
+$whitesmoke: #eeeeee;
+$light: #f2f2f2;
+
+$grey: #e5e5e5;
+$light-grey: #eaeaea;
+$semi-grey: #5c6870;
+$semi-dark-grey: #d5d5d5;
+$dark-grey: #333333;
+$dark-grey-opacity: rgba(51, 51, 51, 0.7);
+
+
+$black: #000000;
+$black-disabled: rgba(0, 0, 0, 0.6);
+
+$brown: #604e43;
+$light-brown: #766357;
+
+$skyblue: #81b3d2;
+$dark-skyblue: #669ec0;
+$darkest-skyblue: #5496bd;
+
+$light-red: #ff5c5c;
+
+$silver: #c1c1c1;
+
+// Fonts
+$pt-sans: "PT Sans", "Arial", sans-serif;

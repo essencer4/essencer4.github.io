@@ -1,0 +1,17 @@
+  .container {
+    margin: auto;
+    width: 320px;
+    background: #fff;
+}
+
+@media (min-width: $tablet-widths) {
+  .container {
+    width: 768px;
+}
+}
+
+@media (min-width: $desktop-widths) {
+  .container {
+    width: 1200px;
+}
+}

@@ -1,0 +1,67 @@
+  .interest {
+    padding: 25px 25px 0px 25px;
+}
+
+  .interest__title {
+    color: $black;
+    @include title-medium;
+    text-align: center;
+    line-height: 145%;
+    letter-spacing: 0.1px;
+    width: 265px;
+    padding: 8px 0px 0px 0px;
+    margin: 0 auto;
+}
+
+  .interest__text {
+    color: $black;
+    margin: 31px 0px 0px 0px;
+    text-align: center;
+    line-height: 172%;
+    letter-spacing: 1.55px;
+    width: 270px;
+    padding: 27px 0px 0px 0px;
+    margin: 0 auto;
+    text-transform: uppercase;
+}
+
+@media (min-width: $tablet-widths) {
+  .interest {
+    padding: 25px 100px 25px 100px;
+}
+
+  .interest__title {
+    @include title-huge;
+    line-height: 130%;
+    width: 450px;
+    padding: 40px 0px 0px 0px;
+    margin: 0 auto;
+}
+
+  .interest__text {
+    letter-spacing: 1.55px;
+    width: 500px;
+    padding: 25px 0px 25px 0px;
+    margin: 0 auto;
+}
+}
+
+@media (min-width: $desktop-widths) {
+  .interest {
+    padding: 25px 350px 25px 350px;
+}
+  .interest__title {
+    @include title-huge;
+    line-height: 135%;
+    width: 490px;
+    padding: 35px 0px 0px 0px;
+    margin: 0 auto;
+}
+
+  .interest__text {
+    letter-spacing: 1.55px;
+    width: 490px;
+    padding: 25px 0px 45px 0px;
+    margin: 0 auto;
+}
+}

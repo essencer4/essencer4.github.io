@@ -1,0 +1,68 @@
+  .attraction {
+    padding: 20px 20px 20px 20px;
+}
+
+  .attraction__title {
+    color: $black;
+    @include title-big;
+    text-align: center;
+    line-height: 145%;
+    letter-spacing: 0.1px;
+    width: 260px;
+    padding: 0px 0px 0px 0px;
+    margin: 0 auto;
+}
+
+  .attraction__text {
+    color: $black;
+    text-align: center;
+    line-height: 172%;
+    letter-spacing: 1.7px;
+    text-transform: uppercase;
+    width: 280px;
+    padding: 18px 0px 12px 0px;
+    margin: 0 auto;
+}
+
+@media (min-width: $tablet-widths) {
+  .attraction {
+    padding: 20px 150px 20px 150px;
+}
+
+  .attraction__title {
+    @include title-huge;
+    width: 300px;
+    padding: 28px 0px 0px 0px;
+    margin: 0 auto;
+}
+
+  .attraction__text {
+    width: 450px;
+    padding: 22px 0px 22px 0px;
+    margin: 0 auto;
+}
+}
+
+@media (min-width: $desktop-widths) {
+  .attraction {
+    padding: 20px 350px 20px 350px;
+}
+
+  .attraction__title {
+    @include title-huge;
+    width: 300px;
+    padding: 25px 0px 0px 0px;
+    margin: 0 auto;
+}
+
+  .attraction__text {
+    color: $black;
+    text-align: center;
+    line-height: 172%;
+    letter-spacing: 1.7px;
+    text-transform: uppercase;
+    width: 445px;
+    padding: 24px 0px 0px 0px;
+    margin: 0 auto;
+}
+}

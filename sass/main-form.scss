@@ -1,0 +1,36 @@
+.main-form {
+  margin-bottom: 75px;
+}
+
+.main-form__wrapper {
+  @include container();
+  padding: 0;
+}
+
+// TABLET
+@media (min-width: $tablet-width) {
+
+  .main-form {
+    margin-bottom: 95px;
+  }
+
+  .main-form__wrapper {
+    @include container-fluid;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+// DESKTOP
+@media (min-width: $desktop-width) {
+
+  .main-form {
+    margin-bottom: 100px;
+  }
+
+  .main-form__wrapper {
+    width: 80%;
+    max-width: 960px;
+  }
+}

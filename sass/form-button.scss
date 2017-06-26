@@ -1,0 +1,33 @@
+.form-button__send-feedback {
+  @include btn();
+  min-width: 280px;
+  margin-top: 25px;
+}
+
+// mobile-only
+@media (max-width: $mobile-width-only) {
+  .form-button__require-text {
+    display: none;
+  }
+}
+
+// tablet
+@media (min-width: $tablet-width) {
+  .form-button {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .form-button__send-feedback {
+    width: 50%;
+    margin: 0;
+  }
+
+  .form-button__require-text {
+    font-size: 14px;
+    line-height: 26px;
+    text-transform: uppercase;
+  }
+}
