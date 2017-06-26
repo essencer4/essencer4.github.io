@@ -14,15 +14,17 @@
 
 @mixin title-medium() {
     font-size: 18px;
-    font-family: PT Sans;
-    font-weight: 900;
+    line-height: 1.25;
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-weight: 400;
     text-transform: uppercase;
 }
 
 @mixin title-small() {
     font-size: 14px;
-    font-family: PT Sans;
-    font-weight: 900;
+    line-height: 1.25;
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-weight: 400;
     text-transform: uppercase;
 }
 
