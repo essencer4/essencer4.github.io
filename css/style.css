@@ -11,8 +11,9 @@
 .advertising-sign__title {
   color: #000000;
   font-size: 18px;
-  font-family: PT Sans;
-  font-weight: 900;
+  line-height: 1.25;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: 400;
   text-transform: uppercase;
   text-align: center;
   line-height: 145%;
@@ -205,8 +206,9 @@ input[type=email] {
 .feature__text-block .feature__title {
   color: #ffffff;
   font-size: 18px;
-  font-family: PT Sans;
-  font-weight: 900;
+  line-height: 1.25;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: 400;
   text-transform: uppercase;
   line-height: 172%;
   letter-spacing: 0.1px;
@@ -271,8 +273,9 @@ input[type=email] {
   float: left;
   color: #000000;
   font-size: 18px;
-  font-family: PT Sans;
-  font-weight: 900;
+  line-height: 1.25;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: 400;
   text-transform: uppercase;
   line-height: 172%;
   letter-spacing: 0px;
@@ -317,8 +320,9 @@ input[type=email] {
   color: #000000;
   width: 100%;
   font-size: 18px;
-  font-family: PT Sans;
-  font-weight: 900;
+  line-height: 1.25;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: 400;
   text-transform: uppercase;
   line-height: 172%;
   letter-spacing: 0.1px;
@@ -469,8 +473,9 @@ input[type=email] {
 .form-sign__title {
   color: #000000;
   font-size: 18px;
-  font-family: PT Sans;
-  font-weight: 900;
+  line-height: 1.25;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: 400;
   text-transform: uppercase;
   text-align: center;
   line-height: 145%;
@@ -510,14 +515,6 @@ input[type=email] {
   .form-item-submit-button__button:active {
     background-color: #5496bd; }
 
-.index-logo {
-  position: absolute;
-  top: -10%;
-  left: 34%;
-  z-index: 10;
-  width: 100px;
-  height: 96px; }
-
 .input-wrapper {
   position: relative;
   padding-right: 60px; }
@@ -544,8 +541,9 @@ input[type=email] {
 .interest__title {
   color: #000000;
   font-size: 18px;
-  font-family: PT Sans;
-  font-weight: 900;
+  line-height: 1.25;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: 400;
   text-transform: uppercase;
   text-align: center;
   line-height: 145%;
@@ -739,20 +737,42 @@ input[type=email] {
 
 .main-nav__item a {
   display: block;
-  /*padding: 12px 21px;
-    padding-bottom: 13px;*/
-  font-size: 18px;
-  font-family: PT Sans;
-  font-weight: 900;
-  text-transform: uppercase;
-  letter-spacing: 0.1px;
-  line-height: 24px;
-  color: #ffffff;
+  width: 170px;
+  padding: 25px 0px;
   text-decoration: none;
-  background-color: #81b3d2;
-  border-bottom: 1.25px solid rgba(0, 0, 0, 0.25);
-  box-shadow: inset 0px 0.5px 0px 0px rgba(255, 255, 255, 0.25);
-  text-align: center; }
+  color: white;
+  letter-spacing: 5px;
+  font-size: 18px;
+  line-height: 1.25;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 900;
+  text-transform: none;
+  text-align: center;
+  box-sizing: border-box;
+  border-left: 3px solid #051471;
+  border-right: 3px solid #051471; }
+
+.main-nav__item--active a {
+  background-color: #4458D6;
+  border-bottom: 5px solid white; }
+
+.main-nav__item-logo a {
+  display: block;
+  width: 160px;
+  height: 80px;
+  padding: 24px 0px;
+  text-decoration: none;
+  color: white;
+  letter-spacing: 2.5px;
+  text-transform: none;
+  font-size: 16px;
+  text-align: center;
+  box-sizing: border-box;
+  border-left: 3px solid #051471;
+  border-right: 3px solid #051471; }
 
 .main-nav__item a[href]:hover {
   background-color: #669ec0;
@@ -768,8 +788,9 @@ input[type=email] {
 .modal-box__title {
   color: #000000;
   font-size: 18px;
-  font-family: PT Sans;
-  font-weight: 900;
+  line-height: 1.25;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: 400;
   text-transform: uppercase;
   line-height: 172%;
   letter-spacing: 2px;
@@ -803,10 +824,18 @@ input[type=email] {
   margin: 24px 0px 24px 70px;
   padding: 14px 76px;
   font-size: 18px;
-  font-family: PT Sans;
-  font-weight: 900;
+  line-height: 1.25;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 2.1px; }
+
+.page {
+  background-color: #00472E;
+  background-image: url("../img/nature.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; }
 
 .page-header {
   position: relative;
@@ -835,8 +864,9 @@ input[type=email] {
 .photo-block__title {
   color: #000000;
   font-size: 14px;
-  font-family: PT Sans;
-  font-weight: 900;
+  line-height: 1.25;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: 400;
   text-transform: uppercase;
   line-height: 172%;
   width: 100%;
@@ -902,8 +932,9 @@ input[type=email] {
 .slogan__title {
   color: #000000;
   font-size: 18px;
-  font-family: PT Sans;
-  font-weight: 900;
+  line-height: 1.25;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: 400;
   text-transform: uppercase;
   text-align: center;
   line-height: 145%;
@@ -1416,11 +1447,6 @@ input[type=email] {
     letter-spacing: 0.25px;
     padding: 15px 50px 16px 40px;
     margin: 52px auto 42px auto; }
-  .index-logo{
-    top: 0;
-    left: 43%;
-    width: 102px;
-    height: 84px; }
   .interest{
     padding: 25px 100px 25px 100px; }
   .interest__title{
@@ -1475,11 +1501,14 @@ input[type=email] {
     background-color: #ffffff; }
   .main-nav__wrapper{
     width: 768px;
-    margin: 0 auto; }
-  .main-nav__wrapper::after{
-    content: "";
-    display: table;
-    clear: both; }
+    position: fixed;
+    background: #0F25AE;
+    opacity: 0.85;
+    z-index: 100;
+    border: 3px solid black;
+    border-top-style: none;
+    border-bottom-style: none;
+    box-sizing: border-box; }
   .main-nav__items{
     float: left;
     width: 100%;
@@ -1501,28 +1530,24 @@ input[type=email] {
   .main-nav__toggle{
     display: none; }
   .main-nav__item a{
-    padding: 0;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    letter-spacing: 0px;
-    background: none;
-    border: none;
-    color: #000000;
-    font-size: 14px; }
-  .main-nav__item a[href]:hover{
-    color: #81b3d2;
-    background-color: #ffffff; }
-  .main-nav__item a[href]:active{
-    color: #cacaca;
-    background-color: #ffffff; }
-  .main-nav__item--active a[href]{
-    color: #766357; }
-  .main-nav__item--active a[href]:hover{
-    color: #d6d0cc;
-    background-color: #ffffff; }
-  .main-nav__item--active a[href]:active{
-    color: #604e43;
-    background-color: #ffffff; }
+    display: block;
+    width: 100px;
+    padding: 25px 0px;
+    text-decoration: none;
+    color: white;
+    letter-spacing: 2.5px;
+    font-size: 18px;
+    line-height: 1.25;
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 900;
+    text-transform: none;
+    text-align: center;
+    box-sizing: border-box;
+    border-left: 3px solid #051471;
+    border-right: 3px solid #051471; }
   .page-header{
     min-height: 531px;
     background-image: url("../img/index-header-image-tablet@1x.jpg");
@@ -2040,11 +2065,6 @@ input[type=email] {
     letter-spacing: 0.25px;
     padding: 15px 45px 16px 45px;
     margin: 52px auto 45px auto; }
-  .index-logo{
-    top: 0;
-    left: 42%;
-    width: 187px;
-    height: 96px; }
   .input-wrapper{
     max-width: 260px; }
   .input-wrapper:first-of-type{
@@ -2089,31 +2109,51 @@ input[type=email] {
     width: 80%;
     max-width: 960px; }
   .main-nav__wrapper{
-    width: 100%; }
-  .main-nav{
-    min-height: 58px;
-
-    /*временно*/ }
-  .main-nav__items{
-    width: 100%;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -ms-flex-pack: distribute;
-    justify-content: space-around; }
+    width: 1200px;
+    position: fixed;
+    background: #0F25AE;
+    opacity: 0.85;
+    z-index: 100;
+    border: 3px solid black;
+    border-top-style: none;
+    border-bottom-style: none;
+    box-sizing: border-box; }
   .main-nav__item a{
-    padding-right: 31px;
-    padding-left: 31px; }
-  .main-nav__item a[href]:hover{
-    color: #000000;
-    background-color: #ffffff; }
-  .main-nav__item a[href]:active{
-    color: rgba(0, 0, 0, 0.3);
-    background-color: #ffffff;
-    opacity: 1; }
-  .main-nav__user-items{
-    width: 160px; }
+    display: block;
+    width: 170px;
+    padding: 25px 0px;
+    text-decoration: none;
+    color: white;
+    letter-spacing: 5px;
+    font-size: 18px;
+    line-height: 1.25;
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 900;
+    text-transform: none;
+    text-align: center;
+    box-sizing: border-box;
+    border-left: 3px solid #051471;
+    border-right: 3px solid #051471; }
+  .main-nav__item--active a{
+    background-color: #4458D6;
+    border-bottom: 5px solid white; }
+  .main-nav__item-logo a{
+    display: block;
+    width: 160px;
+    height: 80px;
+    padding: 24px 0px;
+    text-decoration: none;
+    color: white;
+    letter-spacing: 2.5px;
+    text-transform: none;
+    font-size: 16px;
+    text-align: center;
+    box-sizing: border-box;
+    border-left: 3px solid #051471;
+    border-right: 3px solid #051471; }
   .page-header{
     box-sizing: border-box;
     width: 100%;
@@ -2422,7 +2462,9 @@ input[type=email] {
     text-align: left; }
   .main-nav--nojs .main-nav__user-items{
     display: block;
-    background-color: #6a4d38; } }
+    background-color: #6a4d38; }
+  .main-nav__item-logo{
+    display: none; } }
   @media (min-width: 768px) and (min-width: 768px){
   .main-form__wrapper{
     width: 84%;
