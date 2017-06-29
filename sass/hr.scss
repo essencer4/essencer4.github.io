@@ -1,0 +1,27 @@
+hr {
+  padding: 0;
+  border: none;
+  border-top: 5px double #333;
+  color: #333;
+  text-align: center;
+  margin: 25px 0px 25px 0px;
+}
+
+hr::after {
+  content: "❄";
+  display: inline-block;
+  position: relative;
+  top: -0.7em;
+  font-size: 1.5em;
+  z-index: 1;
+  padding: 0px 0.25em;
+  background: rgb(107, 122, 214);
+}
+
+.hr-first {
+  margin: 0px 0px 25px 0px;
+}
+
+.hr-last {
+  margin: 25px 0px 5px 0px;
+}

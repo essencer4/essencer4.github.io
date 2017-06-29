@@ -1,0 +1,30 @@
+.container-page {
+  margin: auto;
+  margin-top: 6px;
+  background: #4458D6;
+  border: 3px solid black;
+  border-top-style: none;
+  border-bottom-style: none;
+  box-sizing: border-box;
+  background-image: url("../img/2222.jpg");
+  background-repeat: repeat;
+  background-size: contain;
+}
+
+@media (max-width: $mobile-widths) {
+  .container-page {
+    width: 320px;
+}
+}
+
+@media (min-width: $tablet-widths) {
+  .container-page {
+    width: 768px;
+}
+}
+
+@media (min-width: $desktop-widths) {
+  .container-page {
+    width: 1200px;
+}
+}

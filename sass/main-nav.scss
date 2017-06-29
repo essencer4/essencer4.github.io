@@ -14,7 +14,7 @@
     z-index: 2;
     display: block;
     width: 70px;
-    height: 54px;
+    height: 56px;
     font-size: 0;
     cursor: pointer;
     border: none;
@@ -30,19 +30,19 @@
   .main-nav--closed .main-nav__toggle::before {
     content: "";
     position: absolute;
-    top: 15px;
-    left: 27px;
+    top: 18px;
+    left: 25px;
     width: 22px;
     height: 4px;
-    background-color: $blue;
-    box-shadow: 0 8px 0 0 $blue,
-                0 16px 0 0 $blue;
+    background-color: $main-dark-blue;
+    box-shadow: 0 8px 0 0 $main-dark-blue,
+                0 16px 0 0 $main-dark-blue;
 }
 
   .main-nav--closed .main-nav__toggle:active::before {
-    background-color: $blue;
-    box-shadow: 0 8px 0 0 $blue,
-                0 16px 0 0 $blue;
+    background-color: $main-dark-blue;
+    box-shadow: 0 8px 0 0 $main-dark-blue,
+                0 16px 0 0 $main-dark-blue;
 }
 
   .main-nav--opened {
@@ -78,12 +78,12 @@
 }
 
   .main-nav--opened  .main-nav__toggle {
-    background-color: $blue;
+    background-color: $main-dark-blue-2;
     &:hover {
-      background-color: $blue;
+      background-color: $main-dark-blue-2;
     }
     &:active {
-      background-color: $blue;
+      background-color: $main-dark-blue-2;
     }
 }
 
@@ -98,7 +98,7 @@
   .main-nav__item a {
     display: block;
     width: 170px;
-    padding: 25px 0px;
+    padding: 20px 0px;
     text-decoration: none;
     color: white;
     letter-spacing: 5px;
@@ -120,8 +120,8 @@
   .main-nav__item-logo a {
     display: block;
     width: 160px;
-    height: 80px;
-    padding: 24px 0px;
+    height: 60px;
+    padding: 20px 0px;
     text-decoration: none;
     color: white;
     letter-spacing: 2.5px;
@@ -135,8 +135,8 @@
 
   .main-nav__item a[href] {
     &:hover {
-      background-color: $blue-hover;
-      border-top-color: $blue-hover;
+      background-color: $main-dark-blue-hover;
+      border-top-color: $main-dark-blue-hover;
     }
     &:active {
       background-color: $blue-active;
@@ -145,8 +145,15 @@
 }
 
 @media (max-width: $mobile-widths) {
+  .main-nav {
+    height: 58px;
+  }
+
   .main-nav__item a {
     padding: 15.5px 21px;
+    width: 320px;
+    border-bottom: 2px solid $main-dark-blue;
+    border-top: 1px solid $main-dark-blue;
 }
 
   .main-nav--closed .main-nav__item {
@@ -169,7 +176,7 @@
     top: 0;
     left: 0;
     z-index: 20;
-    background-color: #6a4d38;
+    background-color: #0F25AE;
 }
 
   .main-nav--opened .main-nav__wrapper::before {
@@ -180,7 +187,7 @@
     z-index: 2;
     width: 7px;
     height: 100%;
-    box-shadow: inset 4px 0 7px -2px rgba(0, 0, 0, 0.4);
+    box-shadow: inset 6px 0 7px -2px rgba(0, 0, 0, 0.4);
 }
 
   .main-nav--nojs .main-nav__toggle {
@@ -215,7 +222,7 @@
 @media (min-width: $tablet-widths) {
   .main-nav {
     width: auto;
-    min-height: 56px;
+    min-height: 59px;
     margin: 0;
     background-color: $white;
 }
@@ -235,7 +242,7 @@
   .main-nav__items {
     float: left;
     width: 100%;
-    min-height: 56px; /* Временно для сетки */
+    height: 60px; /* Временно для сетки */
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -253,8 +260,8 @@
 
   .main-nav__item a {
     display: block;
-    width: 100px;
-    padding: 25px 0px;
+    width: 105px;
+    padding: 17px 0px;
     text-decoration: none;
     color: white;
     letter-spacing: 2.5px;
@@ -266,6 +273,11 @@
     box-sizing: border-box;
     border-left: 3px solid #051471;
     border-right: 3px solid #051471;
+}
+
+  .main-nav__item-logo a {
+    padding: 4px 0px;
+    width: 120px;
 }
 }
 
@@ -285,10 +297,10 @@
   .main-nav__item a {
     display: block;
     width: 170px;
-    padding: 25px 0px;
+    padding: 15px 0px;
     text-decoration: none;
     color: white;
-    letter-spacing: 5px;
+    letter-spacing: 2px;
     @include title-medium;
     font-size: 20px;
     font-weight: 900;
@@ -307,8 +319,8 @@
   .main-nav__item-logo a {
     display: block;
     width: 160px;
-    height: 80px;
-    padding: 24px 0px;
+    height: 60px;
+    padding: 4px 0px;
     text-decoration: none;
     color: white;
     letter-spacing: 2.5px;
