@@ -1,0 +1,253 @@
+.features-1 {
+  @include clearfix;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/*Текст красной шапочки*/
+
+.block-3 {
+  @include clearfix;
+  position: relative;
+  float: left;
+  width: 255px;
+  color: white;
+  background: #6B7AD6;
+  margin-left: 10px;
+}
+
+.title-link {
+  display: block;
+  text-decoration: none;
+  color: white;
+}
+
+.title-link:hover {
+  color: #051471;
+}
+
+.title-link:active {
+  color: #bdbbbc;
+}
+
+.near-photo-text-1 {
+  padding: 0px 25px;
+  line-height: 1.25;
+  margin-top: 20px;
+}
+
+.near-photo-text-2 {
+  padding-top: 5px;
+  line-height: 1.25;
+  padding: 0px 10px 0px 10px;
+  text-transform: none;
+  text-align: justify;
+  text-indent: 15px;
+  margin: 0px;
+}
+
+/*Кнопка подробнее*/
+
+.sort-column-1-link {
+  float: left;
+  width: 75px;
+  margin: 15px 10px;
+  padding: 11px 20px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #051471;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.sort-column-1-link p {
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+  line-height: 1.5;
+  font-size: 13px;
+}
+
+.sort-column-1-link:hover {
+  background-color: #4458D6;
+  color: white !important;
+}
+
+.sort-column-1-link:active p {
+  opacity: 0.5;
+}
+
+.sort-column-1-link-barbarian {
+  margin: 15px 3px 15px 6px;
+  padding: 11px 10px;
+  width: 70px;
+}
+
+/*Кнопка steam*/
+
+.steam-btn {
+  float: left;
+  margin: 15px 10px;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #051471;
+  border-radius: 5px;
+}
+
+.steam-btn:hover {
+  background-color: #4458D6;
+  color: white !important;
+}
+
+.steam-btn:active {
+  opacity: 0.5;
+}
+
+.steam-btn-barbarian {
+  margin: 15px 3px 15px 3px;
+  padding: 10px 9px;
+}
+
+.steam-btn-barbarian-google {
+  margin: 15px 6px 15px 3px;
+  padding: 3px 9px;
+}
+
+/*Дикий остров*/
+
+.features-2 {
+  @include clearfix;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/*Фотки дикого острова*/
+
+.block-5 {
+  float: left;
+  width: 495px;
+}
+
+.block-5-1 {
+  float: left;
+  margin-left: 10px;
+  border-radius: 10px;
+  margin-top: 5px
+}
+
+.block-5-2 {
+  float: left;
+  margin-left: 10px;
+  border-radius: 10px;
+  margin-top: 5px
+}
+
+.block-5-3 {
+  float: left;
+  margin-left: 10px;
+  margin-top: 15px;
+  border-radius: 10px;
+}
+
+.block-5-4 {
+  float: left;
+  margin-left: 10px;
+  margin-top: 15px;
+  border-radius: 10px;
+}
+
+/*Текст дикого острова*/
+
+.block-6 {
+  position: relative;
+  float: right;
+  width: 255px;
+  color: white;
+  background: #6B7AD6;
+  margin-right: 10px;
+}
+
+/*КОНАН*/
+
+.features-3 {
+  @include clearfix;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/*ТЕКСТ КОНАНА*/
+
+.block-7 {
+  position: relative;
+  float: left;
+  width: 255px;
+  color: white;
+  background: #6B7AD6;
+  margin-left: 10px;
+}
+
+@media (max-width: $mobile-widths) {
+  .features-1,
+  .features-2,
+  .features-3 {
+    margin-top: 0px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 650px;
+}
+
+  .features-2 {
+    flex-direction: column-reverse;
+}
+
+  .block-3 {
+    margin-left: 0px;
+}
+
+  .block-5 {
+    float: none;
+    width: 245px;
+    display: flex;
+    flex-direction: column;
+}
+
+  .block-5-3 {
+    display: none;
+}
+
+  .block-5-4 {
+    display: none;
+}
+
+  .block-6 {
+    margin-right: 0px;
+}
+
+  .block-7 {
+    margin-left: 0px;
+}
+
+  .block-8 {
+    width: 245px;
+}
+}
+
+@media (min-width: $tablet-widths) {
+
+}
+
+@media (min-width: $desktop-widths) {
+  .features-1,
+  .features-2,
+  .features-3 {
+    @include clearfix;
+    margin: 20px auto;
+    width: 768px;
+}
+}

@@ -2,14 +2,12 @@
     font-size: 30px;
     font-family: PT Sans;
     font-weight: 900;
-    text-transform: uppercase;
 }
 
 @mixin title-big() {
     font-size: 21px;
     font-family: PT Sans;
     font-weight: 900;
-    text-transform: uppercase;
 }
 
 @mixin title-medium() {
@@ -17,7 +15,13 @@
     line-height: 1.25;
     font-family: "PT Sans", "Arial", sans-serif;
     font-weight: 400;
-    text-transform: uppercase;
+}
+
+@mixin title-small-plus() {
+    font-size: 16px;
+    line-height: 1.25;
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-weight: 400;
 }
 
 @mixin title-small() {
@@ -25,7 +29,26 @@
     line-height: 1.25;
     font-family: "PT Sans", "Arial", sans-serif;
     font-weight: 400;
-    text-transform: uppercase;
+}
+
+@mixin text-shadow() {
+    text-shadow: 
+    -0   -1px 0   #000000,
+     0   -1px 0   #000000,
+    -0    1px 0   #000000,
+     0    1px 0   #000000,
+    -1px -0   0   #000000,
+     1px -0   0   #000000,
+    -1px  0   0   #000000,
+     1px  0   0   #000000,
+    -1px -1px 0   #000000,
+     1px -1px 0   #000000,
+    -1px  1px 0   #000000,
+     1px  1px 0   #000000,
+    -1px -1px 0   #000000,
+     1px -1px 0   #000000,
+    -1px  1px 0   #000000,
+     1px  1px 0   #000000;
 }
 
 @mixin clearfix() {

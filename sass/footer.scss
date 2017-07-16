@@ -1,0 +1,155 @@
+/*ФУТЕР*/
+
+.main-footer-page {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 1200px;
+  height: 100px;
+  margin: auto;
+  background: #0F25AE;
+  opacity: 0.9;
+  margin-bottom: 625px;
+  margin-top: -6px;
+  z-index: 1;
+  border: 3px solid black;
+  border-top-style: none;
+  box-sizing: border-box;
+  border-radius: 1px 1px 40px 40px;
+}
+
+/*ВИЗИТ СЕДОНА*/
+
+.footer-visit {
+  width: 250px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.footer-visit h2 {
+  margin: 0px;
+  color: white;
+}
+
+/*СОЦИАЛЬНЫЕ КНОПКИ*/
+
+.footer-social {
+  width: 250px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.social-btn-twit {
+  display: flex;
+  width: 15px;
+  height: 17px;
+}
+
+.social-btn-vk {
+  display: flex;
+  width: 20px;
+  height: 12px;
+}
+
+.social-btn-fb {
+  display: flex;
+  width: 10px;
+  height: 19px;
+}
+
+.social-btn-youtube {
+  display: flex;
+  width: 20px;
+  height: 16px;
+}
+
+.social-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 55px;
+  height: 55px;
+  background: #051471;
+}
+
+.social-btn:hover {
+  background-color: #669ec0;
+}
+
+.social-btn:active {
+  background-color: #5496bd;
+}
+
+.social-btn:active img {
+  opacity: 0.3;
+}
+
+/*КТО СДЕЛАЛ*/
+
+.academy-link {
+  width: 250px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.footer-copyright-text {
+  float: left;
+  margin-top: 10px;
+  color: white;
+}
+
+.footer-copyright-text p {
+  @include title-medium;
+  margin: 0px;
+}
+
+.footer-copyright-icon {
+  float: left;
+  margin-left: 8px;
+  margin-top: -4px;
+}
+
+.footer-copyright-icon a {
+  float: left;
+  display: block;
+  text-decoration: none;
+  color: white;
+}
+
+.footer-copyright-icon a p {
+  @include title-medium;
+}
+
+.footer-copyright-icon a:hover {
+  color: #669ec0;
+}
+
+.footer-copyright-icon a:active {
+  color: #bdbbbc;
+}
+
+@media (max-width: $mobile-widths) {
+  .main-footer-page {
+    width: 320px;
+    flex-direction: column;
+    height: 200px;
+}
+}
+
+@media (min-width: $tablet-widths) {
+  .main-footer-page {
+    width: 768px;
+}
+}
+
+@media (min-width: $desktop-widths) {
+  .main-footer-page {
+    width: 1200px;
+}
+}

@@ -1,0 +1,52 @@
+.mission-studio {
+  margin-top: 40px;
+  letter-spacing: -0.25px;
+  color: white;
+  text-align: center;
+  @include text-shadow;
+}
+
+.mission-studio__text {
+  margin: 30px 15px 30px 15px;
+  padding: 10px 5px;
+  color: white;
+  text-transform: none;
+  text-indent: 15px;
+  background-color: #0F25AE;
+  border-radius: 10px;
+  text-align: center;
+}
+
+@media (max-width: $mobile-widths) {
+  .mission-studio {
+    @include title-medium;
+    margin-top: 10px;
+}
+
+  .mission-studio__text {
+    @include title-small;
+}
+}
+
+@media (min-width: $tablet-widths) {
+  .mission-studio {
+    @include title-big;
+    margin-top: 10px;
+}
+
+  .mission-studio__text {
+    @include title-small-plus;
+}
+}
+
+@media (min-width: $desktop-widths) {
+  .mission-studio {
+    @include title-huge;
+    margin-top: 15px;
+}
+
+  .mission-studio__text {
+    @include title-medium;
+    margin-bottom: 40px;
+}
+}
