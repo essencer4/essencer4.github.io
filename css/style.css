@@ -552,8 +552,8 @@ input[type=email] {
 
 .footer-copyright-icon {
   float: left;
-  margin-left: 8px;
-  margin-top: -4px; }
+  margin-left: 5px;
+  margin-top: -8px; }
 
 .footer-copyright-icon a {
   float: left;
@@ -572,6 +572,10 @@ input[type=email] {
 
 .footer-copyright-icon a:active {
   color: #bdbbbc; }
+
+.metrika {
+  float: left;
+  margin: 6px 0px 0px 32px; }
 
 .form-button__send-feedback {
   padding: 15px 0;
@@ -892,7 +896,9 @@ hr {
   border-top: 5px double #333;
   color: #333;
   text-align: center;
-  margin: 10px 0px 10px 0px; }
+  margin: 10px 0px 10px 0px;
+  box-sizing: content-box;
+  height: 0; }
 
 hr::after {
   content: "❄";
@@ -1762,6 +1768,8 @@ hr::after {
     width: 100%; }
   .main-footer-page{
     width: 768px; }
+  .metrika{
+    margin: 6px 0px 0px 8px; }
   .form-button{
     width: 100%;
     display: -ms-flexbox;
@@ -2480,6 +2488,8 @@ hr::after {
     padding: 20px 0px 46px 0px; }
   .main-footer-page{
     width: 1200px; }
+  .metrika{
+    margin: 6px 0px 0px 8px; }
   .form-fields{
     margin-bottom: 70px; }
   .form-fields:nth-child(1){
@@ -2943,6 +2953,10 @@ hr::after {
     -ms-flex-direction: column;
     flex-direction: column;
     height: 200px; }
+  .metrika{
+    margin: 6px 0px 0px 32px; }
+  .footer-visit{
+    margin-top: 20px; }
   .form-button__require-text{
     display: none; }
   .features-1,
