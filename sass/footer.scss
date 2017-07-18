@@ -111,8 +111,8 @@
 
 .footer-copyright-icon {
   float: left;
-  margin-left: 8px;
-  margin-top: -4px;
+  margin-left: 5px;
+  margin-top: -8px;
 }
 
 .footer-copyright-icon a {
@@ -134,11 +134,24 @@
   color: #bdbbbc;
 }
 
+.metrika {
+  float: left;
+  margin: 6px 0px 0px 32px;
+}
+
 @media (max-width: $mobile-widths) {
   .main-footer-page {
     width: 320px;
     flex-direction: column;
     height: 200px;
+}
+
+  .metrika {
+    margin: 6px 0px 0px 32px;
+}
+
+  .footer-visit {
+    margin-top: 15px;
 }
 }
 
@@ -146,10 +159,18 @@
   .main-footer-page {
     width: 768px;
 }
+
+  .metrika {
+    margin: 6px 0px 0px 8px;
+}
 }
 
 @media (min-width: $desktop-widths) {
   .main-footer-page {
     width: 1200px;
+}
+
+  .metrika {
+    margin: 6px 0px 0px 8px;
 }
 }

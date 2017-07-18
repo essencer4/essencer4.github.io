@@ -5,6 +5,8 @@ hr {
   color: #333;
   text-align: center;
   margin: 10px 0px 10px 0px;
+  box-sizing: content-box;
+  height: 0;
 }
 
 hr::after {
