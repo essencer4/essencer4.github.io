@@ -701,7 +701,7 @@ input[type=email] {
   color: #bdbbbc; }
 
 .near-photo-text-1 {
-  padding: 0px 27px;
+  padding: 0px 25px;
   line-height: 1.25;
   margin-top: 20px;
   text-align: center;
@@ -734,10 +734,10 @@ input[type=email] {
   margin: 0px;
   padding: 0px;
   line-height: 1.5;
-  font-size: 14px;
+  font-size: 13px;
   text-transform: uppercase;
   font-weight: 900;
-  letter-spacing: 1.2px; }
+  letter-spacing: 1px; }
 
 .sort-column-1-link:hover {
   background-color: #4458D6;
@@ -1199,7 +1199,7 @@ hr::after {
   background-color: #00472E;
   background-image: url("../img/nature.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  /**background-size: cover;**/
   background-attachment: fixed; }
 
 .page-header {
@@ -1211,7 +1211,10 @@ hr::after {
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: 320px auto;
-  overflow: hidden; }
+  overflow: hidden;
+  border: 3px solid black;
+  border-top-style: none;
+  border-bottom-style: none; }
 
 .photo-block {
   padding: 22px 20px 15px 20px; }
@@ -1552,7 +1555,8 @@ hr::after {
   text-indent: 15px;
   background-color: #0F25AE;
   border-radius: 10px;
-  text-align: center; }
+  text-align: center;
+  font-size: 20px; }
 
 #vk_groups,
 #vk_groups iframe {
@@ -2956,7 +2960,7 @@ hr::after {
   .metrika{
     margin: 6px 0px 0px 32px; }
   .footer-visit{
-    margin-top: 20px; }
+    margin-top: 15px; }
   .form-button__require-text{
     display: none; }
   .features-1,
@@ -3060,7 +3064,7 @@ hr::after {
     border-radius: 40px 5px; }
   .rus-switch{
     position: relative;
-    margin: 140px 50px 0px 0px;
+    margin: 140px 45px 0px 0px;
     left: -70px;
     top: 70px;
     border-radius: 5px 40px;
