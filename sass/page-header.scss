@@ -8,6 +8,9 @@
     background-repeat: no-repeat;
     background-size: 320px auto;
     overflow: hidden;
+    border: 3px solid black;
+    border-top-style: none;
+    border-bottom-style: none;
 }
 
 @media (max-width: $mobile-widths) and (min-resolution: $dpi), (max-width: $mobile-widths) and (min-resolution: $dppx) {
