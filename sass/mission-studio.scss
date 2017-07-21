@@ -1,5 +1,5 @@
 .mission-studio {
-  margin-top: 40px;
+  margin-top: 25px;
   letter-spacing: -0.25px;
   color: white;
   text-align: center;
@@ -20,7 +20,6 @@
 @media (max-width: $mobile-widths) {
   .mission-studio {
     @include title-medium;
-    margin-top: 10px;
 }
 
   .mission-studio__text {
@@ -31,7 +30,6 @@
 @media (min-width: $tablet-widths) {
   .mission-studio {
     @include title-big;
-    margin-top: 10px;
 }
 
   .mission-studio__text {
@@ -42,7 +40,6 @@
 @media (min-width: $desktop-widths) {
   .mission-studio {
     @include title-huge;
-    margin-top: 15px;
 }
 
   .mission-studio__text {

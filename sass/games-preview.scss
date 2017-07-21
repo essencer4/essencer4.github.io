@@ -7,10 +7,14 @@
 /*Текст красной шапочки*/
 
 .block-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   @include clearfix;
   position: relative;
   float: left;
   width: 255px;
+  height: 300px;
   color: white;
   background: #6B7AD6;
   margin-left: 10px;
@@ -51,11 +55,16 @@
 
 /*Кнопка подробнее*/
 
+.sort-column-1-buttons {
+  display: flex;
+  border: 5px solid black;
+}
+
 .sort-column-1-link {
   float: left;
   width: 75px;
   margin: 15px 10px;
-  padding: 11px 20px;
+  padding: 15px 20px;
   text-decoration: none;
   color: #fff;
   background-color: #051471;
@@ -85,7 +94,7 @@
 
 .sort-column-1-link-barbarian {
   margin: 15px 3px 15px 6px;
-  padding: 14px 10px;
+  padding: 15px 10px;
   width: 70px;
 }
 
@@ -170,6 +179,7 @@
   position: relative;
   float: right;
   width: 255px;
+  height: 300px;
   color: white;
   background: #6B7AD6;
   margin-right: 10px;
@@ -190,6 +200,7 @@
   position: relative;
   float: left;
   width: 255px;
+  height: 300px;
   color: white;
   background: #6B7AD6;
   margin-left: 10px;
@@ -199,8 +210,6 @@
   .features-1,
   .features-2,
   .features-3 {
-    margin-top: 0px;
-    margin-bottom: 15px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -208,8 +217,20 @@
     height: 650px;
 }
 
+  .features-1 {
+    margin-top: 25px;
+    margin-bottom: -5px;
+}
+
   .features-2 {
     flex-direction: column-reverse;
+    margin-top: -12px;
+    margin-bottom: 30px;
+}
+
+  .features-3 {
+    margin-top: 18px;
+    margin-bottom: -5px;
 }
 
   .block-3 {

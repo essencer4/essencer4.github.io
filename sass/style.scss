@@ -1,40 +1,17 @@
-@import "colors.scss";
-@import "fonts.scss";
-@import "mixins.scss";
-@import "variables.scss";
-@import "advertising-sign.scss";
-@import "attraction.scss";
-@import "body.scss";
-@import "check-tel-message.scss";
-@import "container.scss";
-@import "container-page.scss";
-@import "custom-input.scss";
-@import "custom-label.scss";
-@import "custom-textarea.scss";
-@import "features.scss";
-@import "feedback-popup.scss";
-@import "footer.scss";
-@import "form-button.scss";
-@import "form-fields.scss";
-@import "form-sign.scss";
-@import "form-submit-button.scss";
-@import "games-preview.scss";
-@import "index-logo.scss";
-@import "input-wrapper.scss";
-@import "interest.scss";
-@import "hr.scss";
-@import "main-footer.scss";
-@import "main-form.scss";
-@import "main-nav.scss";
-@import "mission-studio.scss";
-@import "modal-box.scss";
-@import "page.scss";
-@import "page-header.scss";
-@import "photo-block.scss";
-@import "search.scss";
-@import "slogan.scss";
-@import "switch-lang.scss";
-@import "trailers.scss";
-@import "video.scss";
-@import "video-presentation.scss";
-@import "vk-group-section.scss";
+@import "colors.scss";// цвета сайта
+@import "fonts.scss";//шрифты сайта
+@import "mixins.scss";//миксины сайта
+@import "variables.scss";// перменные сайта
+@import "body.scss";// стили для body
+@import "container.scss";//стили для главной и общей обертки сайта
+@import "container-page.scss"; //стили для обертки тега main
+@import "footer.scss"; //стили для футера
+@import "games-preview.scss"; //стили для блока с играми на index.html
+@import "hr.scss"; //стили для разделительной полосы (hr)
+@import "main-nav.scss"; //стили для навигационного меню
+@import "mission-studio.scss"; //текстовый блок о студии в index.html
+@import "page.scss"; //стили для body (картинка-задник)
+@import "page-header.scss"; //стили для заглавной картинки
+@import "switch-lang.scss"; //стили для кнопок-переключателей языка
+@import "trailers.scss"; //стили для блока с видео с ютуба в index.html
+@import "vk-group-section.scss"; //стили для вк-виджета в index.html
