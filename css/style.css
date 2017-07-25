@@ -241,7 +241,9 @@ body {
 
 .sort-column-1-link {
   float: left;
-  width: 75px;
+  width: 105px;
+  height: 65px;
+  box-sizing: border-box;
   margin: 15px 10px;
   padding: 15px 20px;
   text-decoration: none;
@@ -272,13 +274,22 @@ body {
   opacity: 0.5; }
 
 .sort-column-1-link-barbarian {
-  margin: 15px 3px 15px 6px;
+  margin: 15px 5px 15px 10px;
   padding: 15px 10px;
   width: 70px; }
 
+.sort-column-1-link-barbarian-rus {
+  padding: 15px 0px; }
+
+.sort-column-1-link-barbarian-rus p {
+  letter-spacing: 0.75px; }
+
 /*Кнопка steam*/
 .steam-btn {
-  float: left;
+  float: right;
+  width: 105px;
+  height: 65px;
+  box-sizing: border-box;
   margin: 15px 10px;
   padding: 14px 20px 6px 20px;
   text-decoration: none;
@@ -294,11 +305,15 @@ body {
   opacity: 0.5; }
 
 .steam-btn-barbarian {
-  margin: 15px 3px 15px 3px;
+  float: left;
+  width: 72px;
+  margin: 15px 5px 15px 5px;
   padding: 12.5px 8px 7.5px 10px; }
 
 .steam-btn-barbarian-google {
-  margin: 15px 6px 15px 3px;
+  float: left;
+  width: 72px;
+  margin: 15px 10px 15px 5px;
   padding: 6.5px 9px 0px 9px; }
 
 /*Дикий остров*/
@@ -680,7 +695,7 @@ hr::after {
 
 .white-block__button {
   display: block;
-  width: 262px;
+  width: 280px;
   margin: 30px auto;
   padding: 10px 25px;
   text-decoration: none;
@@ -689,13 +704,14 @@ hr::after {
   border-radius: 5px; }
 
 .white-block__button span {
-  display: inline-block;
+  display: block;
+  margin: 0 auto;
   font-family: "PT Sans", Arial, sans-serif;
   font-weight: 900;
   text-transform: uppercase;
   text-align: center; }
 
-.white-block__list-text {
+.white-block__list li {
   font-family: "PT Sans", Arial, sans-serif;
   text-transform: none;
   margin: 10px 0px;
@@ -709,6 +725,136 @@ hr::after {
   -ms-flex-pack: distribute;
       justify-content: space-around; }
 
+.photo-three-line a img {
+  border-radius: 10px; }
+
+/* ЧЕСТНО СПИЖЖЕННЫЙ КОД ДЛЯ ПОПАПОВ ФОТОК */
+/* Как говорил Меддисон "Если спиздил хорошо - молодец...спизди еще." */
+/* Базовые стили слоя затемнения и модального окна  */
+.overlay {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  display: none;
+  /* фон затемнения */
+  background-color: rgba(0, 0, 0, 0.65);
+  position: fixed;
+  /* фиксированное поцизионирование */
+  cursor: default;
+  /* тип курсара */ }
+
+/* активируем слой затемнения */
+.overlay:target {
+  display: block; }
+
+/* стили модального окна */
+.popup {
+  top: -100%;
+  right: 0;
+  left: 50%;
+  font-size: 14px;
+  z-index: 20;
+  margin: 0;
+  width: 85%;
+  min-width: 320px;
+  max-width: 720px;
+  /* фиксированное позиционирование, окно стабильно при прокрутке */
+  position: fixed;
+  padding: 15px;
+  border: 1px solid #383838;
+  background: #fefefe;
+  /* скругление углов */
+  border-radius: 4px;
+  font: 14px/18px 'Tahoma', Arial, sans-serif;
+  /* внешняя тень */
+  -ms-box-shadow: 0 15px 20px rgba(0, 0, 0, 0.22), 0 19px 60px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.22), 0 19px 60px rgba(0, 0, 0, 0.3);
+  transform: translate(-50%, -500%);
+  transition: transform 0.6s ease-out; }
+
+/* активируем модальный блок */
+.overlay:target + .popup {
+  transform: translate(-50%, 0);
+  top: 18%; }
+
+/* формируем кнопку закрытия */
+.close {
+  top: -10px;
+  right: -10px;
+  width: 30px;
+  height: 25px;
+  position: absolute;
+  padding: 5px 0px 0px 0px;
+  border: 2px solid #ccc;
+  border-radius: 15px;
+  background-color: blue;
+  box-shadow: 0px 0px 10px #000;
+  text-align: center;
+  text-decoration: none;
+  font: 13px/20px 'Tahoma', Arial, sans-serif;
+  font-weight: bold;
+  transition: all ease .8s; }
+
+.close:before {
+  color: rgba(255, 255, 255, 0.9);
+  content: "X";
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.9);
+  font-size: 18px; }
+
+.close:hover {
+  background-color: rgba(252, 20, 0, 0.8);
+  transform: rotate(360deg); }
+
+/* изображения внутри окна */
+.popup img {
+  width: 100%;
+  height: auto; }
+
+/* миниатюры слева/справа */
+.pic-left,
+.pic-right {
+  width: 25%;
+  height: auto; }
+
+.pic-left {
+  float: left;
+  margin: 5px 15px 5px 0; }
+
+.pic-right {
+  float: right;
+  margin: 5px 0 5px 15px; }
+
+/* элементы м-медиа, фреймы */
+.popup embed,
+.popup iframe {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  margin: auto;
+  min-width: 320px;
+  max-width: 600px;
+  width: 100%; }
+
+.popup h2 {
+  /* заголовок 2 */
+  margin: 0;
+  color: #008000;
+  padding: 5px 0px 10px;
+  text-align: left;
+  text-shadow: 1px 1px 3px #adadad;
+  font-weight: 500;
+  font-size: 1.4em;
+  font-family: 'Tahoma', Arial, sans-serif;
+  line-height: 1.3; }
+
+/* параграфы */
+.popup p {
+  margin: 0;
+  padding: 5px 0; }
 @media (min-width: 768px){
   .container{
     width: 768px; }
@@ -814,8 +960,10 @@ hr::after {
     width: 500px; }
   .vk-group-section__widget-position{
     width: 761.5px;
-    height: 500px; } }
-
+    height: 500px; }
+  .photo-three-line a img{
+    width: 234px;
+    height: 140px; } }
 @media (min-width: 1200px){
   .container{
     width: 1200px; }
@@ -925,8 +1073,12 @@ hr::after {
     width: 700px; }
   .vk-group-section__widget-position{
     width: 1194px;
-    height: 500px; } }
-
+    height: 500px; }
+  .photo-three-line{
+    width: 98%; }
+  .photo-three-line a img{
+    width: 360px;
+    height: 195px; } }
 @media (max-width: 767px){
   .container-page{
     width: 320px; }
@@ -1079,18 +1231,21 @@ hr::after {
   .photo-three-line{
     width: 75%;
     -ms-flex-direction: column;
-    flex-direction: column; } }
-
+    flex-direction: column; }
+  .photo-three-line a img{
+    width: 234px;
+    height: 140px;
+    margin: 5px 0px; }
+  .photo-three-line a:nth-child(3) img{
+    display: none; } }
 @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx){
   .page-header__index{
     background-image: url("../img/header-index-mobile@1x.jpg"); }
   .page-header__soft{
     background-image: url("../img/header-soft-mobile@1x.jpg"); } }
-
 @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 768px) and (min-resolution: 144dpi), (min-width: 768px) and (min-resolution: 1.5dppx){
   .page-header__index{
     background-image: url("../img/header-index-tablet@1x.jpg"); } }
-
 @media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1200px) and (min-resolution: 144dpi), (min-width: 1200px) and (min-resolution: 1.5dppx){
   .page-header__index{
     background-image: url("../img/header-index-desktop@1x.jpg"); } }

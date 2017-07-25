@@ -29,7 +29,7 @@
 
 .white-block__button {
   display: block;
-  width: 262px;
+  width: 280px;
   margin: 30px auto;
   padding: 10px 25px;
   text-decoration: none;
@@ -39,14 +39,15 @@
 }
 
 .white-block__button span {
-  display: inline-block;
+  display: block;
+  margin: 0 auto;
   font-family: "PT Sans", Arial, sans-serif;
   font-weight: 900;
   text-transform: uppercase;
   text-align: center;
 }
 
-.white-block__list-text {
+.white-block__list li {
   font-family: "PT Sans", Arial, sans-serif;
   text-transform: none;
   margin: 10px 0px;

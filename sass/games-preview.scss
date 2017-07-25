@@ -61,7 +61,9 @@
 
 .sort-column-1-link {
   float: left;
-  width: 75px;
+  width: 105px;
+  height: 65px;
+  box-sizing: border-box;
   margin: 15px 10px;
   padding: 15px 20px;
   text-decoration: none;
@@ -96,15 +98,26 @@
 }
 
 .sort-column-1-link-barbarian {
-  margin: 15px 3px 15px 6px;
+  margin: 15px 5px 15px 10px;
   padding: 15px 10px;
   width: 70px;
+}
+
+.sort-column-1-link-barbarian-rus {
+  padding: 15px 0px;
+}
+
+.sort-column-1-link-barbarian-rus p {
+  letter-spacing: 0.75px;
 }
 
 /*Кнопка steam*/
 
 .steam-btn {
-  float: left;
+  float: right;
+  width: 105px;
+  height: 65px;
+  box-sizing: border-box;
   margin: 15px 10px;
   padding: 14px 20px 6px 20px;
   text-decoration: none;
@@ -123,12 +136,16 @@
 }
 
 .steam-btn-barbarian {
-  margin: 15px 3px 15px 3px;
+  float: left;
+  width: 72px;
+  margin: 15px 5px 15px 5px;
   padding: 12.5px 8px 7.5px 10px;
 }
 
 .steam-btn-barbarian-google {
-  margin: 15px 6px 15px 3px;
+  float: left;
+  width: 72px;
+  margin: 15px 10px 15px 5px;
   padding: 6.5px 9px 0px 9px;
 }
 

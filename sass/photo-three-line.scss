@@ -5,17 +5,40 @@
   justify-content: space-around;
 }
 
+.photo-three-line a img {
+  border-radius: 10px;
+}
+
 @media (max-width: $mobile-widths) {
   .photo-three-line {
     width: 75%;
     flex-direction: column;
 }
+
+  .photo-three-line a img {
+    width: 234px;
+    height: 140px;
+    margin: 5px 0px;
+}
+
+  .photo-three-line a:nth-child(3) img {
+    display: none;
+}
 }
 
 @media (min-width: $tablet-widths) {
-
+  .photo-three-line a img {
+    width: 234px;
+    height: 140px;
+}
 }
 
 @media (min-width: $desktop-widths) {
-
+  .photo-three-line {
+    width: 98%;
+}
+  .photo-three-line a img {
+    width: 360px;
+    height: 195px;
+}
 }
