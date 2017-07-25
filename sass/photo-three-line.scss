@@ -1,0 +1,21 @@
+.photo-three-line {
+  display: flex;
+  margin: 0 auto;
+  width: 96%;
+  justify-content: space-around;
+}
+
+@media (max-width: $mobile-widths) {
+  .photo-three-line {
+    width: 75%;
+    flex-direction: column;
+}
+}
+
+@media (min-width: $tablet-widths) {
+
+}
+
+@media (min-width: $desktop-widths) {
+
+}

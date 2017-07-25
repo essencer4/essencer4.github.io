@@ -1,0 +1,60 @@
+.white-block {
+  background-color: white;
+  margin: 20px;
+  padding: 15px;
+  border-radius: 20px;
+}
+
+.white-block__text {
+  font-family: "PT Sans", Arial, sans-serif;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: black;
+  text-transform: none;
+  text-align: justify;
+  text-indent: 15px;
+  line-height: 20px;
+}
+
+.white-block__h2 {
+  font-family: "PT Sans", Arial, sans-serif;
+  margin-top: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: 0.5px;
+}
+
+.white-block__button {
+  display: block;
+  width: 262px;
+  margin: 30px auto;
+  padding: 10px 25px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #051471;
+  border-radius: 5px;
+}
+
+.white-block__button span {
+  display: inline-block;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.white-block__list-text {
+  font-family: "PT Sans", Arial, sans-serif;
+  text-transform: none;
+  margin: 10px 0px;
+  text-align: justify;
+}
+
+@media (max-width: $mobile-widths) {
+  .white-block__button {
+    width: 200px;
+}
+}

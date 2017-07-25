@@ -9,9 +9,11 @@
 @import "games-preview.scss"; //стили для блока с играми на index.html
 @import "hr.scss"; //стили для разделительной полосы (hr)
 @import "main-nav.scss"; //стили для навигационного меню
-@import "mission-studio.scss"; //текстовый блок о студии в index.html
+@import "custom-text-one-line-blocks.scss"; //текстовые блоки в 1 линию
 @import "page.scss"; //стили для body (картинка-задник)
 @import "page-header.scss"; //стили для заглавной картинки
 @import "switch-lang.scss"; //стили для кнопок-переключателей языка
 @import "trailers.scss"; //стили для блока с видео с ютуба в index.html
 @import "vk-group-section.scss"; //стили для вк-виджета в index.html
+@import "white-block.scss"; //стили для белого блока (контентный блок-рамка для текста, фоток и прочего)
+@import "photo-three-line"; //стили для горизонтального блока-ряда из трех фоток

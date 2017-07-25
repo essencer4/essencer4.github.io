@@ -1,9 +1,11 @@
-.mission-studio {
+.white-text-no-background {
   margin-top: 25px;
   letter-spacing: -0.25px;
   color: white;
   text-align: center;
   @include text-shadow;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 .mission-studio__text {
