@@ -20,16 +20,26 @@
   .page-header__soft {
     background-image: url("../img/header-soft-mobile@1x.jpg");
 }
+
+  .page-header__games {
+    background-image: url("../img/header-games-mobile@1x.jpg");
+}
+
+  .page-header__others {
+    background-image: url("../img/header-others-mobile@1x.jpg");
+}
+
+  .page-header__team {
+    background-image: url("../img/header-team-mobile@1x.jpg");
+}
+
+  .page-header__contacts {
+    background-image: url("../img/header-contacts-mobile@1x.jpg");
+}
 }
 
 @media (max-width: $mobile-widths) and (min-resolution: $dpi), (max-width: $mobile-widths) and (min-resolution: $dppx) {
-  .page-header__index {
-    background-image: url("../img/header-index-mobile@1x.jpg");
-}
 
-  .page-header__soft {
-    background-image: url("../img/header-soft-mobile@1x.jpg");
-}
 }
 
 @media (min-width: $tablet-widths) {
@@ -47,12 +57,26 @@
   .page-header__soft {
     background-image: url("../img/header-soft-tablet@1x.jpg");
 }
+
+  .page-header__games {
+    background-image: url("../img/header-games-tablet@1x.jpg");
+}
+
+  .page-header__others {
+    background-image: url("../img/header-others-tablet@1x.jpg");
+}
+
+  .page-header__team {
+    background-image: url("../img/header-team-tablet@1x.jpg");
+}
+
+  .page-header__contacts {
+    background-image: url("../img/header-contacts-tablet@1x.jpg");
+}
 }
 
 @media (min-width: $tablet-width) and (min-resolution: $dpi), (min-width: $tablet-width) and (min-resolution: $dppx) {
-  .page-header__index {
-    background-image: url("../img/header-index-tablet@1x.jpg");
-}
+
 }
 
 @media (min-width: $desktop-widths) {
@@ -63,20 +87,35 @@
     margin: 0 auto;
     padding: 0;
     background-size: 1200px auto;
-    background-position: 50% 75%;
 }
 
   .page-header__index {
     background-image: url("../img/header-index-desktop@1x.jpg");
+    background-position: 50% 15%;
 }
 
   .page-header__soft {
-    background-image: url("../img/header-soft-tablet@1x.jpg");
+    background-image: url("../img/header-soft-desktop@1x.jpg");
+    background-position: 50% 75%;
+}
+
+  .page-header__games {
+    background-image: url("../img/header-games-desktop@1x.jpg");
+}
+
+  .page-header__others {
+    background-image: url("../img/header-others-desktop@1x.jpg");
+}
+
+  .page-header__team {
+    background-image: url("../img/header-team-desktop@1x.jpg");
+}
+
+  .page-header__contacts {
+    background-image: url("../img/header-contacts-desktop@1x.jpg");
 }
 }
 
 @media (min-width: $desktop-widths) and (min-resolution: $dpi), (min-width: $desktop-widths) and (min-resolution: $dppx) {
-  .page-header__index {
-    background-image: url("../img/header-index-desktop@1x.jpg");
-}
+
 }

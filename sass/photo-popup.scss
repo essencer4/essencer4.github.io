@@ -28,9 +28,8 @@
   font-size: 14px;
   z-index: 20;
   margin: 0;
-  width: 85%;
-  min-width: 320px;
-  max-width: 720px;
+  /*min-width: 320px;
+  max-width: 720px;*/
 /* фиксированное позиционирование, окно стабильно при прокрутке */
   position: fixed;
   padding: 15px;
@@ -59,11 +58,14 @@
 
 /* активируем модальный блок */
 .overlay:target+.popup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 60px 20px;
   -webkit-transform: translate(-50%, 0);
   -ms-transform: translate(-50%, 0);
   -o-transform: translate(-50%, 0);
   transform: translate(-50%, 0);
-  top: 18%;
 }
 
 /* формируем кнопку закрытия */
@@ -113,8 +115,11 @@
 
 /* изображения внутри окна */
 .popup img {
-  width: 100%;
+  display: block;
+  width: auto;
+  max-width: 870px;
   height: auto;
+  margin: 0 auto;
 }
 
 /* миниатюры слева/справа */
@@ -162,3 +167,52 @@
 
 /* параграфы */
 .popup p {margin: 0; padding: 5px 0}
+
+@media (max-width: $mobile-widths) {
+  .popup {
+    width: 280px;
+    height: 300px;
+    padding: 5px;
+}
+
+  .overlay:target+.popup {
+    top: 20%;
+}
+
+  .popup img {
+    max-width: 270px;
+    max-height: 290px;
+}
+}
+
+@media (min-width: $tablet-widths) {
+  .popup {
+    width: 700px;
+    height: 400px;
+}
+
+  .overlay:target+.popup {
+    top: 18%;
+}
+
+  .popup img {
+    max-width: 680px;
+    max-height: 400px;
+}
+}
+
+@media (min-width: $desktop-widths) {
+  .popup {
+    width: 1000px;
+    height: 480px;
+}
+
+  .overlay:target+.popup {
+    top: 12%;
+}
+
+  .popup img {
+    max-width: 870px;
+    max-height: 480px;
+}
+}

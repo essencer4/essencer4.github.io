@@ -3,6 +3,10 @@
   margin: 20px;
   padding: 15px;
   border-radius: 20px;
+  &--flex-column {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .white-block__text {
@@ -14,6 +18,18 @@
   text-align: justify;
   text-indent: 15px;
   line-height: 20px;
+  &--right { //для блока авторы (биографии)
+    float: right;
+  }
+  &--left { //для блока авторы (интервью)
+    width: 100%;
+    text-align: left;
+    padding: 0px 0px;
+    margin: 15px 0px;
+  }
+  &--left { //для блока авторы (интервью)
+    color: grey;
+  }
 }
 
 .white-block__h2 {
@@ -25,6 +41,21 @@
   font-weight: 700;
   line-height: 1.25;
   letter-spacing: 0.5px;
+  &--right { //для блока авторы (биографии)
+    float: right;
+    text-transform: none;
+  }
+  &--left { //для блока авторы (интервью)
+    text-transform: none;
+    width: 100%;
+    text-align: left;
+    padding: 0px 15px;
+    margin: 25px 0px;
+  }
+}
+
+.white-block__photo {
+  float: left;
 }
 
 .white-block__button {
@@ -57,5 +88,53 @@
 @media (max-width: $mobile-widths) {
   .white-block__button {
     width: 200px;
+}
+
+  .white-block__h2--right {
+    width: 245px;
+    margin: 25px 0px 5px 0px;
+    font-size: 20px;
+}
+
+  .white-block__text--right {
+    width: 245px;
+    margin: 10px 0px 15px 0px;
+}
+
+  .white-block__photo {
+    margin: 15px 45px 0px 45px;
+}
+}
+
+@media (min-width: $tablet-widths) {
+  .white-block__h2--right {
+    width: 520px;
+    margin-top: 15px;
+    padding: 0px 61px;
+    box-sizing: border-box;
+}
+
+  .white-block__text--right {
+    width: 520px;
+    margin-top: 5px;
+}
+
+  .white-block__photo {
+    margin: 10px;
+}
+}
+
+@media (min-width: $desktop-widths) {
+  .white-block__h2--right {
+    width: 900px;
+    margin-top: 25px;
+}
+
+  .white-block__text--right {
+    width: 900px;
+}
+
+  .white-block__photo {
+    margin: 20px;
 }
 }
