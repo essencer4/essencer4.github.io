@@ -23,6 +23,10 @@ body {
   border-radius: 1px 1px 50px 50px; }
 
 .container-page {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
   margin: auto;
   margin-top: 0px;
   background: #4458D6;
@@ -537,11 +541,21 @@ hr::after {
   border-top-color: #5496bd; }
 
 .white-text-no-background {
+  width: 100%;
   margin: 35px 0px 30px 0px;
   letter-spacing: -0.25px;
   color: white;
   text-align: center;
   text-shadow: -0   -1px 0   #000000, 0   -1px 0   #000000, -0    1px 0   #000000, 0    1px 0   #000000, -1px -0   0   #000000, 1px -0   0   #000000, -1px  0   0   #000000, 1px  0   0   #000000, -1px -1px 0   #000000, 1px -1px 0   #000000, -1px  1px 0   #000000, 1px  1px 0   #000000, -1px -1px 0   #000000, 1px -1px 0   #000000, -1px  1px 0   #000000, 1px  1px 0   #000000;
+  letter-spacing: 2px;
+  text-transform: uppercase; }
+
+.black-text {
+  width: 100%;
+  margin: 15px 0px 25px 0px;
+  letter-spacing: -0.25px;
+  color: black;
+  text-align: center;
   letter-spacing: 2px;
   text-transform: uppercase; }
 
@@ -743,6 +757,54 @@ hr::after {
   text-transform: none;
   margin: 10px 0px;
   text-align: justify; }
+
+/* Блок для страницы контакты  */
+.vk-group {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  float: left;
+  width: 500px;
+  height: 525px;
+  margin-left: 40px;
+  margin-top: 20px; }
+
+.vk-group #vk_groups,
+.vk-group #vk_groups iframe {
+  width: 500px !important;
+  height: 450px !important; }
+
+.fb-group {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  float: left;
+  height: 525px;
+  margin-left: 25px;
+  margin-top: 20px; }
+
+.twit-group {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  float: left;
+  height: 525px;
+  margin-left: 25px;
+  margin-top: 20px; }
+
+.youtube-group {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  float: left;
+  width: 500px;
+  height: 525px;
+  margin-left: 40px;
+  margin-top: 20px; }
 
 .photo-three-line {
   display: -ms-flexbox;
@@ -1014,6 +1076,20 @@ hr::after {
     margin-top: 5px; }
   .white-block__photo{
     margin: 10px; }
+  .vk-group{
+    width: 300px; }
+  .vk-group #vk_groups,
+  .vk-group #vk_groups iframe{
+    width: 300px !important;
+    height: 450px !important; }
+  .fb-group{
+    width: 300px; }
+  .twit-group{
+    width: 300px; }
+  .youtube-group{
+    width: 300px; }
+  .vk-group-section__widget-position-contacts{
+    width: 300px; }
   .photo-three-line a img{
     width: 234px;
     height: 140px; }
@@ -1151,6 +1227,20 @@ hr::after {
     width: 900px; }
   .white-block__photo{
     margin: 20px; }
+  .vk-group{
+    width: 500px; }
+  .vk-group #vk_groups,
+  .vk-group #vk_groups iframe{
+    width: 500px !important;
+    height: 450px !important; }
+  .fb-group{
+    width: 500px; }
+  .twit-group{
+    width: 500px; }
+  .youtube-group{
+    width: 500px; }
+  .vk-group-section__widget-position-contacts{
+    width: 500px; }
   .photo-three-line{
     width: 98%; }
   .photo-three-line a img{
@@ -1332,6 +1422,32 @@ hr::after {
     margin: 10px 0px 15px 0px; }
   .white-block__photo{
     margin: 15px 45px 0px 45px; }
+  .vk-group{
+    width: 245px;
+    margin-left: 0px;
+    margin-top: 0px; }
+  .vk-group #vk_groups,
+  .vk-group #vk_groups iframe{
+    width: 245px !important;
+    height: 450px !important; }
+  .fb-group{
+    width: 245px;
+    margin-left: 0px;
+    margin-top: 0px; }
+  .fb-group .fb-page .fb_iframe_widget iframe{
+    width: 245px; }
+  .fb-group .fb_iframe_widget iframe{
+    width: 245px; }
+  .twit-group{
+    width: 245px;
+    margin-left: 0px;
+    margin-top: 0px; }
+  .youtube-group{
+    width: 245px;
+    margin-left: 0px;
+    margin-top: 0px; }
+  .vk-group-section__widget-position-contacts{
+    width: 245px; }
   .photo-three-line{
     width: 75%;
     -ms-flex-direction: column;
