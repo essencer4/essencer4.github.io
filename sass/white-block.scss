@@ -85,6 +85,52 @@
   text-align: justify;
 }
 
+/* Блок для страницы контакты  */
+
+.vk-group {
+  display: flex;
+  flex-direction: column;
+  float: left;
+  width: 500px;
+  height: 525px;
+  margin-left: 40px;
+  margin-top: 20px;
+}
+
+.vk-group #vk_groups,
+.vk-group #vk_groups iframe {
+    width: 500px !important;
+    height: 450px !important;
+}
+
+.fb-group {
+  display: flex;
+  flex-direction: column;
+  float: left;
+  height: 525px;
+  margin-left: 25px;
+  margin-top: 20px;
+}
+
+.twit-group {
+  display: flex;
+  flex-direction: column;
+  float: left;
+  height: 525px;
+  margin-left: 25px;
+  margin-top: 20px;
+}
+
+.youtube-group {
+  display: flex;
+  flex-direction: column;
+  float: left;
+  width: 500px;
+  height: 525px;
+  margin-left: 40px;
+  margin-top: 20px;
+}
+
 @media (max-width: $mobile-widths) {
   .white-block__button {
     width: 200px;
@@ -104,6 +150,48 @@
   .white-block__photo {
     margin: 15px 45px 0px 45px;
 }
+
+  .vk-group {
+    width: 245px;
+    margin-left: 0px;
+    margin-top: 0px;
+}
+
+  .vk-group #vk_groups,
+  .vk-group #vk_groups iframe {
+    width: 245px !important;
+    height: 450px !important;
+}
+
+  .fb-group {
+    width: 245px;
+    margin-left: 0px;
+    margin-top: 0px;
+}
+
+  .fb-group .fb-page .fb_iframe_widget iframe {
+    width: 245px;
+}
+
+  .fb-group .fb_iframe_widget iframe {
+    width: 245px;
+}
+
+  .twit-group {
+    width: 245px;
+    margin-left: 0px;
+    margin-top: 0px;
+}
+
+  .youtube-group {
+    width: 245px;
+    margin-left: 0px;
+    margin-top: 0px;
+}
+
+.vk-group-section__widget-position-contacts {
+  width: 245px;
+}
 }
 
 @media (min-width: $tablet-widths) {
@@ -122,6 +210,32 @@
   .white-block__photo {
     margin: 10px;
 }
+
+  .vk-group {
+    width: 300px;
+}
+
+  .vk-group #vk_groups,
+  .vk-group #vk_groups iframe {
+    width: 300px !important;
+    height: 450px !important;
+}
+
+  .fb-group {
+    width: 300px;
+}
+
+  .twit-group {
+    width: 300px;
+}
+
+  .youtube-group {
+    width: 300px;
+}
+
+.vk-group-section__widget-position-contacts {
+  width: 300px;
+}
 }
 
 @media (min-width: $desktop-widths) {
@@ -136,5 +250,31 @@
 
   .white-block__photo {
     margin: 20px;
+}
+
+  .vk-group {
+    width: 500px;
+}
+
+  .vk-group #vk_groups,
+  .vk-group #vk_groups iframe {
+    width: 500px !important;
+    height: 450px !important;
+}
+
+  .fb-group {
+    width: 500px;
+}
+
+  .twit-group {
+    width: 500px;
+}
+
+  .youtube-group {
+    width: 500px;
+}
+
+.vk-group-section__widget-position-contacts {
+  width: 500px;
 }
 }
