@@ -714,7 +714,7 @@ hr::after {
 
 .white-block__h2 {
   font-family: "PT Sans", Arial, sans-serif;
-  margin-top: 50px;
+  margin-top: 40px;
   text-align: center;
   text-transform: uppercase;
   font-size: 21px;
@@ -800,11 +800,32 @@ hr::after {
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
   float: left;
   width: 500px;
   height: 525px;
   margin-left: 40px;
   margin-top: 20px; }
+
+.photo-three-line__in-white-block {
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+
+.photo-three-line__in-white-block a img {
+  border-radius: 10px; }
+
+.white-block__steam-widget {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  margin-top: 30px;
+  height: 200px; }
 
 .photo-three-line {
   display: -ms-flexbox;
@@ -1090,6 +1111,11 @@ hr::after {
     width: 300px; }
   .vk-group-section__widget-position-contacts{
     width: 300px; }
+  .photo-three-line__in-white-block a img{
+    width: 228px;
+    height: 135px; }
+  .white-block__steam-widget iframe{
+    width: 600px; }
   .photo-three-line a img{
     width: 234px;
     height: 140px; }
@@ -1241,6 +1267,14 @@ hr::after {
     width: 500px; }
   .vk-group-section__widget-position-contacts{
     width: 500px; }
+  .photo-three-line__in-white-block{
+    -ms-flex-pack: distribute;
+    justify-content: space-around; }
+  .photo-three-line__in-white-block a img{
+    width: 360px;
+    height: 195px; }
+  .white-block__steam-widget iframe{
+    width: 650px; }
   .photo-three-line{
     width: 98%; }
   .photo-three-line a img{
@@ -1448,6 +1482,22 @@ hr::after {
     margin-top: 0px; }
   .vk-group-section__widget-position-contacts{
     width: 245px; }
+  .photo-three-line__in-white-block{
+    width: 100%;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-align: center;
+    align-items: center; }
+  .photo-three-line__in-white-block a img{
+    width: 234px;
+    height: 140px;
+    margin: 5px 0px; }
+  .photo-three-line__in-white-block a:nth-child(3) img{
+    display: none; }
+  .white-block__list{
+    padding-left: 15px; }
+  .white-block__steam-widget iframe{
+    width: 235px; }
   .photo-three-line{
     width: 75%;
     -ms-flex-direction: column;

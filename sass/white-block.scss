@@ -34,7 +34,7 @@
 
 .white-block__h2 {
   font-family: "PT Sans", Arial, sans-serif;
-  margin-top: 50px;
+  margin-top: 40px;
   text-align: center;
   text-transform: uppercase;
   font-size: 21px;
@@ -124,11 +124,30 @@
 .youtube-group {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   float: left;
   width: 500px;
   height: 525px;
   margin-left: 40px;
   margin-top: 20px;
+}
+
+.photo-three-line__in-white-block {
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.photo-three-line__in-white-block a img {
+  border-radius: 10px;
+}
+
+.white-block__steam-widget {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  height: 200px;
 }
 
 @media (max-width: $mobile-widths) {
@@ -189,8 +208,33 @@
     margin-top: 0px;
 }
 
-.vk-group-section__widget-position-contacts {
-  width: 245px;
+  .vk-group-section__widget-position-contacts {
+    width: 245px;
+}
+
+  .photo-three-line__in-white-block {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+  .photo-three-line__in-white-block a img {
+    width: 234px;
+    height: 140px;
+    margin: 5px 0px;
+}
+
+  .photo-three-line__in-white-block a:nth-child(3) img {
+    display: none;
+}
+
+  .white-block__list {
+    padding-left: 15px;
+}
+
+  .white-block__steam-widget iframe {
+    width: 235px;
 }
 }
 
@@ -233,8 +277,17 @@
     width: 300px;
 }
 
-.vk-group-section__widget-position-contacts {
-  width: 300px;
+  .vk-group-section__widget-position-contacts {
+    width: 300px;
+}
+
+  .photo-three-line__in-white-block a img {
+    width: 228px;
+    height: 135px;
+}
+
+  .white-block__steam-widget iframe {
+    width: 600px;
 }
 }
 
@@ -274,7 +327,20 @@
     width: 500px;
 }
 
-.vk-group-section__widget-position-contacts {
-  width: 500px;
+  .vk-group-section__widget-position-contacts {
+    width: 500px;
+}
+
+  .photo-three-line__in-white-block {
+    justify-content: space-around;
+}
+
+  .photo-three-line__in-white-block a img {
+    width: 360px;
+    height: 195px;
+}
+
+  .white-block__steam-widget iframe {
+    width: 650px;
 }
 }
