@@ -692,6 +692,13 @@ hr::after {
     display: flex;
     -ms-flex-direction: column;
         flex-direction: column; }
+  .white-block--flex-row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
 
 .white-block__text {
   font-family: "PT Sans", Arial, sans-serif;
@@ -826,6 +833,25 @@ hr::after {
       justify-content: center;
   margin-top: 30px;
   height: 200px; }
+
+/* Блок для страницы прочее */
+.white-block__donation-block-1 {
+  width: 450px;
+  height: 198px; }
+
+.white-block__donation-block-2 {
+  float: left;
+  margin: 20px 5px 5px 55px;
+  width: 130px;
+  height: 65px;
+  border: none; }
+
+.white-block__donation-block-3 {
+  float: left;
+  margin: 20px 5px 5px 23px;
+  width: 195px;
+  height: 65px;
+  border: none; }
 
 .photo-three-line {
   display: -ms-flexbox;
@@ -1116,6 +1142,16 @@ hr::after {
     height: 135px; }
   .white-block__steam-widget iframe{
     width: 600px; }
+  .white-block__donation-block-1-big{
+    display: block; }
+  .white-block__donation-block-1-small{
+    display: none; }
+  .white-block__text{
+    font-size: 18px;
+    line-height: 25px; }
+  .white-block__list{
+    font-size: 18px;
+    line-height: 25px; }
   .photo-three-line a img{
     width: 234px;
     height: 140px; }
@@ -1275,6 +1311,16 @@ hr::after {
     height: 195px; }
   .white-block__steam-widget iframe{
     width: 650px; }
+  .white-block__donation-block-1-big{
+    display: block; }
+  .white-block__donation-block-1-small{
+    display: none; }
+  .white-block__text{
+    font-size: 18px;
+    line-height: 25px; }
+  .white-block__list{
+    font-size: 18px;
+    line-height: 25px; }
   .photo-three-line{
     width: 98%; }
   .photo-three-line a img{
@@ -1389,6 +1435,9 @@ hr::after {
     background-color: #6a4d38; }
   .main-nav__item-logo{
     display: none; }
+  .white-text-no-background{
+    width: 87%;
+    padding: 0px 20px; }
   .mission-studio{
     font-size: 18px;
     line-height: 1.25;
@@ -1498,6 +1547,22 @@ hr::after {
     padding-left: 15px; }
   .white-block__steam-widget iframe{
     width: 235px; }
+  .white-block--flex-row{
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .white-block__donation-block-1{
+    width: 245px;
+    height: 198px;
+    transform: scale(0.9); }
+  .white-block__donation-block-1-big{
+    display: none; }
+  .white-block__donation-block-1-small{
+    display: block;
+    margin: 20px 0px; }
+  .white-block__text{
+    font-size: 16px; }
+  .white-block__list{
+    font-size: 16px; }
   .photo-three-line{
     width: 75%;
     -ms-flex-direction: column;

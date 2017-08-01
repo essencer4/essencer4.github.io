@@ -7,6 +7,11 @@
     display: flex;
     flex-direction: column;
   }
+  &--flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }
 
 .white-block__text {
@@ -150,6 +155,29 @@
   height: 200px;
 }
 
+/* Блок для страницы прочее */
+
+  .white-block__donation-block-1 {
+    width: 450px;
+    height: 198px;
+}
+
+.white-block__donation-block-2 {
+  float: left;
+  margin: 20px 5px 5px 55px;
+  width: 130px;
+  height: 65px;
+  border: none;
+}
+
+.white-block__donation-block-3 {
+  float: left;
+  margin: 20px 5px 5px 23px;
+  width: 195px;
+  height: 65px;
+  border: none;
+}
+
 @media (max-width: $mobile-widths) {
   .white-block__button {
     width: 200px;
@@ -236,6 +264,33 @@
   .white-block__steam-widget iframe {
     width: 235px;
 }
+
+  .white-block--flex-row {
+    flex-direction: column;
+  }
+
+  .white-block__donation-block-1 {
+    width: 245px;
+    height: 198px;
+    transform: scale(0.9);
+}
+
+  .white-block__donation-block-1-big {
+    display: none;
+  }
+
+  .white-block__donation-block-1-small {
+    display: block;
+    margin: 20px 0px;
+  }
+
+  .white-block__text {
+    font-size: 16px;
+  }
+
+  .white-block__list {
+    font-size: 16px;
+  }
 }
 
 @media (min-width: $tablet-widths) {
@@ -289,6 +344,24 @@
   .white-block__steam-widget iframe {
     width: 600px;
 }
+
+  .white-block__donation-block-1-big {
+    display: block;
+  }
+
+  .white-block__donation-block-1-small {
+    display: none;
+  }
+
+  .white-block__text {
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .white-block__list {
+    font-size: 18px;
+    line-height: 25px;
+  }
 }
 
 @media (min-width: $desktop-widths) {
@@ -343,4 +416,22 @@
   .white-block__steam-widget iframe {
     width: 650px;
 }
+
+  .white-block__donation-block-1-big {
+    display: block;
+  }
+
+  .white-block__donation-block-1-small {
+    display: none;
+  }
+
+  .white-block__text {
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .white-block__list {
+    font-size: 18px;
+    line-height: 25px;
+  }
 }
