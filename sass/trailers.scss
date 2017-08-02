@@ -2,25 +2,6 @@
   margin: 30px 0px;
 }
 
-.trailers__text {
-  display: block;
-  color: white;
-  margin: 30px 15px 30px 15px;
-  padding: 10px 5px;
-  color: white;
-  text-transform: none;
-  text-indent: 15px;
-  background-color: #0F25AE;
-  border-radius: 10px;
-  text-align: center;
-}
-
-.trailers__text-center {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
 .trailers__video {
   display: block;
   margin: 0 auto;
@@ -29,10 +10,6 @@
 }
 
 @media (max-width: $mobile-widths) {
-  .trailers__text {
-    width: 285px;
-    margin: 0px 10px 30px 10px;
-}
 
   .trailers__video {
     width: 315px;
@@ -46,10 +23,6 @@
     margin: -10px 0px;
 }
 
-  .trailers__text {
-    width: 630px;
-}
-
   .trailers__video {
     width: 640px;
     height: 360px;
@@ -59,10 +32,6 @@
 @media (min-width: $desktop-widths) {
   .trailers {
     margin: -10px 0px;
-}
-
-  .trailers__text {
-    width: 950px;
 }
 
   .trailers__video {

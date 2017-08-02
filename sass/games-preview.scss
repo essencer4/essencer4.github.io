@@ -11,7 +11,6 @@
   flex-direction: column;
   justify-content: space-between;
   @include clearfix;
-  position: relative;
   float: left;
   width: 255px;
   height: 300px;
@@ -119,7 +118,7 @@
   height: 65px;
   box-sizing: border-box;
   margin: 15px 10px;
-  padding: 14px 20px 6px 20px;
+  padding: 14px 27px 6px 27px;
   text-decoration: none;
   color: #fff;
   background-color: #051471;

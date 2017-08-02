@@ -117,6 +117,14 @@
   margin-top: 20px;
 }
 
+.fb-group__index {
+  width: 100%;
+  height: 450px;
+  display: flex;
+  justify-content: center;
+  margin: 0px 350px;
+}
+
 .twit-group {
   display: flex;
   flex-direction: column;
@@ -157,9 +165,9 @@
 
 /* Блок для страницы прочее */
 
-  .white-block__donation-block-1 {
-    width: 450px;
-    height: 198px;
+.white-block__donation-block-1 {
+   width: 450px;
+  height: 198px;
 }
 
 .white-block__donation-block-2 {
@@ -176,6 +184,41 @@
   width: 195px;
   height: 65px;
   border: none;
+}
+
+.white-block__background-others-monster {
+  background-image: url("../img/others-games-1-background.jpg");
+  background-size: cover;
+}
+
+.white-block__background-others-aldar {
+  background-image: url("../img/others-games-2-background.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.white-block__background-others-zog {
+  background-image: url("../img/others-games-3-background.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.white-block__background-others-red {
+  background-image: url("../img/games-red-background.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.white-block__background-others-island {
+  background-image: url("../img/games-island-background.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.white-block__background-others-caves {
+  background-image: url("../img/games-barbarian-background.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
 }
 
 @media (max-width: $mobile-widths) {
@@ -215,6 +258,14 @@
     margin-left: 0px;
     margin-top: 0px;
 }
+
+  .fb-group__index {
+    width: 245px;
+    margin-left: 35px;
+    margin: 0px 35px;
+    margin-top: 20px;
+}
+
 
   .fb-group .fb-page .fb_iframe_widget iframe {
     width: 245px;
@@ -291,6 +342,10 @@
   .white-block__list {
     font-size: 16px;
   }
+
+  .white-block__background-others-monster {
+    background-position: 34% 50%;
+}
 }
 
 @media (min-width: $tablet-widths) {
@@ -322,6 +377,11 @@
 
   .fb-group {
     width: 300px;
+}
+
+  .fb-group__index {
+    width: 500px;
+    margin: 0px 130px;
 }
 
   .twit-group {
@@ -362,6 +422,10 @@
     font-size: 18px;
     line-height: 25px;
   }
+
+  .white-block__background-others-monster {
+    background-position: 50% 50%;
+}
 }
 
 @media (min-width: $desktop-widths) {
@@ -380,6 +444,11 @@
 
   .vk-group {
     width: 500px;
+}
+
+  .fb-group__index {
+    width: 500px;
+    margin: 0px 350px;
 }
 
   .vk-group #vk_groups,
@@ -434,4 +503,8 @@
     font-size: 18px;
     line-height: 25px;
   }
+
+  .white-block__background-others-monster {
+    background-position: 50% 50%;
+}
 }

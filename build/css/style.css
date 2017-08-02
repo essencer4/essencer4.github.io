@@ -198,7 +198,6 @@ body {
       flex-direction: column;
   -ms-flex-pack: justify;
       justify-content: space-between;
-  position: relative;
   float: left;
   width: 255px;
   height: 300px;
@@ -295,7 +294,7 @@ body {
   height: 65px;
   box-sizing: border-box;
   margin: 15px 10px;
-  padding: 14px 20px 6px 20px;
+  padding: 14px 27px 6px 27px;
   text-decoration: none;
   color: #fff;
   background-color: #051471;
@@ -559,7 +558,17 @@ hr::after {
   letter-spacing: 2px;
   text-transform: uppercase; }
 
-.mission-studio__text {
+.white-text-with-background {
+  margin: 30px 15px 30px 15px;
+  padding: 10px 5px;
+  color: white;
+  text-transform: none;
+  text-indent: 15px;
+  background-color: #0F25AE;
+  border-radius: 10px;
+  text-align: center; }
+
+.white-text-with-background-h2 {
   margin: 30px 15px 30px 15px;
   padding: 10px 5px;
   color: white;
@@ -632,26 +641,6 @@ hr::after {
 .trailers {
   margin: 30px 0px; }
 
-.trailers__text {
-  display: block;
-  color: white;
-  margin: 30px 15px 30px 15px;
-  padding: 10px 5px;
-  color: white;
-  text-transform: none;
-  text-indent: 15px;
-  background-color: #0F25AE;
-  border-radius: 10px;
-  text-align: center; }
-
-.trailers__text-center {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: row;
-      flex-direction: row;
-  -ms-flex-pack: center;
-      justify-content: center; }
-
 .trailers__video {
   display: block;
   margin: 0 auto;
@@ -660,22 +649,6 @@ hr::after {
 
 .vk-group-section {
   margin: 30px 0px; }
-
-.vk-group-section__text-position {
-  margin: 0 auto; }
-
-.vk-group-section__text {
-  display: block;
-  width: 635px;
-  color: white;
-  padding: 10px 5px;
-  color: white;
-  text-transform: none;
-  text-indent: 15px;
-  background-color: #0F25AE;
-  border-radius: 10px;
-  text-align: center;
-  font-size: 18px; }
 
 #vk_groups,
 #vk_groups iframe {
@@ -792,6 +765,15 @@ hr::after {
   margin-left: 25px;
   margin-top: 20px; }
 
+.fb-group__index {
+  width: 100%;
+  height: 450px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  margin: 0px 350px; }
+
 .twit-group {
   display: -ms-flexbox;
   display: flex;
@@ -852,6 +834,35 @@ hr::after {
   width: 195px;
   height: 65px;
   border: none; }
+
+.white-block__background-others-monster {
+  background-image: url("../img/others-games-1-background.jpg");
+  background-size: cover; }
+
+.white-block__background-others-aldar {
+  background-image: url("../img/others-games-2-background.jpg");
+  background-size: cover;
+  background-position: 50% 50%; }
+
+.white-block__background-others-zog {
+  background-image: url("../img/others-games-3-background.jpg");
+  background-size: cover;
+  background-position: 50% 50%; }
+
+.white-block__background-others-red {
+  background-image: url("../img/games-red-background.jpg");
+  background-size: cover;
+  background-position: 50% 50%; }
+
+.white-block__background-others-island {
+  background-image: url("../img/games-island-background.jpg");
+  background-size: cover;
+  background-position: 50% 50%; }
+
+.white-block__background-others-caves {
+  background-image: url("../img/games-barbarian-background.jpg");
+  background-size: cover;
+  background-position: 50% 50%; }
 
 .photo-three-line {
   display: -ms-flexbox;
@@ -1064,12 +1075,12 @@ hr::after {
   .main-nav__item-logo a{
     padding: 4px 0px;
     width: 120px; }
-  .mission-studio{
+  .white-text-with-background-h2{
     font-size: 21px;
     font-family: PT Sans;
     font-weight: 900; }
-  .mission-studio__text{
-    font-size: 16px;
+  .white-text-with-background{
+    font-size: 18px;
     line-height: 1.25;
     font-family: "PT Sans", "Arial", sans-serif;
     font-weight: 400; }
@@ -1101,15 +1112,9 @@ hr::after {
     font-size: 24px; }
   .trailers{
     margin: -10px 0px; }
-  .trailers__text{
-    width: 630px; }
   .trailers__video{
     width: 640px;
     height: 360px; }
-  .vk-group-section__text-position{
-    width: 500px; }
-  .vk-group-section__text{
-    width: 500px; }
   .vk-group-section__widget-position{
     width: 761.5px;
     height: 500px; }
@@ -1131,6 +1136,9 @@ hr::after {
     height: 450px !important; }
   .fb-group{
     width: 300px; }
+  .fb-group__index{
+    width: 500px;
+    margin: 0px 130px; }
   .twit-group{
     width: 300px; }
   .youtube-group{
@@ -1152,6 +1160,8 @@ hr::after {
   .white-block__list{
     font-size: 18px;
     line-height: 25px; }
+  .white-block__background-others-monster{
+    background-position: 50% 50%; }
   .photo-three-line a img{
     width: 234px;
     height: 140px; }
@@ -1228,11 +1238,11 @@ hr::after {
     box-sizing: border-box;
     border-left: 3px solid #051471;
     border-right: 3px solid #051471; }
-  .mission-studio{
-    font-size: 30px;
+  .white-text-with-background-h2{
+    font-size: 21px;
     font-family: PT Sans;
     font-weight: 900; }
-  .mission-studio__text{
+  .white-text-with-background{
     font-size: 18px;
     line-height: 1.25;
     font-family: "PT Sans", "Arial", sans-serif;
@@ -1270,15 +1280,9 @@ hr::after {
     font-size: 32px; }
   .trailers{
     margin: -10px 0px; }
-  .trailers__text{
-    width: 950px; }
   .trailers__video{
     width: 960px;
     height: 540px; }
-  .vk-group-section__text-position{
-    width: 700px; }
-  .vk-group-section__text{
-    width: 700px; }
   .vk-group-section__widget-position{
     width: 1194px;
     height: 500px; }
@@ -1291,6 +1295,9 @@ hr::after {
     margin: 20px; }
   .vk-group{
     width: 500px; }
+  .fb-group__index{
+    width: 500px;
+    margin: 0px 350px; }
   .vk-group #vk_groups,
   .vk-group #vk_groups iframe{
     width: 500px !important;
@@ -1321,6 +1328,8 @@ hr::after {
   .white-block__list{
     font-size: 18px;
     line-height: 25px; }
+  .white-block__background-others-monster{
+    background-position: 50% 50%; }
   .photo-three-line{
     width: 98%; }
   .photo-three-line a img{
@@ -1438,13 +1447,13 @@ hr::after {
   .white-text-no-background{
     width: 87%;
     padding: 0px 20px; }
-  .mission-studio{
+  .white-text-with-background-h2{
     font-size: 18px;
     line-height: 1.25;
     font-family: "PT Sans", "Arial", sans-serif;
     font-weight: 400; }
-  .mission-studio__text{
-    font-size: 14px;
+  .white-text-with-background{
+    font-size: 16px;
     line-height: 1.25;
     font-family: "PT Sans", "Arial", sans-serif;
     font-weight: 400; }
@@ -1479,18 +1488,10 @@ hr::after {
   .switch-lang p{
     padding: 10px 25px;
     font-size: 28px; }
-  .trailers__text{
-    width: 285px;
-    margin: 0px 10px 30px 10px; }
   .trailers__video{
     width: 315px;
     height: 180px;
     padding-bottom: 10px; }
-  .vk-group-section__text-position{
-    width: 300px; }
-  .vk-group-section__text{
-    width: 300px;
-    padding: 10px 0px; }
   .vk-group-section__widget-position{
     width: 313px;
     height: 500px; }
@@ -1517,6 +1518,11 @@ hr::after {
     width: 245px;
     margin-left: 0px;
     margin-top: 0px; }
+  .fb-group__index{
+    width: 245px;
+    margin-left: 35px;
+    margin: 0px 35px;
+    margin-top: 20px; }
   .fb-group .fb-page .fb_iframe_widget iframe{
     width: 245px; }
   .fb-group .fb_iframe_widget iframe{
@@ -1563,6 +1569,8 @@ hr::after {
     font-size: 16px; }
   .white-block__list{
     font-size: 16px; }
+  .white-block__background-others-monster{
+    background-position: 34% 50%; }
   .photo-three-line{
     width: 75%;
     -ms-flex-direction: column;

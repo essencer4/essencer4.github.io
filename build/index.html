@@ -7,13 +7,23 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="description" content="Многогранные текстовые приключения с нелинейным сюжетом набирают популярность! Добро пожаловать на сайт инди-команды NLB project. Интерактивные миры для вас!">
     <meta name="keywords" content="NLB project, nlb project, нлб прожект, НЛБ прожект, игра возвращение красной шапочки, игра Возвращение Красной шапочки, игра дикий остров, игра Дикий остров, игра варвар и подземные пещеры, игра Варвар и подземные пещеры, инди-игры, Инди-игры">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
     <script type="text/javascript" src="//vk.com/js/api/openapi.js?146"></script>
   </head>
 
   <body class="page">
+
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.8";
+  fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+
   <div class="container">
     <nav class="main-nav main-nav--closed main-nav--nojs">
       <button class="main-nav__toggle" type="button">Открыть меню</button>
@@ -56,7 +66,7 @@
 
     <h2 class="white-text-no-background">NLB project is an indie game developer team, consisting of three members.</h2>
 
-    <p class="mission-studio__text">One day we decided to create games. Currently our goal is to create uncommon, fascinating games that can emotionalize gamers. Now we work in visual novel genre, but in future plan to try some other genres.</p>
+    <p class="white-text-with-background">One day we decided to create games. Currently our goal is to create uncommon, fascinating games that can emotionalize gamers. Now we work in visual novel genre, but in future plan to try some other genres.</p>
 
     <hr>
 
@@ -106,9 +116,13 @@
         <a class="title-link" href="games.html#island"><h2 class="near-photo-text-1">"Wild Island Quest"</h2></a>
         <p class="near-photo-text-2 fig">Wild Island Quest is a visual novel about the adventures of the teenagers on a dangerous island. You can go to the Wild Island with the main characters and delve into a deadly adventure. Take one or a few friends with You, but keep in mind that all characters have their strengths and weaknesses...</p>
 
-        <a class="sort-column-1-link" href="games.html#island"><p>Game details</p></a>
+        <div class="sort-column-1-buttons">
 
-        <a class="steam-btn" href = "http://store.steampowered.com/app/392820" target="blank"><img src="img/steam.png" width="52" height="37" alt=""></a>
+          <a class="sort-column-1-link" href="games.html#island"><p>Game details</p></a>
+
+          <a class="steam-btn" href = "http://store.steampowered.com/app/392820" target="blank"><img src="img/steam.png" width="52" height="37" alt=""></a>
+
+        </div>
 
       </div>
 
@@ -124,11 +138,15 @@
         <p class="near-photo-text-2 fig">The Barbarian and the Subterranean Caves is an adventure visual novel about the heroic feats of the intrepid warrior Ragnar. Now you can become the famed adventurer Ragnar and bravely seek out all-new original adventures in this exciting game.
         </p>
 
-        <a class="sort-column-1-link sort-column-1-link-barbarian" href="games.html#barbarian"><p>Game details</p></a>
+        <div class="sort-column-1-buttons">
 
-        <a class="steam-btn steam-btn-barbarian" href = "http://store.steampowered.com/app/490690/" target="blank"><img src="img/steam.png" width="52" height="37" alt=""></a>
+          <a class="sort-column-1-link sort-column-1-link-barbarian" href="games.html#barbarian"><p>Game details</p></a>
 
-        <a class="steam-btn steam-btn-barbarian-google" href = "https://play.google.com/store/apps/details?id=com.nlbhub.instead.barbariancaves" target="blank"><img src="img/google_play.png" width="51" height="51" alt=""></a>
+          <a class="steam-btn steam-btn-barbarian" href = "http://store.steampowered.com/app/490690/" target="blank"><img src="img/steam.png" width="52" height="37" alt=""></a>
+
+          <a class="steam-btn steam-btn-barbarian-google" href = "https://play.google.com/store/apps/details?id=com.nlbhub.instead.barbariancaves" target="blank"><img src="img/google_play.png" width="51" height="51" alt=""></a>
+
+        </div>
 
       </div>
 
@@ -147,30 +165,13 @@
 
   <div class="vk-group-section">
 
-    <div class="vk-group-section__text-position">
+    <h2 class="white-text-with-background-h2">Latest news from our FB group</h2>
 
-      <h2 class="vk-group-section__text">Latest news from our FB group</h2>
+    <div class="fb-group fb-group__index">
 
-    </div>
+        <div class="fb-page" data-href="https://www.facebook.com/nlbproject/" data-tabs="timeline" data-width="500" data-height="450" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/nlbproject/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/nlbproject/">NLB project</a></blockquote></div>
 
-    <div class="vk-group-section__widget-position">
-
-      <div id="vk_widget">
-        <div id="vk_groups"></div>
       </div>
-
-      <script type="text/javascript" src="//vk.com/js/api/openapi.js?116"></script>
-      <script>
-        function VK_Widget_Init(){
-          document.getElementById('vk_groups').innerHTML = "";
-          var vk_width = document.getElementById('vk_widget').clientWidth;
-          VK.Widgets.Group("vk_groups", {mode: 4, wide: 1, width: "100%", height: "500px", color3: '0F25AE'}, 85687194);
-        };
-        window.addEventListener('load', VK_Widget_Init, false);
-        window.addEventListener('resize', VK_Widget_Init, false);
-      </script>
-
-    </div>
 
   </div>
 
@@ -178,9 +179,7 @@
 
     <div class="trailers">
 
-      <div class="trailers__text-center">
-        <h2 class="trailers__text">Our trailers</h2>
-      </div>
+      <h2 class="white-text-with-background-h2">Our trailers</h2>
 
       <div class="trailers__video">
         <iframe width="100%" height="100%" src="https://www.youtube.com/embed/GayT7Zr0_Us" frameborder="0" allowfullscreen></iframe>

@@ -19,7 +19,18 @@
   text-transform: uppercase;
 }
 
-.mission-studio__text {
+.white-text-with-background {
+  margin: 30px 15px 30px 15px;
+  padding: 10px 5px;
+  color: white;
+  text-transform: none;
+  text-indent: 15px;
+  background-color: #0F25AE;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.white-text-with-background-h2 {
   margin: 30px 15px 30px 15px;
   padding: 10px 5px;
   color: white;
@@ -35,12 +46,12 @@
     width: 87%;
     padding: 0px 20px;
 }
-  .mission-studio {
+  .white-text-with-background-h2 {
     @include title-medium;
 }
 
-  .mission-studio__text {
-    @include title-small;
+  .white-text-with-background {
+    @include title-small-plus;
 }
 
   .white-text-no-background--center {
@@ -50,21 +61,21 @@
 }
 
 @media (min-width: $tablet-widths) {
-  .mission-studio {
+  .white-text-with-background-h2 {
     @include title-big;
 }
 
-  .mission-studio__text {
-    @include title-small-plus;
+  .white-text-with-background  {
+    @include title-medium;
 }
 }
 
 @media (min-width: $desktop-widths) {
-  .mission-studio {
-    @include title-huge;
+  .white-text-with-background-h2 {
+    @include title-big;
 }
 
-  .mission-studio__text {
+  .white-text-with-background {
     @include title-medium;
     margin-bottom: 40px;
 }
