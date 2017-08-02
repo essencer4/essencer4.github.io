@@ -1,5 +1,10 @@
 .vk-group-section {
-  margin: 30px 0px;
+  margin: 5px 0px 25px 0px;
+}
+
+.vk-group-section__widget-position {
+  height: 500px;
+  margin: 0 auto;
 }
 
 #vk_groups,
@@ -10,21 +15,21 @@
 
 @media (max-width: $mobile-widths) {
   .vk-group-section__widget-position {
-    width: 313px;
-    height: 500px;
+    width: 284px;
+    margin: 0 auto;
 }
 }
 
 @media (min-width: $tablet-widths) {
   .vk-group-section__widget-position {
-    width: 761.5px;
-    height: 500px;
+    width: 732px;
+    margin: 0 auto;
 }
 }
 
 @media (min-width: $desktop-widths) {
   .vk-group-section__widget-position {
-    width: 1194px;
-    height: 500px;
+    width: 1160px;
+    margin: 0 auto;
 }
 }
