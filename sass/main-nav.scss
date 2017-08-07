@@ -20,10 +20,10 @@
     border: none;
     background-color: $white;
     &:hover {
-    background-color: $white;
+    background-color: $main-dark-blue-2;
     }
     &:active {
-    background-color: $white;
+    background-color: $main-dark-blue-2;
     }
 }
 
@@ -39,10 +39,17 @@
                 0 16px 0 0 $main-dark-blue;
 }
 
+  .main-nav--closed .main-nav__toggle:hover::before {
+    background-color: $white;
+    box-shadow: 0 8px 0 0 $white,
+                0 16px 0 0 $white;
+}
+
+
   .main-nav--closed .main-nav__toggle:active::before {
-    background-color: $main-dark-blue;
-    box-shadow: 0 8px 0 0 $main-dark-blue,
-                0 16px 0 0 $main-dark-blue;
+    background-color: $white;
+    box-shadow: 0 8px 0 0 $white,
+                0 16px 0 0 $white;
 }
 
   .main-nav--opened {
@@ -73,17 +80,21 @@
     }
     &:active::before,
     &:active::after {
-      background-color: $white;
+      background-color: $main-dark-blue;
+    }
+    &:hover::before,
+    &:hover::after {
+      background-color: $main-dark-blue;
     }
 }
 
   .main-nav--opened  .main-nav__toggle {
     background-color: $main-dark-blue-2;
     &:hover {
-      background-color: $main-dark-blue-2;
+      background-color: $white;
     }
     &:active {
-      background-color: $main-dark-blue-2;
+      background-color: $white;
     }
 }
 
@@ -139,8 +150,8 @@
       border-top-color: $main-dark-blue-hover;
     }
     &:active {
-      background-color: $blue-active;
-      border-top-color: $blue-active;
+      background-color: $main-dark-blue;
+      border-top-color: $main-dark-blue;
     }
 }
 

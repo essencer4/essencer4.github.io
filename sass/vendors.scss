@@ -1,0 +1,52 @@
+@-moz-document url-prefix() {
+
+  .near-photo-text-1 {
+    font-size: 14px;
+}
+
+  .near-photo-text-2 {
+    font-size: 13px;
+}
+
+  .sort-column-1-link {
+    padding: 18px 4px;
+}
+
+  .sort-column-1-link-barbarian-rus p {
+    letter-spacing: 0px;
+}
+
+  .sort-column-1-link p {
+    font-size: 9px;
+}
+
+}
+
+/*
+@-moz-document url-prefix() {
+
+@media (max-width: $mobile-widths) {
+
+  .container .page-header .rus-switch {
+    left: -45px;
+}
+
+}
+
+@media (min-width: $tablet-widths) {
+
+  .page .container .page-header .rus-switch {
+    left: 160px;
+}
+
+}
+
+@media (min-width: $desktop-widths) {
+
+  .container .page-header .rus-switch {
+    left: 185px;
+}
+
+}
+
+}*/

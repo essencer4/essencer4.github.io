@@ -235,7 +235,8 @@ body {
   text-transform: none;
   text-align: justify;
   text-indent: 15px;
-  margin: 0px; }
+  margin: 0px;
+  -webkit-font-size: 13px; }
 
 /*Кнопка подробнее*/
 .sort-column-1-buttons {
@@ -358,6 +359,18 @@ body {
   margin-top: 15px;
   border-radius: 10px; }
 
+.block-5-5 {
+  float: left;
+  margin-left: 10px;
+  margin-top: 15px;
+  border-radius: 10px; }
+
+.block-5-6 {
+  float: left;
+  margin-left: 10px;
+  margin-top: 15px;
+  border-radius: 10px; }
+
 /*Текст дикого острова*/
 .block-6 {
   position: relative;
@@ -437,9 +450,9 @@ hr::after {
   border: none;
   background-color: #ffffff; }
   .main-nav__toggle:hover {
-    background-color: #ffffff; }
+    background-color: #0F25AE; }
   .main-nav__toggle:active {
-    background-color: #ffffff; }
+    background-color: #0F25AE; }
 
 .main-nav--closed .main-nav__toggle::before {
   content: "";
@@ -451,9 +464,13 @@ hr::after {
   background-color: #051471;
   box-shadow: 0 8px 0 0 #051471, 0 16px 0 0 #051471; }
 
+.main-nav--closed .main-nav__toggle:hover::before {
+  background-color: #ffffff;
+  box-shadow: 0 8px 0 0 #ffffff, 0 16px 0 0 #ffffff; }
+
 .main-nav--closed .main-nav__toggle:active::before {
-  background-color: #051471;
-  box-shadow: 0 8px 0 0 #051471, 0 16px 0 0 #051471; }
+  background-color: #ffffff;
+  box-shadow: 0 8px 0 0 #ffffff, 0 16px 0 0 #ffffff; }
 
 .main-nav--opened {
   z-index: 100; }
@@ -477,14 +494,16 @@ hr::after {
   .main-nav--opened .main-nav__toggle::after {
     transform: rotate(-45deg); }
   .main-nav--opened .main-nav__toggle:active::before, .main-nav--opened .main-nav__toggle:active::after {
-    background-color: #ffffff; }
+    background-color: #051471; }
+  .main-nav--opened .main-nav__toggle:hover::before, .main-nav--opened .main-nav__toggle:hover::after {
+    background-color: #051471; }
 
 .main-nav--opened .main-nav__toggle {
   background-color: #0F25AE; }
   .main-nav--opened .main-nav__toggle:hover {
-    background-color: #0F25AE; }
+    background-color: #ffffff; }
   .main-nav--opened .main-nav__toggle:active {
-    background-color: #0F25AE; }
+    background-color: #ffffff; }
 
 .main-nav__items {
   /*min-height: 255px;*/
@@ -536,8 +555,8 @@ hr::after {
   border-top-color: #4458D6; }
 
 .main-nav__item a[href]:active {
-  background-color: #5496bd;
-  border-top-color: #5496bd; }
+  background-color: #051471;
+  border-top-color: #051471; }
 
 .white-text-no-background {
   width: 100%;
@@ -727,6 +746,10 @@ hr::after {
   color: #fff;
   background-color: #051471;
   border-radius: 5px; }
+  .white-block__button:hover {
+    background-color: #4458D6; }
+  .white-block__button:active {
+    background-color: #0F25AE; }
 
 .white-block__button span {
   display: block;
@@ -777,6 +800,10 @@ hr::after {
   -ms-flex-pack: center;
       justify-content: center;
   margin: 0px 350px; }
+
+#fb-root iframe {
+  height: 200px !important;
+  border-bottom: 1px solid #AAA !important; }
 
 .twit-group {
   display: -ms-flexbox;
@@ -1014,6 +1041,48 @@ hr::after {
 .popup p {
   margin: 0;
   padding: 5px 0; }
+
+@-moz-document url-prefix() {
+  .near-photo-text-1 {
+    font-size: 14px; }
+  .near-photo-text-2 {
+    font-size: 13px; }
+  .sort-column-1-link {
+    padding: 18px 4px; }
+  .sort-column-1-link-barbarian-rus p {
+    letter-spacing: 0px; }
+  .sort-column-1-link p {
+    font-size: 9px; } }
+
+/*
+@-moz-document url-prefix() {
+
+@media (max-width: $mobile-widths) {
+
+  .container .page-header .rus-switch {
+    left: -45px;
+}
+
+}
+
+@media (min-width: $tablet-widths) {
+
+  .page .container .page-header .rus-switch {
+    left: 160px;
+}
+
+}
+
+@media (min-width: $desktop-widths) {
+
+  .container .page-header .rus-switch {
+    left: 185px;
+}
+
+}
+
+}*/
+
 @media (min-width: 768px){
   .container{
     width: 768px; }
@@ -1023,6 +1092,20 @@ hr::after {
     width: 768px; }
   .metrika{
     margin: 6px 0px 0px 8px; }
+  .features-1,
+  .features-2,
+  .features-3{
+    margin: 20px auto;
+    width: 768px; }
+  .features-1::after,
+    .features-2::after,
+    .features-3::after{
+    content: "";
+    display: table;
+    clear: both; }
+  .block-5-5,
+  .block-5-6{
+    display: none; }
   .main-nav{
     width: auto;
     min-height: 59px;
@@ -1177,6 +1260,7 @@ hr::after {
   .popup img{
     max-width: 680px;
     max-height: 400px; } }
+
 @media (min-width: 1200px){
   .container{
     width: 1200px; }
@@ -1190,13 +1274,20 @@ hr::after {
   .features-2,
   .features-3{
     margin: 20px auto;
-    width: 768px; }
+    width: 1000px; }
   .features-1::after,
     .features-2::after,
     .features-3::after{
     content: "";
     display: table;
     clear: both; }
+  .block-5{
+    width: 735px; }
+  .block-5-3{
+    margin-top: 5px; }
+  .block-5-5,
+  .block-5-6{
+    display: block; }
   .main-nav__wrapper{
     width: 1200px;
     position: fixed;
@@ -1299,15 +1390,15 @@ hr::after {
     margin: 20px; }
   .vk-group{
     width: 500px; }
-  .fb-group__index{
-    width: 500px;
-    margin: 0px 350px; }
   .vk-group #vk_groups,
   .vk-group #vk_groups iframe{
     width: 500px !important;
     height: 450px !important; }
   .fb-group{
     width: 500px; }
+  .fb-group__index{
+    width: 500px;
+    margin: 0px 350px; }
   .twit-group{
     width: 500px; }
   .youtube-group{
@@ -1347,6 +1438,7 @@ hr::after {
   .popup img{
     max-width: 870px;
     max-height: 480px; } }
+
 @media (max-width: 767px){
   .container-page{
     width: 320px; }
@@ -1391,9 +1483,10 @@ hr::after {
     display: flex;
     -ms-flex-direction: column;
     flex-direction: column; }
-  .block-5-3{
-    display: none; }
-  .block-5-4{
+  .block-5-3,
+  .block-5-4,
+  .block-5-5,
+  .block-5-6{
     display: none; }
   .block-6{
     margin-right: 0px; }
@@ -1525,8 +1618,7 @@ hr::after {
   .fb-group__index{
     width: 245px;
     margin-left: 35px;
-    margin: 0px 35px;
-    margin-top: 20px; }
+    margin: 0px 35px; }
   .fb-group .fb-page .fb_iframe_widget iframe{
     width: 245px; }
   .fb-group .fb_iframe_widget iframe{
@@ -1590,7 +1682,7 @@ hr::after {
     height: 300px;
     padding: 5px; }
   .overlay:target + .popup{
-    top: 20%; }
+    top: 18%; }
   .popup img{
     max-width: 270px;
     max-height: 290px; } }

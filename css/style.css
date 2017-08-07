@@ -198,7 +198,6 @@ body {
       flex-direction: column;
   -ms-flex-pack: justify;
       justify-content: space-between;
-  position: relative;
   float: left;
   width: 255px;
   height: 300px;
@@ -236,7 +235,8 @@ body {
   text-transform: none;
   text-align: justify;
   text-indent: 15px;
-  margin: 0px; }
+  margin: 0px;
+  -webkit-font-size: 13px; }
 
 /*Кнопка подробнее*/
 .sort-column-1-buttons {
@@ -295,7 +295,7 @@ body {
   height: 65px;
   box-sizing: border-box;
   margin: 15px 10px;
-  padding: 14px 20px 6px 20px;
+  padding: 14px 27px 6px 27px;
   text-decoration: none;
   color: #fff;
   background-color: #051471;
@@ -354,6 +354,18 @@ body {
   border-radius: 10px; }
 
 .block-5-4 {
+  float: left;
+  margin-left: 10px;
+  margin-top: 15px;
+  border-radius: 10px; }
+
+.block-5-5 {
+  float: left;
+  margin-left: 10px;
+  margin-top: 15px;
+  border-radius: 10px; }
+
+.block-5-6 {
   float: left;
   margin-left: 10px;
   margin-top: 15px;
@@ -438,9 +450,9 @@ hr::after {
   border: none;
   background-color: #ffffff; }
   .main-nav__toggle:hover {
-    background-color: #ffffff; }
+    background-color: #0F25AE; }
   .main-nav__toggle:active {
-    background-color: #ffffff; }
+    background-color: #0F25AE; }
 
 .main-nav--closed .main-nav__toggle::before {
   content: "";
@@ -452,9 +464,13 @@ hr::after {
   background-color: #051471;
   box-shadow: 0 8px 0 0 #051471, 0 16px 0 0 #051471; }
 
+.main-nav--closed .main-nav__toggle:hover::before {
+  background-color: #ffffff;
+  box-shadow: 0 8px 0 0 #ffffff, 0 16px 0 0 #ffffff; }
+
 .main-nav--closed .main-nav__toggle:active::before {
-  background-color: #051471;
-  box-shadow: 0 8px 0 0 #051471, 0 16px 0 0 #051471; }
+  background-color: #ffffff;
+  box-shadow: 0 8px 0 0 #ffffff, 0 16px 0 0 #ffffff; }
 
 .main-nav--opened {
   z-index: 100; }
@@ -478,14 +494,16 @@ hr::after {
   .main-nav--opened .main-nav__toggle::after {
     transform: rotate(-45deg); }
   .main-nav--opened .main-nav__toggle:active::before, .main-nav--opened .main-nav__toggle:active::after {
-    background-color: #ffffff; }
+    background-color: #051471; }
+  .main-nav--opened .main-nav__toggle:hover::before, .main-nav--opened .main-nav__toggle:hover::after {
+    background-color: #051471; }
 
 .main-nav--opened .main-nav__toggle {
   background-color: #0F25AE; }
   .main-nav--opened .main-nav__toggle:hover {
-    background-color: #0F25AE; }
+    background-color: #ffffff; }
   .main-nav--opened .main-nav__toggle:active {
-    background-color: #0F25AE; }
+    background-color: #ffffff; }
 
 .main-nav__items {
   /*min-height: 255px;*/
@@ -537,8 +555,8 @@ hr::after {
   border-top-color: #4458D6; }
 
 .main-nav__item a[href]:active {
-  background-color: #5496bd;
-  border-top-color: #5496bd; }
+  background-color: #051471;
+  border-top-color: #051471; }
 
 .white-text-no-background {
   width: 100%;
@@ -559,7 +577,17 @@ hr::after {
   letter-spacing: 2px;
   text-transform: uppercase; }
 
-.mission-studio__text {
+.white-text-with-background {
+  margin: 30px 15px 30px 15px;
+  padding: 10px 5px;
+  color: white;
+  text-transform: none;
+  text-indent: 15px;
+  background-color: #0F25AE;
+  border-radius: 10px;
+  text-align: center; }
+
+.white-text-with-background-h2 {
   margin: 30px 15px 30px 15px;
   padding: 10px 5px;
   color: white;
@@ -630,27 +658,7 @@ hr::after {
   text-decoration: underline; }
 
 .trailers {
-  margin: 30px 0px; }
-
-.trailers__text {
-  display: block;
-  color: white;
-  margin: 30px 15px 30px 15px;
-  padding: 10px 5px;
-  color: white;
-  text-transform: none;
-  text-indent: 15px;
-  background-color: #0F25AE;
-  border-radius: 10px;
-  text-align: center; }
-
-.trailers__text-center {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: row;
-      flex-direction: row;
-  -ms-flex-pack: center;
-      justify-content: center; }
+  margin: 5px 0px; }
 
 .trailers__video {
   display: block;
@@ -659,23 +667,11 @@ hr::after {
   text-align: center; }
 
 .vk-group-section {
-  margin: 30px 0px; }
+  margin: 5px 0px 25px 0px; }
 
-.vk-group-section__text-position {
+.vk-group-section__widget-position {
+  height: 500px;
   margin: 0 auto; }
-
-.vk-group-section__text {
-  display: block;
-  width: 635px;
-  color: white;
-  padding: 10px 5px;
-  color: white;
-  text-transform: none;
-  text-indent: 15px;
-  background-color: #0F25AE;
-  border-radius: 10px;
-  text-align: center;
-  font-size: 18px; }
 
 #vk_groups,
 #vk_groups iframe {
@@ -750,6 +746,10 @@ hr::after {
   color: #fff;
   background-color: #051471;
   border-radius: 5px; }
+  .white-block__button:hover {
+    background-color: #4458D6; }
+  .white-block__button:active {
+    background-color: #0F25AE; }
 
 .white-block__button span {
   display: block;
@@ -791,6 +791,19 @@ hr::after {
   height: 525px;
   margin-left: 25px;
   margin-top: 20px; }
+
+.fb-group__index {
+  width: 100%;
+  height: 450px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  margin: 0px 350px; }
+
+#fb-root iframe {
+  height: 200px !important;
+  border-bottom: 1px solid #AAA !important; }
 
 .twit-group {
   display: -ms-flexbox;
@@ -852,6 +865,35 @@ hr::after {
   width: 195px;
   height: 65px;
   border: none; }
+
+.white-block__background-others-monster {
+  background-image: url("../img/others-games-1-background.jpg");
+  background-size: cover; }
+
+.white-block__background-others-aldar {
+  background-image: url("../img/others-games-2-background.jpg");
+  background-size: cover;
+  background-position: 50% 50%; }
+
+.white-block__background-others-zog {
+  background-image: url("../img/others-games-3-background.jpg");
+  background-size: cover;
+  background-position: 50% 50%; }
+
+.white-block__background-others-red {
+  background-image: url("../img/games-red-background.jpg");
+  background-size: cover;
+  background-position: 50% 50%; }
+
+.white-block__background-others-island {
+  background-image: url("../img/games-island-background.jpg");
+  background-size: cover;
+  background-position: 50% 50%; }
+
+.white-block__background-others-caves {
+  background-image: url("../img/games-barbarian-background.jpg");
+  background-size: cover;
+  background-position: 50% 50%; }
 
 .photo-three-line {
   display: -ms-flexbox;
@@ -999,6 +1041,48 @@ hr::after {
 .popup p {
   margin: 0;
   padding: 5px 0; }
+
+@-moz-document url-prefix() {
+  .near-photo-text-1 {
+    font-size: 14px; }
+  .near-photo-text-2 {
+    font-size: 13px; }
+  .sort-column-1-link {
+    padding: 18px 4px; }
+  .sort-column-1-link-barbarian-rus p {
+    letter-spacing: 0px; }
+  .sort-column-1-link p {
+    font-size: 9px; } }
+
+/*
+@-moz-document url-prefix() {
+
+@media (max-width: $mobile-widths) {
+
+  .container .page-header .rus-switch {
+    left: -45px;
+}
+
+}
+
+@media (min-width: $tablet-widths) {
+
+  .page .container .page-header .rus-switch {
+    left: 160px;
+}
+
+}
+
+@media (min-width: $desktop-widths) {
+
+  .container .page-header .rus-switch {
+    left: 185px;
+}
+
+}
+
+}*/
+
 @media (min-width: 768px){
   .container{
     width: 768px; }
@@ -1008,6 +1092,20 @@ hr::after {
     width: 768px; }
   .metrika{
     margin: 6px 0px 0px 8px; }
+  .features-1,
+  .features-2,
+  .features-3{
+    margin: 20px auto;
+    width: 768px; }
+  .features-1::after,
+    .features-2::after,
+    .features-3::after{
+    content: "";
+    display: table;
+    clear: both; }
+  .block-5-5,
+  .block-5-6{
+    display: none; }
   .main-nav{
     width: auto;
     min-height: 59px;
@@ -1064,12 +1162,12 @@ hr::after {
   .main-nav__item-logo a{
     padding: 4px 0px;
     width: 120px; }
-  .mission-studio{
+  .white-text-with-background-h2{
     font-size: 21px;
     font-family: PT Sans;
     font-weight: 900; }
-  .mission-studio__text{
-    font-size: 16px;
+  .white-text-with-background{
+    font-size: 18px;
     line-height: 1.25;
     font-family: "PT Sans", "Arial", sans-serif;
     font-weight: 400; }
@@ -1101,18 +1199,12 @@ hr::after {
     font-size: 24px; }
   .trailers{
     margin: -10px 0px; }
-  .trailers__text{
-    width: 630px; }
   .trailers__video{
     width: 640px;
     height: 360px; }
-  .vk-group-section__text-position{
-    width: 500px; }
-  .vk-group-section__text{
-    width: 500px; }
   .vk-group-section__widget-position{
-    width: 761.5px;
-    height: 500px; }
+    width: 732px;
+    margin: 0 auto; }
   .white-block__h2--right{
     width: 520px;
     margin-top: 15px;
@@ -1131,6 +1223,9 @@ hr::after {
     height: 450px !important; }
   .fb-group{
     width: 300px; }
+  .fb-group__index{
+    width: 500px;
+    margin: 0px 130px; }
   .twit-group{
     width: 300px; }
   .youtube-group{
@@ -1152,6 +1247,8 @@ hr::after {
   .white-block__list{
     font-size: 18px;
     line-height: 25px; }
+  .white-block__background-others-monster{
+    background-position: 50% 50%; }
   .photo-three-line a img{
     width: 234px;
     height: 140px; }
@@ -1163,6 +1260,7 @@ hr::after {
   .popup img{
     max-width: 680px;
     max-height: 400px; } }
+
 @media (min-width: 1200px){
   .container{
     width: 1200px; }
@@ -1176,13 +1274,20 @@ hr::after {
   .features-2,
   .features-3{
     margin: 20px auto;
-    width: 768px; }
+    width: 1000px; }
   .features-1::after,
     .features-2::after,
     .features-3::after{
     content: "";
     display: table;
     clear: both; }
+  .block-5{
+    width: 735px; }
+  .block-5-3{
+    margin-top: 5px; }
+  .block-5-5,
+  .block-5-6{
+    display: block; }
   .main-nav__wrapper{
     width: 1200px;
     position: fixed;
@@ -1228,11 +1333,11 @@ hr::after {
     box-sizing: border-box;
     border-left: 3px solid #051471;
     border-right: 3px solid #051471; }
-  .mission-studio{
-    font-size: 30px;
+  .white-text-with-background-h2{
+    font-size: 21px;
     font-family: PT Sans;
     font-weight: 900; }
-  .mission-studio__text{
+  .white-text-with-background{
     font-size: 18px;
     line-height: 1.25;
     font-family: "PT Sans", "Arial", sans-serif;
@@ -1270,18 +1375,12 @@ hr::after {
     font-size: 32px; }
   .trailers{
     margin: -10px 0px; }
-  .trailers__text{
-    width: 950px; }
   .trailers__video{
     width: 960px;
     height: 540px; }
-  .vk-group-section__text-position{
-    width: 700px; }
-  .vk-group-section__text{
-    width: 700px; }
   .vk-group-section__widget-position{
-    width: 1194px;
-    height: 500px; }
+    width: 1160px;
+    margin: 0 auto; }
   .white-block__h2--right{
     width: 900px;
     margin-top: 25px; }
@@ -1297,6 +1396,9 @@ hr::after {
     height: 450px !important; }
   .fb-group{
     width: 500px; }
+  .fb-group__index{
+    width: 500px;
+    margin: 0px 350px; }
   .twit-group{
     width: 500px; }
   .youtube-group{
@@ -1321,6 +1423,8 @@ hr::after {
   .white-block__list{
     font-size: 18px;
     line-height: 25px; }
+  .white-block__background-others-monster{
+    background-position: 50% 50%; }
   .photo-three-line{
     width: 98%; }
   .photo-three-line a img{
@@ -1334,6 +1438,7 @@ hr::after {
   .popup img{
     max-width: 870px;
     max-height: 480px; } }
+
 @media (max-width: 767px){
   .container-page{
     width: 320px; }
@@ -1378,9 +1483,10 @@ hr::after {
     display: flex;
     -ms-flex-direction: column;
     flex-direction: column; }
-  .block-5-3{
-    display: none; }
-  .block-5-4{
+  .block-5-3,
+  .block-5-4,
+  .block-5-5,
+  .block-5-6{
     display: none; }
   .block-6{
     margin-right: 0px; }
@@ -1438,13 +1544,13 @@ hr::after {
   .white-text-no-background{
     width: 87%;
     padding: 0px 20px; }
-  .mission-studio{
+  .white-text-with-background-h2{
     font-size: 18px;
     line-height: 1.25;
     font-family: "PT Sans", "Arial", sans-serif;
     font-weight: 400; }
-  .mission-studio__text{
-    font-size: 14px;
+  .white-text-with-background{
+    font-size: 16px;
     line-height: 1.25;
     font-family: "PT Sans", "Arial", sans-serif;
     font-weight: 400; }
@@ -1479,21 +1585,13 @@ hr::after {
   .switch-lang p{
     padding: 10px 25px;
     font-size: 28px; }
-  .trailers__text{
-    width: 285px;
-    margin: 0px 10px 30px 10px; }
   .trailers__video{
     width: 315px;
     height: 180px;
     padding-bottom: 10px; }
-  .vk-group-section__text-position{
-    width: 300px; }
-  .vk-group-section__text{
-    width: 300px;
-    padding: 10px 0px; }
   .vk-group-section__widget-position{
-    width: 313px;
-    height: 500px; }
+    width: 284px;
+    margin: 0 auto; }
   .white-block__button{
     width: 200px; }
   .white-block__h2--right{
@@ -1517,6 +1615,10 @@ hr::after {
     width: 245px;
     margin-left: 0px;
     margin-top: 0px; }
+  .fb-group__index{
+    width: 245px;
+    margin-left: 35px;
+    margin: 0px 35px; }
   .fb-group .fb-page .fb_iframe_widget iframe{
     width: 245px; }
   .fb-group .fb_iframe_widget iframe{
@@ -1563,6 +1665,8 @@ hr::after {
     font-size: 16px; }
   .white-block__list{
     font-size: 16px; }
+  .white-block__background-others-monster{
+    background-position: 34% 50%; }
   .photo-three-line{
     width: 75%;
     -ms-flex-direction: column;
@@ -1578,7 +1682,7 @@ hr::after {
     height: 300px;
     padding: 5px; }
   .overlay:target + .popup{
-    top: 20%; }
+    top: 18%; }
   .popup img{
     max-width: 270px;
     max-height: 290px; } }

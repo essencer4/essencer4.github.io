@@ -50,6 +50,7 @@
   text-align: justify;
   text-indent: 15px;
   margin: 0px;
+  -webkit-font-size: 13px;
 }
 
 /*Кнопка подробнее*/
@@ -192,6 +193,20 @@
   border-radius: 10px;
 }
 
+.block-5-5 {
+  float: left;
+  margin-left: 10px;
+  margin-top: 15px;
+  border-radius: 10px;
+}
+
+.block-5-6 {
+  float: left;
+  margin-left: 10px;
+  margin-top: 15px;
+  border-radius: 10px;
+}
+
 /*Текст дикого острова*/
 
 .block-6 {
@@ -263,11 +278,10 @@
     flex-direction: column;
 }
 
-  .block-5-3 {
-    display: none;
-}
-
-  .block-5-4 {
+  .block-5-3,
+  .block-5-4,
+  .block-5-5,
+  .block-5-6 {
     display: none;
 }
 
@@ -285,7 +299,18 @@
 }
 
 @media (min-width: $tablet-widths) {
+  .features-1,
+  .features-2,
+  .features-3 {
+    @include clearfix;
+    margin: 20px auto;
+    width: 768px;
+}
 
+  .block-5-5,
+  .block-5-6 {
+    display: none;
+}
 }
 
 @media (min-width: $desktop-widths) {
@@ -294,6 +319,19 @@
   .features-3 {
     @include clearfix;
     margin: 20px auto;
-    width: 768px;
+    width: 1000px;
+}
+
+.block-5 {
+  width: 735px;
+}
+
+  .block-5-3 {
+    margin-top: 5px;
+}
+
+  .block-5-5,
+  .block-5-6 {
+    display: block;
 }
 }

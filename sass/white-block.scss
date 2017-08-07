@@ -70,8 +70,14 @@
   padding: 10px 25px;
   text-decoration: none;
   color: #fff;
-  background-color: #051471;
+  background-color: $main-dark-blue;
   border-radius: 5px;
+  &:hover {
+    background-color: $main-dark-blue-hover;
+  }
+  &:active {
+    background-color: $main-dark-blue-2;
+  }
 }
 
 .white-block__button span {
@@ -123,6 +129,11 @@
   display: flex;
   justify-content: center;
   margin: 0px 350px;
+}
+
+#fb-root iframe {
+    height: 200px !important;
+    border-bottom: 1px solid #AAA !important;
 }
 
 .twit-group {
@@ -263,12 +274,12 @@
     width: 245px;
     margin-left: 35px;
     margin: 0px 35px;
-    margin-top: 20px;
 }
 
 
   .fb-group .fb-page .fb_iframe_widget iframe {
     width: 245px;
+
 }
 
   .fb-group .fb_iframe_widget iframe {
@@ -446,11 +457,6 @@
     width: 500px;
 }
 
-  .fb-group__index {
-    width: 500px;
-    margin: 0px 350px;
-}
-
   .vk-group #vk_groups,
   .vk-group #vk_groups iframe {
     width: 500px !important;
@@ -460,6 +466,12 @@
   .fb-group {
     width: 500px;
 }
+
+  .fb-group__index {
+    width: 500px;
+    margin: 0px 350px;
+}
+
 
   .twit-group {
     width: 500px;
