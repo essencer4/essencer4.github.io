@@ -304,7 +304,7 @@
   .features-3 {
     @include clearfix;
     margin: 20px auto;
-    width: 768px;
+    width: 762px;
 }
 
   .block-5-5,
@@ -333,5 +333,9 @@
   .block-5-5,
   .block-5-6 {
     display: block;
+}
+
+  .features-2 .block-6 {
+    margin-right: 0px;
 }
 }
