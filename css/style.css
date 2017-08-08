@@ -601,7 +601,7 @@ hr::after {
   background-color: #00472E;
   background-image: url("../img/nature.jpg");
   background-repeat: no-repeat;
-  /**background-size: cover;**/
+  background-size: cover;
   background-attachment: fixed; }
 
 .page-header {
@@ -1096,7 +1096,7 @@ hr::after {
   .features-2,
   .features-3{
     margin: 20px auto;
-    width: 768px; }
+    width: 762px; }
   .features-1::after,
     .features-2::after,
     .features-3::after{
@@ -1288,6 +1288,8 @@ hr::after {
   .block-5-5,
   .block-5-6{
     display: block; }
+  .features-2 .block-6{
+    margin-right: 0px; }
   .main-nav__wrapper{
     width: 1200px;
     position: fixed;
@@ -1593,7 +1595,7 @@ hr::after {
     width: 284px;
     margin: 0 auto; }
   .white-block__button{
-    width: 200px; }
+    width: 194px; }
   .white-block__h2--right{
     width: 245px;
     margin: 25px 0px 5px 0px;
