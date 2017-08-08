@@ -1496,6 +1496,8 @@ hr::after {
     margin-left: 0px; }
   .block-8{
     width: 245px; }
+  .near-photo-text-1{
+    padding: 0px 0px; }
   .main-nav{
     height: 58px; }
   .main-nav__item a{
@@ -1588,7 +1590,7 @@ hr::after {
     padding: 10px 25px;
     font-size: 28px; }
   .trailers__video{
-    width: 315px;
+    width: 285px;
     height: 180px;
     padding-bottom: 10px; }
   .vk-group-section__widget-position{
@@ -1618,9 +1620,8 @@ hr::after {
     margin-left: 0px;
     margin-top: 0px; }
   .fb-group__index{
-    width: 245px;
-    margin-left: 35px;
-    margin: 0px 35px; }
+    width: 285px;
+    margin: 0px 14.5px; }
   .fb-group .fb-page .fb_iframe_widget iframe{
     width: 245px; }
   .fb-group .fb_iframe_widget iframe{
