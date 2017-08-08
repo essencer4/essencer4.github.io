@@ -1228,6 +1228,9 @@ hr::after {
     margin: 0px 130px; }
   .twit-group{
     width: 300px; }
+  .twit-group_index-page{
+    width: 727px;
+    margin: 0px 17px; }
   .youtube-group{
     width: 300px; }
   .vk-group-section__widget-position-contacts{
@@ -1403,6 +1406,9 @@ hr::after {
     margin: 0px 350px; }
   .twit-group{
     width: 500px; }
+  .twit-group_index-page{
+    width: 1160px;
+    margin: 0px 17px; }
   .youtube-group{
     width: 500px; }
   .vk-group-section__widget-position-contacts{
@@ -1476,6 +1482,9 @@ hr::after {
   .features-3{
     margin-top: 18px;
     margin-bottom: -5px; }
+  .features-3 .block-7 .near-photo-text-1{
+    font-size: 20px;
+    letter-spacing: 1px; }
   .block-3{
     margin-left: 0px; }
   .block-5{
@@ -1630,6 +1639,9 @@ hr::after {
     width: 245px;
     margin-left: 0px;
     margin-top: 0px; }
+  .twit-group_index-page{
+    width: 285px;
+    margin: 0px 14.5px; }
   .youtube-group{
     width: 245px;
     margin-left: 0px;
