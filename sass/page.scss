@@ -1,26 +1,8 @@
 .page {
   background-color: #00472E;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-position: center center;
   background-attachment: fixed;
-}
-
-@media (max-width: 320px) {
-  .page {
-    background-image: url("../img/nature-mobile@1x.jpg");
-    background-size: 100% auto;
-}
-}
-
-@media (min-width: 321px) and (max-width: 768px) {
-  .page {
-    background-image: url("../img/nature-tablet@1x.jpg");
-    background-size: 100% auto;
-}
-}
-
-@media (min-width: $desktop-widths) {
-  .page {
-    background-image: url("../img/nature-desktop@1x.jpg");
-}
+  background-size: cover;
+  background-image: url("../img/nature-desktop@1x.jpg");
 }
