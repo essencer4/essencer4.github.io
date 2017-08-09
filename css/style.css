@@ -1726,9 +1726,9 @@ hr::after {
 @media (max-width: 320px){
   .page{
     background-image: url("../img/nature-mobile@1x.jpg");
-    background-size: cover; } }
+    background-size: 100% auto; } }
 
 @media (min-width: 321px) and (max-width: 768px){
   .page{
     background-image: url("../img/nature-tablet@1x.jpg");
-    background-size: cover; } }
+    background-size: 100% auto; } }
