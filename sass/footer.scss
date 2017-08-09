@@ -11,7 +11,6 @@
   background: #0F25AE;
   opacity: 0.9;
   margin-bottom: 625px;
-  margin-top: -6px;
   z-index: 1;
   border: 3px solid black;
   border-top-style: none;
@@ -141,10 +140,11 @@
 
 @media (max-width: $mobile-widths) {
   .main-footer-page {
-    width: 320px;
+    width: 318px;
     flex-direction: column;
     height: 200px;
     margin-bottom: 5px;
+    border: 1px solid black;
 }
 
   .metrika {

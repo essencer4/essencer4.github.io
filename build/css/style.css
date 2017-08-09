@@ -18,7 +18,7 @@ body {
 
 .container {
   margin: auto;
-  width: 320px;
+  width: 318px;
   background: #fff;
   border-radius: 1px 1px 50px 50px; }
 
@@ -54,7 +54,6 @@ body {
   background: #0F25AE;
   opacity: 0.9;
   margin-bottom: 625px;
-  margin-top: -6px;
   z-index: 1;
   border: 3px solid black;
   border-top-style: none;
@@ -432,11 +431,11 @@ hr::after {
   margin: 0px 0px 15px 0px; }
 
 .hr-last {
-  margin: 25px 0px 5px 0px; }
+  margin: 25px 0px 0px 0px; }
 
 .main-nav {
   position: relative;
-  width: 320px;
+  width: 318px;
   height: 55px;
   /*временно*/
   min-height: 50px;
@@ -1465,13 +1464,15 @@ hr::after {
 
 @media (max-width: 767px){
   .container-page{
-    width: 320px; }
+    width: 318px;
+    border: 1px solid black; }
   .main-footer-page{
-    width: 320px;
+    width: 318px;
     -ms-flex-direction: column;
     flex-direction: column;
     height: 200px;
-    margin-bottom: 5px; }
+    margin-bottom: 5px;
+    border: 1px solid black; }
   .metrika{
     margin: 6px 0px 0px 32px; }
   .footer-visit{
@@ -1595,6 +1596,8 @@ hr::after {
     padding: 0px 35px; }
   .page{
     background-image: url("../img/nature-mobile@1x.jpg"); }
+  .page-header{
+    border: 1px solid black; }
   .page-header__index{
     background-image: url("../img/header-index-mobile@1x.jpg"); }
   .page-header__soft{
