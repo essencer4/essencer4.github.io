@@ -7,13 +7,15 @@
 
 @media (max-width: $mobile-widths) {
   .page {
-    background-image: url("../img/nature-mobile@1x.jpg");
+    background-image: url("../img/nature-tablet@1x.jpg");
+    background-size: cover;
 }
 }
 
 @media (min-width: $tablet-widths) {
   .page {
     background-image: url("../img/nature-tablet@1x.jpg");
+    background-size: cover;
 }
 }
 
