@@ -605,7 +605,6 @@ hr::after {
 
 .page {
   background-color: #00472E;
-  background-image: url("../img/nature.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed; }
@@ -1187,6 +1186,8 @@ hr::after {
     line-height: 1.25;
     font-family: "PT Sans", "Arial", sans-serif;
     font-weight: 400; }
+  .page{
+    background-image: url("../img/nature-tablet@1x.jpg"); }
   .page-header{
     min-height: 432px;
     background-size: cover;
@@ -1362,6 +1363,8 @@ hr::after {
     font-family: "PT Sans", "Arial", sans-serif;
     font-weight: 400;
     margin-bottom: 40px; }
+  .page{
+    background-image: url("../img/nature-desktop@1x.jpg"); }
   .page-header{
     box-sizing: border-box;
     width: 100%;
@@ -1588,6 +1591,8 @@ hr::after {
     font-weight: 400; }
   .white-text-no-background--center{
     padding: 0px 35px; }
+  .page{
+    background-image: url("../img/nature-mobile@1x.jpg"); }
   .page-header__index{
     background-image: url("../img/header-index-mobile@1x.jpg"); }
   .page-header__soft{
