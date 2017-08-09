@@ -605,11 +605,10 @@ hr::after {
 
 .page {
   background-color: #00472E;
+  background-image: url("../img/nature-desktop@1x.jpg");
   background-repeat: no-repeat;
-  background-position: center center;
-  background-attachment: fixed;
   background-size: cover;
-  background-image: url("../img/nature-desktop@1x.jpg"); }
+  background-attachment: fixed; }
 
 .page-header {
   display: -ms-flexbox;
@@ -1467,7 +1466,8 @@ hr::after {
     width: 320px;
     -ms-flex-direction: column;
     flex-direction: column;
-    height: 200px; }
+    height: 200px;
+    margin-bottom: 5px; }
   .metrika{
     margin: 6px 0px 0px 32px; }
   .footer-visit{
