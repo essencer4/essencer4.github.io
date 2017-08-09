@@ -1186,9 +1186,6 @@ hr::after {
     line-height: 1.25;
     font-family: "PT Sans", "Arial", sans-serif;
     font-weight: 400; }
-  .page{
-    background-image: url("../img/nature-tablet@1x.jpg");
-    background-size: cover; }
   .page-header{
     min-height: 432px;
     background-size: cover;
@@ -1592,9 +1589,6 @@ hr::after {
     font-weight: 400; }
   .white-text-no-background--center{
     padding: 0px 35px; }
-  .page{
-    background-image: url("../img/nature-tablet@1x.jpg");
-    background-size: cover; }
   .page-header__index{
     background-image: url("../img/header-index-mobile@1x.jpg"); }
   .page-header__soft{
@@ -1728,3 +1722,13 @@ hr::after {
   .popup img{
     max-width: 270px;
     max-height: 290px; } }
+
+@media (max-width: 320px){
+  .page{
+    background-image: url("../img/nature-mobile@1x.jpg");
+    background-size: cover; } }
+
+@media (min-width: 321px) and (max-width: 768px){
+  .page{
+    background-image: url("../img/nature-tablet@1x.jpg");
+    background-size: cover; } }

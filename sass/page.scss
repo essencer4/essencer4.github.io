@@ -5,14 +5,14 @@
   background-attachment: fixed;
 }
 
-@media (max-width: $mobile-widths) {
+@media (max-width: 320px) {
   .page {
-    background-image: url("../img/nature-tablet@1x.jpg");
+    background-image: url("../img/nature-mobile@1x.jpg");
     background-size: cover;
 }
 }
 
-@media (min-width: $tablet-widths) {
+@media (min-width: 321px) and (max-width: 768px) {
   .page {
     background-image: url("../img/nature-tablet@1x.jpg");
     background-size: cover;
