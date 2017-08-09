@@ -605,6 +605,12 @@ hr::after {
   background-attachment: fixed; }
 
 .page-header {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
+  -ms-flex-align: end;
+      align-items: flex-end;
   position: relative;
   max-width: 100%;
   min-height: 283px;
@@ -616,6 +622,14 @@ hr::after {
   border: 3px solid black;
   border-top-style: none;
   border-bottom-style: none; }
+
+.switch-lang__block {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
 
 .switch-lang {
   float: right;
@@ -643,14 +657,10 @@ hr::after {
   opacity: 0.5; }
 
 .eng-switch {
-  margin: 365px 25px 0px 0px;
   border-bottom: 8px solid white;
   border-right: 4px solid white; }
 
 .rus-switch {
-  position: relative;
-  margin: 260px 50px 0px 0px;
-  left: 170px;
   border-bottom: 8px solid white;
   border-right: 4px solid white; }
 
@@ -711,7 +721,7 @@ hr::after {
     width: 100%;
     text-align: left;
     padding: 0px 0px;
-    margin: 15px 0px; }
+    margin: 25px 0px; }
   .white-block__text--left {
     color: grey; }
 
@@ -1188,15 +1198,13 @@ hr::after {
     background-image: url("../img/header-team-tablet@1x.jpg"); }
   .page-header__contacts{
     background-image: url("../img/header-contacts-tablet@1x.jpg"); }
-  .eng-switch{
-    margin: 330px 25px 0px 0px; }
-  .rus-switch{
-    position: relative;
-    margin: 240px 50px 0px 0px;
-    left: 155px; }
+  .switch-lang__block{
+    width: 130px;
+    height: 180px;
+    margin: 0px 20px 20px 0px; }
   .switch-lang p{
     padding: 15px 30px;
-    font-size: 24px; }
+    font-size: 28px; }
   .trailers{
     margin: -10px 0px; }
   .trailers__video{
@@ -1369,12 +1377,10 @@ hr::after {
     background-image: url("../img/header-team-desktop@1x.jpg"); }
   .page-header__contacts{
     background-image: url("../img/header-contacts-desktop@1x.jpg"); }
-  .eng-switch{
-    margin: 360px 30px 0px 0px; }
-  .rus-switch{
-    position: relative;
-    margin: 250px 50px 0px 0px;
-    left: 170px; }
+  .switch-lang__block{
+    width: 140px;
+    height: 200px;
+    margin: 0px 25px 25px 0px; }
   .switch-lang p{
     padding: 15px 35px;
     font-size: 32px; }
@@ -1581,20 +1587,21 @@ hr::after {
     background-image: url("../img/header-team-mobile@1x.jpg"); }
   .page-header__contacts{
     background-image: url("../img/header-contacts-mobile@1x.jpg"); }
+  .switch-lang__block{
+    width: 294px;
+    height: 70px;
+    margin: 0px 10px 10px 10px;
+    -ms-flex-direction: row;
+    flex-direction: row; }
   .switch-lang{
     border-radius: 0px 0px; }
   .eng-switch{
-    margin: 210px 5px 0px 0px;
-    border-radius: 40px 5px; }
-  .rus-switch{
-    position: relative;
-    margin: 140px 40px 0px 0px;
-    left: -70px;
-    top: 70px;
     border-radius: 5px 40px;
     border-bottom: 8px solid white;
     border-left: 4px solid white;
     border-right: none; }
+  .rus-switch{
+    border-radius: 40px 5px; }
   .switch-lang p{
     padding: 10px 25px;
     font-size: 28px; }
