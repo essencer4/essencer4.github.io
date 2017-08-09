@@ -244,6 +244,10 @@ body {
   display: flex; }
 
 .sort-column-1-link {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
   float: left;
   width: 105px;
   height: 65px;
@@ -1483,7 +1487,7 @@ hr::after {
   .features-2{
     -ms-flex-direction: column-reverse;
     flex-direction: column-reverse;
-    margin-top: -12px;
+    margin-top: 0px;
     margin-bottom: 30px; }
   .features-3{
     margin-top: 18px;
@@ -1501,6 +1505,8 @@ hr::after {
     display: flex;
     -ms-flex-direction: column;
     flex-direction: column; }
+  .block-5-2{
+    margin-top: 15px; }
   .block-5-3,
   .block-5-4,
   .block-5-5,
@@ -1515,7 +1521,7 @@ hr::after {
   .block-8{
     width: 245px; }
   .near-photo-text-1{
-    padding: 0px 0px; }
+    padding: 0px 10px; }
   .main-nav{
     height: 58px; }
   .main-nav__item a{
