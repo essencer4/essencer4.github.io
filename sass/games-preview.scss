@@ -61,6 +61,7 @@
 
 .sort-column-1-link {
   display: flex;
+  justify-content: center;
   align-items: center;
   float: left;
   width: 105px;
@@ -313,6 +314,10 @@
 
   .near-photo-text-1 {
     padding: 0px 10px;
+}
+
+  .sort-column-1-link__hidden-text {
+    display: none;
 }
 }
 

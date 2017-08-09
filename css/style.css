@@ -246,6 +246,8 @@ body {
 .sort-column-1-link {
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
   -ms-flex-align: center;
       align-items: center;
   float: left;
@@ -1522,6 +1524,8 @@ hr::after {
     width: 245px; }
   .near-photo-text-1{
     padding: 0px 10px; }
+  .sort-column-1-link__hidden-text{
+    display: none; }
   .main-nav{
     height: 58px; }
   .main-nav__item a{
