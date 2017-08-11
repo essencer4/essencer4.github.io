@@ -1,7 +1,7 @@
   .main-nav {
     position: relative;
-    width: 318px;
-    height: 55px; /*временно*/
+    width: 316px;
+    height: 55px;
     min-height: 50px;
     margin: 0 auto;
     background-color: $white;
@@ -9,12 +9,12 @@
 
   .main-nav__toggle {
     position: absolute;
-    top: 0.5px;
-    right: 0;
+    top: 0px;
+    right: 0px;
     z-index: 2;
     display: block;
     width: 70px;
-    height: 56px;
+    height: 60px;
     font-size: 0;
     cursor: pointer;
     border: none;
@@ -157,12 +157,17 @@
 
 @media (max-width: $mobile-widths) {
   .main-nav {
-    height: 58px;
+    height: 60px;
+    position: fixed;
+    z-index: 10;
+    border: 1px solid black;
+    border-top-style: none;
+    border-bottom-style: none;
   }
 
   .main-nav__item a {
-    padding: 15.5px 21px;
-    width: 320px;
+    padding: 17.5px 21px;
+    width: 316px;
     border-bottom: 2px solid $main-dark-blue;
     border-top: 1px solid $main-dark-blue;
 }
@@ -275,7 +280,7 @@
     padding: 17px 0px;
     text-decoration: none;
     color: white;
-    letter-spacing: 2.5px;
+    letter-spacing: 2px;
     @include title-medium;
     font-size: 16px;
     font-weight: 900;

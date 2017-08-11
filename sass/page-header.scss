@@ -18,6 +18,8 @@
 @media (max-width: $mobile-widths) {
   .page-header {
     border: 1px solid black;
+    min-height: 340px;
+    background-position: 60% 100%;
 }
   .page-header__index {
     background-image: url("../img/header-index-mobile@1x.jpg");

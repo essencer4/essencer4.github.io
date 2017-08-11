@@ -42,14 +42,13 @@ body {
 .main-footer-page {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-direction: row;
-      flex-direction: row;
+  -ms-flex-direction: column;
+      flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   -ms-flex-align: center;
       align-items: center;
   width: 1200px;
-  height: 120px;
   margin: auto;
   background: #0F25AE;
   opacity: 0.9;
@@ -60,6 +59,16 @@ body {
   box-sizing: border-box;
   border-radius: 1px 1px 40px 40px; }
 
+.main-footer-page__main-block {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  margin-top: 30px; }
+
 /*ВИЗИТ СЕДОНА*/
 .footer-visit {
   width: 250px;
@@ -68,11 +77,14 @@ body {
   -ms-flex-direction: row;
       flex-direction: row;
   -ms-flex-pack: center;
-      justify-content: center; }
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
 
 .footer-visit h2 {
   margin: 0px;
-  color: white; }
+  color: white;
+  letter-spacing: 0.5px; }
 
 /*СОЦИАЛЬНЫЕ КНОПКИ*/
 .footer-social {
@@ -180,6 +192,12 @@ body {
 .metrika {
   float: left;
   margin: 6px 0px 0px 32px; }
+
+.site-date {
+  width: 100%;
+  text-align: center;
+  color: white;
+  margin-top: 5px; }
 
 .features-1 {
   margin-top: 20px;
@@ -435,21 +453,20 @@ hr::after {
 
 .main-nav {
   position: relative;
-  width: 318px;
+  width: 316px;
   height: 55px;
-  /*временно*/
   min-height: 50px;
   margin: 0 auto;
   background-color: #ffffff; }
 
 .main-nav__toggle {
   position: absolute;
-  top: 0.5px;
-  right: 0;
+  top: 0px;
+  right: 0px;
   z-index: 2;
   display: block;
   width: 70px;
-  height: 56px;
+  height: 60px;
   font-size: 0;
   cursor: pointer;
   border: none;
@@ -1162,7 +1179,7 @@ hr::after {
     padding: 17px 0px;
     text-decoration: none;
     color: white;
-    letter-spacing: 2.5px;
+    letter-spacing: 2px;
     font-size: 18px;
     line-height: 1.25;
     font-family: "PT Sans", "Arial", sans-serif;
@@ -1466,17 +1483,25 @@ hr::after {
   .container-page{
     width: 318px;
     border: 1px solid black; }
+  .main-footer-page__main-block{
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 200px;
+    margin-top: 0px; }
   .main-footer-page{
     width: 318px;
     -ms-flex-direction: column;
     flex-direction: column;
-    height: 200px;
     margin-bottom: 5px;
     border: 1px solid black; }
   .metrika{
     margin: 6px 0px 0px 32px; }
   .footer-visit{
     margin-top: 15px; }
+  .site-date{
+    margin-top: -5px; }
   .features-1,
   .features-2,
   .features-3{
@@ -1533,10 +1558,15 @@ hr::after {
   .sort-column-1-link__hidden-text{
     display: none; }
   .main-nav{
-    height: 58px; }
+    height: 60px;
+    position: fixed;
+    z-index: 10;
+    border: 1px solid black;
+    border-top-style: none;
+    border-bottom-style: none; }
   .main-nav__item a{
-    padding: 15.5px 21px;
-    width: 320px;
+    padding: 17.5px 21px;
+    width: 316px;
     border-bottom: 2px solid #051471;
     border-top: 1px solid #051471; }
   .main-nav--closed .main-nav__item{
@@ -1597,7 +1627,9 @@ hr::after {
   .page{
     background-image: url("../img/nature-mobile@1x.jpg"); }
   .page-header{
-    border: 1px solid black; }
+    border: 1px solid black;
+    min-height: 340px;
+    background-position: 60% 100%; }
   .page-header__index{
     background-image: url("../img/header-index-mobile@1x.jpg"); }
   .page-header__soft{

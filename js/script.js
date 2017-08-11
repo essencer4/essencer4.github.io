@@ -15,44 +15,68 @@ navToggle.addEventListener('click', function() {
   }
 });
 
-
-// Popup
-const mainForm = document.querySelector(".main-form form");
-
-if (mainForm !== null) {
-  const fields = mainForm.querySelectorAll("input");
-  const telErrorMsg = mainForm.querySelector(".check-tel-message");
-  const popup = mainForm.querySelectorAll(".feedback-popup")
-  const successPopup = mainForm.querySelector(".feedback-popup--success");
-  const errorPopup = mainForm.querySelector(".feedback-popup--error")
-  const popupCloseBtn = mainForm.querySelectorAll(".feedback-popup__close");
-
-  mainForm.addEventListener("submit", function(event) {
-    event.preventDefault();
-    let fakeCounter = 0;
-    for (let i = 0; i < fields.length; i++) {
-      if (fields[i].value === "") {
-        fakeCounter++;
-        fields[i].style.border = "1px solid red";
-        telErrorMsg.style.display = "inline-block";
+$(document).ready(function() {
+  
+  var header = $(".main-nav"); // Меню
+  var scrollPrev = 0 // Предыдущее значение скролла
+  
+  $(window).scroll(function() {
+    var scrolled = $(window).scrollTop(); // Высота скролла в px
+    var firstScrollUp = false; // Параметр начала сколла вверх
+    var firstScrollDown = false; // Параметр начала сколла вниз
+    
+    // Если скроллим
+    if ( scrolled > 0 ) {
+      // Если текущее значение скролла > предыдущего, т.е. скроллим вниз
+      if ( scrolled > scrollPrev ) {
+        firstScrollUp = false; // Обнуляем параметр начала скролла вверх
+        // Если меню видно
+        if ( scrolled < header.height() + header.offset().top ) {
+          // Если только начали скроллить вниз
+          if ( firstScrollDown === false ) {
+            var topPosition = header.offset().top; // Фиксируем текущую позицию меню
+            header.css({
+              "top": topPosition + "px"
+            });
+            firstScrollDown = true;
+          }
+          // Позиционируем меню абсолютно
+          header.css({
+            "position": "absolute"
+          });
+        // Если меню НЕ видно
+        } else {
+          // Позиционируем меню фиксированно вне экрана
+          header.css({
+            "position": "fixed",
+            "top": "-" + header.height() + "px"
+          });
+        }
+        
+      // Если текущее значение скролла < предыдущего, т.е. скроллим вверх
       } else {
-        fields[i].style.border = "none";
+        firstScrollDown = false; // Обнуляем параметр начала скролла вниз
+        // Если меню не видно
+        if ( scrolled > header.offset().top ) {
+          // Если только начали скроллить вверх
+          if ( firstScrollUp === false ) {
+            var topPosition = header.offset().top; // Фиксируем текущую позицию меню
+            header.css({
+              "top": topPosition + "px"
+            });
+            firstScrollUp = true;
+          }
+          // Позиционируем меню абсолютно
+          header.css({
+            "position": "absolute"
+          });
+        } else {
+          // Убираем все стили
+          header.removeAttr("style");
+        }
       }
-    };
-
-    if (fakeCounter > 0) {
-      errorPopup.style.display = "block";
-    } else {
-      successPopup.style.display = "block";
-      telErrorMsg.style.display = "none";
-    }
-  });
-
-  for (i = 0; i < popupCloseBtn.length; i++) {
-    popupCloseBtn[i].addEventListener("click", function() {
-      for (i = 0; i < popup.length; i++) {
-        popup[i].style.display = "none";
-      }
-    })
-  }
-}
+      // Присваеваем текущее значение скролла предыдущему
+      scrollPrev = scrolled;
+    } 
+  });     
+});
