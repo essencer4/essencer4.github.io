@@ -207,6 +207,16 @@ body {
     display: table;
     clear: both; }
 
+.features-1,
+.features-2,
+.features-3 {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-align: center;
+      align-items: center; }
+
 /*Текст красной шапочки*/
 .block-3 {
   display: -ms-flexbox;
@@ -217,7 +227,7 @@ body {
       justify-content: space-between;
   float: left;
   width: 255px;
-  height: 300px;
+  min-height: 300px;
   color: white;
   background: #6B7AD6;
   margin-left: 10px; }
@@ -240,20 +250,23 @@ body {
 .near-photo-text-1 {
   padding: 0px 20px;
   line-height: 1.25;
-  margin-top: 20px;
+  margin: 10px 0px 12px 0px;
   text-align: center;
   text-transform: uppercase;
-  font-weight: 900; }
+  font-weight: 900;
+  font-size: 21px; }
 
 .near-photo-text-2 {
   padding-top: 5px;
-  line-height: 1.25;
+  line-height: 1.2;
   padding: 0px 10px 0px 10px;
   text-transform: none;
   text-align: justify;
   text-indent: 15px;
   margin: 0px;
-  -webkit-font-size: 13px; }
+  -webkit-font-size: 13px;
+  font-size: 18px;
+  letter-spacing: 0.25px; }
 
 /*Кнопка подробнее*/
 .sort-column-1-buttons {
@@ -399,10 +412,10 @@ body {
   position: relative;
   float: right;
   width: 255px;
-  height: 300px;
+  min-height: 300px;
   color: white;
   background: #6B7AD6;
-  margin-right: 10px; }
+  margin: 0px 10px 0px 10px; }
 
 /*КОНАН*/
 .features-3 {
@@ -419,10 +432,23 @@ body {
   position: relative;
   float: left;
   width: 255px;
-  height: 300px;
+  min-height: 300px;
   color: white;
   background: #6B7AD6;
   margin-left: 10px; }
+
+.block-8 {
+  height: 325px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
 
 hr {
   padding: 0;
@@ -1138,10 +1164,12 @@ hr::after {
   .block-5-5,
   .block-5-6{
     display: none; }
+  .block-8{
+    width: 490px; }
   .main-nav{
     width: auto;
     min-height: 59px;
-    margin: 0;
+    margin-bottom: -60px;
     background-color: #ffffff; }
   .main-nav__wrapper{
     width: 768px;
@@ -1209,7 +1237,8 @@ hr::after {
     min-height: 432px;
     background-size: cover;
     background-size: 768px auto;
-    background-position: 50% 0%; }
+    background-position: 50% 0%;
+    margin-top: 58px; }
   .page-header__index{
     background-image: url("../img/header-index-tablet@1x.jpg"); }
   .page-header__soft{
@@ -1325,6 +1354,10 @@ hr::after {
     display: block; }
   .features-2 .block-6{
     margin-right: 0px; }
+  .block-8{
+    width: 732px; }
+  .main-nav{
+    margin-bottom: -60px; }
   .main-nav__wrapper{
     width: 1200px;
     position: fixed;
@@ -1387,6 +1420,7 @@ hr::after {
     width: 100%;
     min-height: 475px;
     margin: 0 auto;
+    margin-top: 58px;
     padding: 0;
     background-size: 1200px auto; }
   .page-header__index{
@@ -1502,6 +1536,10 @@ hr::after {
     margin-top: 15px; }
   .site-date{
     margin-top: -5px; }
+  .features-2 .block-5{
+    margin-top: 5px; }
+  .feature-3 .block-7{
+    margin-bottom: 5px; }
   .features-1,
   .features-2,
   .features-3{
@@ -1513,18 +1551,13 @@ hr::after {
     justify-content: space-around;
     -ms-flex-align: center;
     align-items: center;
-    height: 650px; }
+    height: 650px;
+    margin: 15px 0px; }
   .features-1{
-    margin-top: 25px;
-    margin-bottom: -5px; }
+    margin: 15px 0px 5px 0px; }
   .features-2{
     -ms-flex-direction: column-reverse;
-    flex-direction: column-reverse;
-    margin-top: 0px;
-    margin-bottom: 30px; }
-  .features-3{
-    margin-top: 18px;
-    margin-bottom: -5px; }
+    flex-direction: column-reverse; }
   .features-3 .block-7 .near-photo-text-1{
     font-size: 19px;
     letter-spacing: 0.75px; }
@@ -1550,9 +1583,11 @@ hr::after {
     height: initial; }
   .block-7{
     margin-left: 0px;
-    height: initial; }
+    height: initial;
+    margin-bottom: 5px; }
   .block-8{
-    width: 245px; }
+    width: 245px;
+    height: 300px; }
   .near-photo-text-1{
     padding: 0px 10px; }
   .sort-column-1-link__hidden-text{

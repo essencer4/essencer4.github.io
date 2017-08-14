@@ -4,6 +4,14 @@
   margin-bottom: 20px;
 }
 
+.features-1,
+.features-2,
+.features-3 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 /*Текст красной шапочки*/
 
 .block-3 {
@@ -13,7 +21,7 @@
   @include clearfix;
   float: left;
   width: 255px;
-  height: 300px;
+  min-height: 300px;
   color: white;
   background: #6B7AD6;
   margin-left: 10px;
@@ -36,21 +44,24 @@
 .near-photo-text-1 {
   padding: 0px 20px;
   line-height: 1.25;
-  margin-top: 20px;
+  margin: 10px 0px 12px 0px;
   text-align: center;
   text-transform: uppercase;
   font-weight: 900;
+  font-size: 21px;
 }
 
 .near-photo-text-2 {
   padding-top: 5px;
-  line-height: 1.25;
+  line-height: 1.2;
   padding: 0px 10px 0px 10px;
   text-transform: none;
   text-align: justify;
   text-indent: 15px;
   margin: 0px;
   -webkit-font-size: 13px;
+  font-size: 18px;
+  letter-spacing: 0.25px;
 }
 
 /*Кнопка подробнее*/
@@ -216,10 +227,10 @@
   position: relative;
   float: right;
   width: 255px;
-  height: 300px;
+  min-height: 300px;
   color: white;
   background: #6B7AD6;
-  margin-right: 10px;
+  margin: 0px 10px 0px 10px;
 }
 
 /*КОНАН*/
@@ -237,13 +248,30 @@
   position: relative;
   float: left;
   width: 255px;
-  height: 300px;
+  min-height: 300px;
   color: white;
   background: #6B7AD6;
   margin-left: 10px;
 }
 
+.block-8 {
+  height: 325px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
 @media (max-width: $mobile-widths) {
+  .features-2 .block-5 {
+    margin-top: 5px;
+}
+
+  .feature-3 .block-7 {
+    margin-bottom: 5px;
+}
+
   .features-1,
   .features-2,
   .features-3 {
@@ -252,22 +280,15 @@
     justify-content: space-around;
     align-items: center;
     height: 650px;
+    margin: 15px 0px;
 }
 
   .features-1 {
-    margin-top: 25px;
-    margin-bottom: -5px;
+    margin: 15px 0px 5px 0px;
 }
 
   .features-2 {
     flex-direction: column-reverse;
-    margin-top: 0px;
-    margin-bottom: 30px;
-}
-
-  .features-3 {
-    margin-top: 18px;
-    margin-bottom: -5px;
 }
 
   .features-3 .block-7 .near-photo-text-1 {
@@ -306,10 +327,12 @@
   .block-7 {
     margin-left: 0px;
     height: initial;
+    margin-bottom: 5px;
 }
 
   .block-8 {
     width: 245px;
+    height: 300px;
 }
 
   .near-photo-text-1 {
@@ -333,6 +356,10 @@
   .block-5-5,
   .block-5-6 {
     display: none;
+}
+
+  .block-8 {
+    width: 490px;
 }
 }
 
@@ -360,5 +387,9 @@
 
   .features-2 .block-6 {
     margin-right: 0px;
+}
+
+  .block-8 {
+    width: 732px;
 }
 }

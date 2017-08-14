@@ -239,7 +239,7 @@
   .main-nav {
     width: auto;
     min-height: 59px;
-    margin: 0;
+    margin-bottom: -60px;
     background-color: $white;
 }
 
@@ -298,6 +298,10 @@
 }
 
 @media (min-width: $desktop-widths) {
+  .main-nav {
+    margin-bottom: -60px;
+}
+
   .main-nav__wrapper {
     width: 1200px;
     position: fixed;
