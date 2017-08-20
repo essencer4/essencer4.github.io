@@ -163,32 +163,19 @@
 
     <hr>
 
-  <div class="vk-group-section">
+    <div class="vk-group-section">
 
-    <h2 class="white-text-with-background-h2">Новости из нашего сообщества в ВК</h2>
+      <h2 class="white-text-with-background-h2">Latest news from our Twitter</h2>
 
-    <div class="vk-group-section__widget-position">
+        <div class="twit-group twit-group_index-page">
 
-      <div id="vk_widget">
-        <div id="vk_groups"></div>
-      </div>
+          <a class="twitter-timeline" data-width="100%" data-height="100%" data-theme="light" href="https://twitter.com/nlbproject">Tweets by nlbproject</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-      <script async type="text/javascript" src="//vk.com/js/api/openapi.js?116"></script>
-      <script async>
-        function VK_Widget_Init(){
-          document.getElementById('vk_groups').innerHTML = "";
-          var vk_width = document.getElementById('vk_widget').clientWidth;
-          VK.Widgets.Group("vk_groups", {mode: 4, wide: 1, width: "auto", height: "500px", color3: '0F25AE'}, 85687194);
-        };
-        window.addEventListener('load', VK_Widget_Init, false);
-        window.addEventListener('resize', VK_Widget_Init, false);
-      </script>
+        </div>
 
     </div>
 
-  </div>
-
-  <hr>
+    <hr>
 
     <div class="trailers">
 
@@ -346,18 +333,18 @@
         <h2>#Nlb-project</h2>
       </div>
       <div class="footer-social">
-        <div class="social-btn">
-          <a class="social-btn-twit" href = "https://twitter.com/nlbproject" target="blank"><img src="img/twit-icon.png" width="17" height="15" alt=""></a>
-        </div>
-        <div class="social-btn">
-          <a class="social-btn-vk" href = "https://vk.com/nlbproject" target="blank">  <img src="img/vk-icon.png" width="20" height="12" alt=""></a>
-        </div>
-        <div class="social-btn">
-          <a class="social-btn-fb" href = "https://www.facebook.com/nlbproject/"target="blank"><img src="img/fb-icon.png" width="10" height="19" alt=""></a>
-        </div>
-        <div class="social-btn">
-          <a class="social-btn-youtube" href ="https://www.youtube.com/c/nlbproject" target="blank"><img src="img/youtube-icon.png" width="20" height="16" alt=""></a>
-        </div>
+        <a class="social-btn social-btn-twit" href = "https://twitter.com/nlbproject" target="blank">
+          <img src="img/twit-icon.png" width="17" height="15" alt="">
+        </a>
+        <a class="social-btn social-btn-vk" href = "https://vk.com/nlbproject" target="blank">
+          <img src="img/vk-icon.png" width="20" height="12" alt="">
+        </a>
+        <a class="social-btn social-btn-fb" href = "https://www.facebook.com/nlbproject/"target="blank">
+          <img src="img/fb-icon.png" width="10" height="19" alt="">
+        </a>
+        <a class="social-btn social-btn-youtube" href ="https://www.youtube.com/channel/UCEeM6BnLfqBrETLmvD2E0iw/videos?shelf_id=0&view=0&sort=dd" target="blank">
+          <img src="img/youtube-icon.png" width="20" height="16" alt="">
+        </a>
       </div>
       <div class="academy-link">
         <div class="footer-copyright-text">
@@ -414,7 +401,6 @@
   <link rel="stylesheet" property="stylesheet" type="text/css" href="css/style.min.css">
   <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
   <script async src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  <script async type="text/javascript" src="//vk.com/js/api/openapi.js?146"></script>
   <script async src="js/script.js"></script>
   <script async src="js/svg4everybody.min.js"></script>
   <script async>svg4everybody();</script>
