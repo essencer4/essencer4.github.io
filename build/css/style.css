@@ -50,9 +50,9 @@ body {
       align-items: center;
   width: 1200px;
   margin: auto;
+  margin-bottom: 20px;
   background: #0F25AE;
   opacity: 0.9;
-  margin-bottom: 625px;
   z-index: 1;
   border: 3px solid black;
   border-top-style: none;
@@ -1528,7 +1528,6 @@ hr::after {
     width: 318px;
     -ms-flex-direction: column;
     flex-direction: column;
-    margin-bottom: 5px;
     border: 1px solid black; }
   .metrika{
     margin: 6px 0px 0px 32px; }
