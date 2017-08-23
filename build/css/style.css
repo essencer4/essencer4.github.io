@@ -199,55 +199,47 @@ body {
   color: white;
   margin-top: 5px; }
 
-.features-1 {
-  margin-top: 20px;
-  margin-bottom: 20px; }
-  .features-1::after {
-    content: "";
-    display: table;
-    clear: both; }
-
-.features-1,
-.features-2,
-.features-3 {
+.game-preview {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: row;
       flex-direction: row;
   -ms-flex-align: center;
-      align-items: center; }
+      align-items: center;
+  background-color: #4458D6;
+  padding: 20px 0px;
+  border-radius: 25px;
+  border: 0.5px solid white;
+  margin: 30px auto;
+  opacity: 0.96; }
 
-/*Текст красной шапочки*/
-.block-3 {
+/*Блок с описанием игры и кнопками*/
+.game-preview__block {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
   -ms-flex-pack: justify;
       justify-content: space-between;
-  float: left;
   width: 255px;
-  min-height: 300px;
+  min-height: 340px;
   color: white;
   background: #6B7AD6;
-  margin-left: 10px; }
-  .block-3::after {
-    content: "";
-    display: table;
-    clear: both; }
+  margin-left: 10px;
+  border-radius: 40px 10px 10px 10px; }
 
-.title-link {
+.game-preview__title-link {
   display: block;
   text-decoration: none;
   color: white; }
 
-.title-link:hover {
+.game-preview__title-link:hover {
   color: #051471; }
 
-.title-link:active {
+.game-preview__title-link:active {
   color: #bdbbbc; }
 
-.near-photo-text-1 {
+.game-preview__title {
   padding: 0px 20px;
   line-height: 1.25;
   margin: 10px 0px 12px 0px;
@@ -256,7 +248,7 @@ body {
   font-weight: 900;
   font-size: 21px; }
 
-.near-photo-text-2 {
+.game-preview__text {
   padding-top: 5px;
   line-height: 1.2;
   padding: 0px 10px 0px 10px;
@@ -269,11 +261,11 @@ body {
   letter-spacing: 0.25px; }
 
 /*Кнопка подробнее*/
-.sort-column-1-buttons {
+.game-preview__buttons-block {
   display: -ms-flexbox;
   display: flex; }
 
-.sort-column-1-link {
+.game-preview__button-details {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
@@ -292,11 +284,11 @@ body {
   border-radius: 5px;
   text-align: center; }
 
-.sort-column-1-link-flex {
+.game-preview__button-details-flex {
   display: -ms-flexbox;
   display: flex; }
 
-.sort-column-1-link p {
+.game-preview__button-details p {
   text-align: center;
   margin: 0px;
   padding: 0px;
@@ -306,26 +298,26 @@ body {
   font-weight: 900;
   letter-spacing: 0.9px; }
 
-.sort-column-1-link:hover {
+.game-preview__button-details:hover {
   background-color: #4458D6;
   color: white !important; }
 
-.sort-column-1-link:active p {
+.game-preview__button-details:active p {
   opacity: 0.5; }
 
-.sort-column-1-link-barbarian {
+.game-preview__button-details--barbarian {
   margin: 15px 5px 15px 10px;
   padding: 15px 10px;
   width: 70px; }
 
-.sort-column-1-link-barbarian-rus {
+.game-preview__button-details--barbarian-rus {
   padding: 15px 0px; }
 
-.sort-column-1-link-barbarian-rus p {
+.game-preview__button-details--barbarian-rus p {
   letter-spacing: 0.75px; }
 
-/*Кнопка steam*/
-.steam-btn {
+/*Кнопки*/
+.game-preview__button-steam {
   float: right;
   width: 105px;
   height: 65px;
@@ -337,118 +329,42 @@ body {
   background-color: #051471;
   border-radius: 5px; }
 
-.steam-btn:hover {
+.game-preview__button-steam:hover {
   background-color: #4458D6;
   color: white !important; }
 
-.steam-btn:active {
+.game-preview__button-steam:active {
   opacity: 0.5; }
 
-.steam-btn-barbarian {
+.game-preview__button-steam--barbarian {
   float: left;
   width: 72px;
   margin: 15px 5px 15px 5px;
   padding: 12.5px 8px 7.5px 10px; }
 
-.steam-btn-barbarian-google {
+.game-preview__button-steam--barbarian-google {
   float: left;
   width: 72px;
   margin: 15px 10px 15px 5px;
   padding: 6.5px 9px 0px 9px; }
 
-/*Дикий остров*/
-.features-2 {
-  width: 100%;
-  margin-top: 20px;
-  margin-bottom: 20px; }
-  .features-2::after {
-    content: "";
-    display: table;
-    clear: both; }
-
-/*Фотки дикого острова*/
-.block-5 {
-  float: left;
-  width: 495px; }
-
-.block-5-1 {
-  float: left;
-  margin-left: 10px;
-  border-radius: 10px;
-  margin-top: 5px; }
-
-.block-5-2 {
-  float: left;
-  margin-left: 10px;
-  border-radius: 10px;
-  margin-top: 5px; }
-
-.block-5-3 {
-  float: left;
-  margin-left: 10px;
-  margin-top: 15px;
-  border-radius: 10px; }
-
-.block-5-4 {
-  float: left;
-  margin-left: 10px;
-  margin-top: 15px;
-  border-radius: 10px; }
-
-.block-5-5 {
-  float: left;
-  margin-left: 10px;
-  margin-top: 15px;
-  border-radius: 10px; }
-
-.block-5-6 {
-  float: left;
-  margin-left: 10px;
-  margin-top: 15px;
-  border-radius: 10px; }
-
-/*Текст дикого острова*/
-.block-6 {
-  position: relative;
-  float: right;
-  width: 255px;
-  min-height: 300px;
-  color: white;
-  background: #6B7AD6;
-  margin: 0px 10px 0px 10px; }
-
-/*КОНАН*/
-.features-3 {
-  width: 100%;
-  margin-top: 20px;
-  margin-bottom: 20px; }
-  .features-3::after {
-    content: "";
-    display: table;
-    clear: both; }
-
-/*ТЕКСТ КОНАНА*/
-.block-7 {
-  position: relative;
-  float: left;
-  width: 255px;
-  min-height: 300px;
-  color: white;
-  background: #6B7AD6;
-  margin-left: 10px; }
-
-.block-8 {
-  height: 325px;
+/*Блок с фотками*/
+.game-preview__photo-block {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: row;
       flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -ms-flex-align: center;
-      align-items: center;
+  width: 495px;
+  min-height: 340px;
   -ms-flex-pack: distribute;
-      justify-content: space-around; }
+      justify-content: space-around;
+  -ms-flex-align: center;
+      align-items: center; }
+
+.game-preview__photo {
+  border-radius: 10px; }
 
 hr {
   padding: 0;
@@ -1150,22 +1066,19 @@ hr::after {
     width: 768px; }
   .metrika{
     margin: 6px 0px 0px 8px; }
-  .features-1,
-  .features-2,
-  .features-3{
-    margin: 20px auto;
-    width: 762px; }
-  .features-1::after,
-    .features-2::after,
-    .features-3::after{
-    content: "";
-    display: table;
-    clear: both; }
-  .block-5-5,
-  .block-5-6{
+  .game-preview:nth-of-type(2){
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse; }
+  .game-preview:nth-of-type(2) .game-preview__block{
+    margin-left: 0px;
+    margin-right: 10px;
+    border-radius: 10px 40px 10px 10px; }
+  .game-preview__photo-block a:nth-child(3),
+  .game-preview__photo-block a:nth-child(4){
+    display: block; }
+  .game-preview__photo-block a:nth-child(5),
+  .game-preview__photo-block a:nth-child(6){
     display: none; }
-  .block-8{
-    width: 490px; }
   .main-nav{
     width: auto;
     min-height: 59px;
@@ -1334,28 +1247,19 @@ hr::after {
     width: 1200px; }
   .metrika{
     margin: 6px 0px 0px 8px; }
-  .features-1,
-  .features-2,
-  .features-3{
-    margin: 20px auto;
-    width: 1000px; }
-  .features-1::after,
-    .features-2::after,
-    .features-3::after{
-    content: "";
-    display: table;
-    clear: both; }
-  .block-5{
+  .game-preview{
+    width: 1000px;
+    padding: 20px 5px; }
+  .game-preview:nth-of-type(2){
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse; }
+  .game-preview__photo-block{
     width: 735px; }
-  .block-5-3{
-    margin-top: 5px; }
-  .block-5-5,
-  .block-5-6{
+  .game-preview__photo-block a:nth-child(3),
+  .game-preview__photo-block a:nth-child(4),
+  .game-preview__photo-block a:nth-child(5),
+  .game-preview__photo-block a:nth-child(6){
     display: block; }
-  .features-2 .block-6{
-    margin-right: 0px; }
-  .block-8{
-    width: 732px; }
   .main-nav{
     margin-bottom: -60px; }
   .main-nav__wrapper{
@@ -1432,7 +1336,8 @@ hr::after {
   .page-header__games{
     background-image: url("../img/header-games-desktop@1x.jpg"); }
   .page-header__others{
-    background-image: url("../img/header-others-desktop@1x.jpg"); }
+    background-image: url("../img/header-others-desktop@1x.jpg");
+    background-position: 50% 50%; }
   .page-header__team{
     background-image: url("../img/header-team-desktop@1x.jpg"); }
   .page-header__contacts{
@@ -1535,61 +1440,22 @@ hr::after {
     margin-top: 15px; }
   .site-date{
     margin-top: -5px; }
-  .features-2 .block-5{
-    margin-top: 5px; }
-  .feature-3 .block-7{
-    margin-bottom: 5px; }
-  .features-1,
-  .features-2,
-  .features-3{
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
-    -ms-flex-align: center;
-    align-items: center;
-    height: 650px;
-    margin: 15px 0px; }
-  .features-1{
-    margin: 15px 0px 5px 0px; }
-  .features-2{
-    -ms-flex-direction: column-reverse;
-    flex-direction: column-reverse; }
-  .features-3 .block-7 .near-photo-text-1{
-    font-size: 19px;
-    letter-spacing: 0.75px; }
-  .block-3{
-    margin-left: 0px;
-    height: initial; }
-  .block-5{
-    float: none;
-    width: 245px;
-    display: -ms-flexbox;
-    display: flex;
+  .game-preview{
     -ms-flex-direction: column;
     flex-direction: column; }
-  .block-5-2{
-    margin-top: 15px; }
-  .block-5-3,
-  .block-5-4,
-  .block-5-5,
-  .block-5-6{
+  .game-preview__block{
+    margin: 0px; }
+  .game-preview__button-details span{
     display: none; }
-  .block-6{
-    margin-right: 0px;
-    height: initial; }
-  .block-7{
-    margin-left: 0px;
-    height: initial;
-    margin-bottom: 5px; }
-  .block-8{
-    width: 245px;
-    height: 300px; }
-  .near-photo-text-1{
-    padding: 0px 10px; }
-  .sort-column-1-link__hidden-text{
+  .game-preview__photo-block{
+    width: 255px;
+    margin-top: 15px;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .game-preview__photo-block a:nth-child(3),
+  .game-preview__photo-block a:nth-child(4),
+  .game-preview__photo-block a:nth-child(5),
+  .game-preview__photo-block a:nth-child(6){
     display: none; }
   .main-nav{
     height: 60px;
