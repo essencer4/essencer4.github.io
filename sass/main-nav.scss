@@ -7,6 +7,35 @@
     background-color: $white;
 }
 
+  .main-nav__indicator {
+    display: block;
+    width: 246px;
+    height: 60px;
+    padding: 20px 0px;
+    text-decoration: none;
+    color: #0f25ae;
+    letter-spacing: 5px;
+    @include title-medium;
+    font-size: 20px;
+    font-weight: 900;
+    text-transform: none;
+    text-align: center;
+    box-sizing: border-box;
+    border-left: none;
+    border-right: 3px solid #051471;
+    margin: 0;
+      @media (min-width: $tablet-widths) {
+        display: none;
+      }
+      @media (min-width: $desktop-widths) {
+        display: none;
+      }
+}
+
+  .main-nav__1 {
+    display: flex;
+}
+
   .main-nav__toggle {
     position: absolute;
     top: 0px;
@@ -228,11 +257,11 @@
   .main-nav--nojs .main-nav__user-items {
     display: block;
     background-color: #6a4d38;
-  }
+}
 
   .main-nav__item-logo {
     display: none;
-  }
+}
 }
 
 @media (min-width: $tablet-widths) {

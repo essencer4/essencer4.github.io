@@ -401,6 +401,31 @@ hr::after {
   margin: 0 auto;
   background-color: #ffffff; }
 
+.main-nav__indicator {
+  display: block;
+  width: 246px;
+  height: 60px;
+  padding: 20px 0px;
+  text-decoration: none;
+  color: #0f25ae;
+  letter-spacing: 5px;
+  font-size: 18px;
+  line-height: 1.25;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  font-weight: 900;
+  text-transform: none;
+  text-align: center;
+  box-sizing: border-box;
+  border-left: none;
+  border-right: 3px solid #051471;
+  margin: 0; }
+
+.main-nav__1 {
+  display: -ms-flexbox;
+  display: flex; }
+
 .main-nav__toggle {
   position: absolute;
   top: 0px;
@@ -1079,6 +1104,8 @@ hr::after {
   .game-preview__photo-block a:nth-child(5),
   .game-preview__photo-block a:nth-child(6){
     display: none; }
+  .main-nav__indicator{
+    display: none; }
   .main-nav{
     width: auto;
     min-height: 59px;
@@ -1260,6 +1287,8 @@ hr::after {
   .game-preview__photo-block a:nth-child(5),
   .game-preview__photo-block a:nth-child(6){
     display: block; }
+  .main-nav__indicator{
+    display: none; }
   .main-nav{
     margin-bottom: -60px; }
   .main-nav__wrapper{
