@@ -1042,16 +1042,13 @@ hr::after {
   padding: 5px 0; }
 
 @-moz-document url-prefix() {
-  .near-photo-text-1 {
-    font-size: 14px; }
-  .near-photo-text-2 {
-    font-size: 13px; }
-  .sort-column-1-link {
-    padding: 18px 4px; }
-  .sort-column-1-link-barbarian-rus p {
-    letter-spacing: 0px; }
-  .sort-column-1-link p {
-    font-size: 9px; } }
+  .game-preview__title {
+    font-size: 18px;
+    padding: 0px 10px; }
+  .game-preview__text {
+    font-size: 16px; }
+  .game-preview__button-details p {
+    font-size: 11px; } }
 
 /*
 @-moz-document url-prefix() {
@@ -1683,13 +1680,29 @@ hr::after {
     margin: 5px 0px; }
   .photo-three-line a:nth-child(3) img{
     display: none; }
+  .close{
+    top: 200px;
+    right: 0px; }
+  .close__vertical{
+    top: 280px;
+    right: 0px; }
   .popup{
-    width: 280px;
-    height: 300px;
+    width: 300px;
+    height: 210px;
     padding: 5px; }
+  .popup__vertical{
+    width: 280px;
+    height: 300px; }
   .overlay:target + .popup{
-    top: 18%; }
+    top: 30%;
+    border-radius: 30px; }
+  .overlay:target + .popup__vertical{
+    top: 22%;
+    border-radius: 60px 20px; }
   .popup img{
+    max-width: 305px;
+    max-height: 290px; }
+  .popup__vertical img{
     max-width: 270px;
     max-height: 290px; } }
 
