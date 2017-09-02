@@ -69,6 +69,7 @@
   text-transform: uppercase;
   font-weight: 900;
   font-size: 21px;
+  letter-spacing: 0.7px;
 }
 
 .game-preview__text {
@@ -105,11 +106,6 @@
   background-color: #051471;
   border-radius: 5px;
   text-align: center;
-    @media (max-width: $mobile-widths) {
-      & span {
-      display: none;
-      }
-    }
 }
 
 .game-preview__button-details-flex {
@@ -124,7 +120,7 @@
   font-size: 12px;
   text-transform: uppercase;
   font-weight: 900;
-  letter-spacing: 0.9px;
+  letter-spacing: 1.5px;
 }
 
 .game-preview__button-details:hover {

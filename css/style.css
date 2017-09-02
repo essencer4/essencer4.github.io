@@ -246,7 +246,8 @@ body {
   text-align: center;
   text-transform: uppercase;
   font-weight: 900;
-  font-size: 21px; }
+  font-size: 21px;
+  letter-spacing: 0.7px; }
 
 .game-preview__text {
   padding-top: 5px;
@@ -296,7 +297,7 @@ body {
   font-size: 12px;
   text-transform: uppercase;
   font-weight: 900;
-  letter-spacing: 0.9px; }
+  letter-spacing: 1.5px; }
 
 .game-preview__button-details:hover {
   background-color: #4458D6;
@@ -750,6 +751,9 @@ hr::after {
   .white-block__button:active {
     background-color: #0F25AE; }
 
+.white-block__button--short {
+  width: 250px; }
+
 .white-block__button span {
   display: block;
   margin: 0 auto;
@@ -772,7 +776,7 @@ hr::after {
       flex-direction: column;
   float: left;
   width: 500px;
-  height: 525px;
+  height: 560px;
   margin-left: 40px;
   margin-top: 20px; }
 
@@ -787,7 +791,7 @@ hr::after {
   -ms-flex-direction: column;
       flex-direction: column;
   float: left;
-  height: 525px;
+  height: 560px;
   margin-left: 25px;
   margin-top: 20px; }
 
@@ -864,6 +868,28 @@ hr::after {
   width: 195px;
   height: 65px;
   border: none; }
+
+.white-block__button-contacts {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  width: 96%;
+  height: 50px;
+  box-sizing: border-box;
+  margin: 15px 10px;
+  padding: 15px 20px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #051471;
+  border-radius: 5px;
+  text-align: center; }
+
+.white-block__button-contacts:hover {
+  background-color: #4458D6;
+  color: white !important; }
 
 .white-block__background-others-monster {
   background-image: url("../img/others-games-1-background.jpg");
@@ -1430,6 +1456,8 @@ hr::after {
     line-height: 25px; }
   .white-block__background-others-monster{
     background-position: 50% 50%; }
+  .white-block__button--short{
+    width: 280px; }
   .photo-three-line{
     width: 98%; }
   .photo-three-line a img{
@@ -1471,8 +1499,6 @@ hr::after {
     flex-direction: column; }
   .game-preview__block{
     margin: 0px; }
-  .game-preview__button-details span{
-    display: none; }
   .game-preview__photo-block{
     width: 255px;
     margin-top: 15px;
