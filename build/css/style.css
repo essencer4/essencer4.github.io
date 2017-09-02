@@ -1,9 +1,15 @@
 @charset "UTF-8";
 @font-face {
+  font-family: "PT Sans";
+  src: url("../fonts/ptsans.woff") format("woff"), url("../fonts/ptsans.woff2") format("woff2");
   font-weight: normal;
-  font-family: "PT Sans Narrow";
-  font-style: normal;
-  src: url("fonts/ptsans.woff") format("woff"), url("fonts/ptsans.woff") format("woff"); }
+  font-style: normal; }
+
+@font-face {
+  font-family: "PT Sans";
+  src: url("../fonts/ptsansbold.woff") format("woff"), url("../fonts/ptsansbold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal; }
 
 /* Основной темно-синий цвет для кнопок */
 /* Чуть более светлый цвет для наведения */
@@ -11,7 +17,7 @@
 body {
   font-size: 14px;
   line-height: 27px;
-  font-family: "PT Sans Narrow", Arial, sans-serif;
+  font-family: "PT Sans", "Tahoma", sans-serif;
   font-weight: 300;
   font-style: normal;
   margin: 0 auto; }
@@ -222,7 +228,7 @@ body {
   -ms-flex-pack: justify;
       justify-content: space-between;
   width: 255px;
-  min-height: 340px;
+  min-height: 410px;
   color: white;
   background: #6B7AD6;
   margin-left: 10px;
@@ -240,7 +246,7 @@ body {
   color: #bdbbbc; }
 
 .game-preview__title {
-  padding: 0px 20px;
+  padding: 0px 15px;
   line-height: 1.25;
   margin: 10px 0px 12px 0px;
   text-align: center;
@@ -358,14 +364,16 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 495px;
-  min-height: 340px;
+  min-height: 400px;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   -ms-flex-align: center;
       align-items: center; }
 
 .game-preview__photo {
-  border-radius: 10px; }
+  border-radius: 10px;
+  width: 245px;
+  height: 147px; }
 
 hr {
   padding: 0;
@@ -1069,10 +1077,10 @@ hr::after {
 
 @-moz-document url-prefix() {
   .game-preview__title {
-    font-size: 18px;
-    padding: 0px 10px; }
+    font-size: 20px;
+    padding: 0px 5px; }
   .game-preview__text {
-    font-size: 16px; }
+    font-size: 17px; }
   .game-preview__button-details p {
     font-size: 11px; } }
 
@@ -1121,6 +1129,9 @@ hr::after {
     margin-left: 0px;
     margin-right: 10px;
     border-radius: 10px 40px 10px 10px; }
+  .game-preview__photo{
+    width: 234px;
+    height: 140px; }
   .game-preview__photo-block a:nth-child(3),
   .game-preview__photo-block a:nth-child(4){
     display: block; }
@@ -1298,13 +1309,17 @@ hr::after {
   .metrika{
     margin: 6px 0px 0px 8px; }
   .game-preview{
-    width: 1000px;
+    width: 1050px;
     padding: 20px 5px; }
   .game-preview:nth-of-type(2){
     -ms-flex-direction: row-reverse;
     flex-direction: row-reverse; }
   .game-preview__photo-block{
-    width: 735px; }
+    width: 785px;
+    margin-left: 2px; }
+  .game-preview__photo{
+    width: 245px;
+    height: 147px; }
   .game-preview__photo-block a:nth-child(3),
   .game-preview__photo-block a:nth-child(4),
   .game-preview__photo-block a:nth-child(5),
@@ -1503,7 +1518,11 @@ hr::after {
     width: 255px;
     margin-top: 15px;
     -ms-flex-direction: column;
-    flex-direction: column; }
+    flex-direction: column;
+    min-height: 325px; }
+  .game-preview__photo{
+    width: 234px;
+    height: 140px; }
   .game-preview__photo-block a:nth-child(3),
   .game-preview__photo-block a:nth-child(4),
   .game-preview__photo-block a:nth-child(5),
