@@ -8,6 +8,7 @@
   border: 0.5px solid white;
   margin: 30px auto;
   opacity: 0.96;
+  box-sizing: border-box;
     @media (max-width: $mobile-widths) {
       flex-direction: column;
     }
@@ -22,7 +23,7 @@
       }
     }
     @media (min-width: $desktop-widths) {
-      width: 1050px;
+      width: 1100px;
       padding: 20px 5px;
       &:nth-of-type(2) {
         flex-direction: row-reverse;
@@ -201,7 +202,7 @@
       min-height: 325px;
     }
     @media (min-width: $desktop-widths) {
-      width: 785px;
+      width: 832px;
       margin-left: 2px;
     }
 }
@@ -219,8 +220,8 @@
       height: 140px;
     }
     @media (min-width: $desktop-widths) {
-      width: 245px;
-      height: 147px;
+      width: 257px;
+      height: 154px;
     }
 }
 

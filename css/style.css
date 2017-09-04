@@ -217,7 +217,8 @@ body {
   border-radius: 25px;
   border: 0.5px solid white;
   margin: 30px auto;
-  opacity: 0.96; }
+  opacity: 0.96;
+  box-sizing: border-box; }
 
 /*Блок с описанием игры и кнопками*/
 .game-preview__block {
@@ -576,7 +577,7 @@ hr::after {
   text-transform: uppercase; }
 
 .white-text-with-background {
-  margin: 30px 15px 30px 15px;
+  margin: 30px 15px;
   padding: 10px 5px;
   color: white;
   text-transform: none;
@@ -586,7 +587,7 @@ hr::after {
   text-align: center; }
 
 .white-text-with-background-h2 {
-  margin: 30px 15px 30px 15px;
+  margin: 30px 15px;
   padding: 10px 5px;
   color: white;
   text-transform: none;
@@ -594,6 +595,27 @@ hr::after {
   background-color: #0F25AE;
   border-radius: 10px;
   text-align: center; }
+
+.white-text-with-background--short-twit {
+  width: 1150px;
+  z-index: 100; }
+
+.text-with-twit-animation {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-align: center;
+      align-items: center; }
+
+.twit-animation {
+  height: 50px;
+  width: 50px;
+  background-image: url("../img/twitter_icon.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  z-index: 1;
+  transition: all 0.5s ease; }
 
 .page {
   background-color: #00472E;
@@ -829,15 +851,21 @@ hr::after {
 .youtube-group {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
   -ms-flex-pack: justify;
       justify-content: space-between;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
   float: left;
   width: 500px;
   height: 525px;
   margin-left: 40px;
   margin-top: 30px; }
+
+.youtube-group__video {
+  width: 245px;
+  height: 205px; }
 
 .photo-three-line__in-white-block {
   display: -ms-flexbox;
@@ -1196,6 +1224,14 @@ hr::after {
   .main-nav__item-logo a{
     padding: 4px 0px;
     width: 120px; }
+  .white-text-with-background--short{
+    margin: 30px 16px; }
+  .white-text-with-background--short-twit{
+    margin: 30px 16px; }
+  .twit-animation{
+    margin-left: -50px; }
+  .twit-animation:hover{
+    margin: 0px 15px 0px -5px; }
   .white-text-with-background-h2{
     font-size: 21px;
     font-family: PT Sans;
@@ -1240,6 +1276,9 @@ hr::after {
   .vk-group-section__widget-position{
     width: 732px;
     margin: 0 auto; }
+  .youtube-group__video{
+    width: 300px;
+    height: 205px; }
   .white-block__h2--right{
     width: 520px;
     margin-top: 15px;
@@ -1309,17 +1348,17 @@ hr::after {
   .metrika{
     margin: 6px 0px 0px 8px; }
   .game-preview{
-    width: 1050px;
+    width: 1100px;
     padding: 20px 5px; }
   .game-preview:nth-of-type(2){
     -ms-flex-direction: row-reverse;
     flex-direction: row-reverse; }
   .game-preview__photo-block{
-    width: 785px;
+    width: 832px;
     margin-left: 2px; }
   .game-preview__photo{
-    width: 245px;
-    height: 147px; }
+    width: 257px;
+    height: 154px; }
   .game-preview__photo-block a:nth-child(3),
   .game-preview__photo-block a:nth-child(4),
   .game-preview__photo-block a:nth-child(5),
@@ -1374,6 +1413,14 @@ hr::after {
     box-sizing: border-box;
     border-left: 3px solid #051471;
     border-right: 3px solid #051471; }
+  .white-text-with-background--short{
+    margin: 30px 42px; }
+  .white-text-with-background--short-twit{
+    margin: 30px 42px; }
+  .twit-animation{
+    margin-left: -70px; }
+  .twit-animation:hover{
+    margin: 0px 15px 0px -25px; }
   .white-text-with-background-h2{
     font-size: 21px;
     font-family: PT Sans;
@@ -1419,11 +1466,14 @@ hr::after {
   .trailers{
     margin: -10px 0px; }
   .trailers__video{
-    width: 960px;
+    width: 1100px;
     height: 540px; }
   .vk-group-section__widget-position{
     width: 1160px;
     margin: 0 auto; }
+  .youtube-group__video{
+    width: 400px;
+    height: 205px; }
   .white-block__h2--right{
     width: 900px;
     margin-top: 25px; }
@@ -1445,8 +1495,8 @@ hr::after {
   .twit-group{
     width: 500px; }
   .twit-group_index-page{
-    width: 1160px;
-    margin: 0px 17px; }
+    width: 1100px;
+    margin: 0px 47px; }
   .youtube-group{
     width: 500px; }
   .vk-group-section__widget-position-contacts{
@@ -1580,6 +1630,14 @@ hr::after {
     background-color: #6a4d38; }
   .main-nav__item-logo{
     display: none; }
+  .white-text-with-background--short{
+    margin: 30px 16px; }
+  .white-text-with-background--short-twit{
+    margin: 30px 16px; }
+  .twit-animation{
+    margin-left: -50px; }
+  .twit-animation:hover{
+    margin: 0px 2px 0px -13px; }
   .white-text-no-background{
     width: 87%;
     padding: 0px 20px; }

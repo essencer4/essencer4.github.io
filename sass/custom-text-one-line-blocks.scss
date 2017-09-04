@@ -20,7 +20,7 @@
 }
 
 .white-text-with-background {
-  margin: 30px 15px 30px 15px;
+  margin: 30px 15px;
   padding: 10px 5px;
   color: white;
   text-transform: none;
@@ -31,7 +31,7 @@
 }
 
 .white-text-with-background-h2 {
-  margin: 30px 15px 30px 15px;
+  margin: 30px 15px;
   padding: 10px 5px;
   color: white;
   text-transform: none;
@@ -39,6 +39,69 @@
   background-color: #0F25AE;
   border-radius: 10px;
   text-align: center;
+}
+
+.white-text-with-background--short {
+    @media (max-width: $mobile-widths) {
+      margin: 30px 16px;
+    }
+    @media (min-width: $tablet-widths) {
+      margin: 30px 16px;
+    }
+    @media (min-width: $desktop-widths) {
+      margin: 30px 42px;
+    }
+}
+
+.white-text-with-background--short-twit {
+  width: 1150px;
+  z-index: 100;
+    @media (max-width: $mobile-widths) {
+      margin: 30px 16px;
+    }
+    @media (min-width: $tablet-widths) {
+      margin: 30px 16px;
+    }
+    @media (min-width: $desktop-widths) {
+      margin: 30px 42px;
+    }
+}
+
+.text-with-twit-animation {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.twit-animation {
+  height: 50px;
+  width: 50px;
+  background-image: url("../img/twitter_icon.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  z-index: 1;
+  transition: all 0.5s ease;
+    @media (max-width: $mobile-widths) {
+      margin-left: -50px;
+    }
+    @media (min-width: $tablet-widths) {
+      margin-left: -50px;
+    }
+    @media (min-width: $desktop-widths) {
+      margin-left: -70px;
+    }
+}
+
+.twit-animation:hover {
+    @media (max-width: $mobile-widths) {
+      margin: 0px 2px 0px -13px;
+    }
+    @media (min-width: $tablet-widths) {
+      margin: 0px 15px 0px -5px;
+    }
+    @media (min-width: $desktop-widths) {
+      margin: 0px 15px 0px -25px;
+    }
 }
 
 @media (max-width: $mobile-widths) {
