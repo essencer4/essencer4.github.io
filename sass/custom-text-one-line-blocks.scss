@@ -54,16 +54,31 @@
 }
 
 .white-text-with-background--short-twit {
-  width: 1150px;
+  width: 1100px;
   z-index: 100;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
     @media (max-width: $mobile-widths) {
       margin: 30px 16px;
+      min-height: 160px;
     }
     @media (min-width: $tablet-widths) {
       margin: 30px 16px;
+      min-height: 50px;
     }
     @media (min-width: $desktop-widths) {
       margin: 30px 42px;
+      min-height: 50px;
+    }
+}
+
+.white-text-with-background--short-twit-rus {
+    @media (max-width: $mobile-widths) {
+      min-height: 200px;
+    }
+    @media (min-width: $tablet-widths) {
+      min-height: 90px;
     }
 }
 
@@ -74,21 +89,25 @@
 }
 
 .twit-animation {
-  height: 50px;
-  width: 50px;
+  height: 70px;
+  width: 87px;
   background-image: url("../img/twitter_icon.png");
   background-size: 100% 100%;
   background-repeat: no-repeat;
   z-index: 1;
   transition: all 0.5s ease;
+  margin-top: -5px;
     @media (max-width: $mobile-widths) {
-      margin-left: -50px;
+      margin-left: -80px;
+      margin-top: 0px;
     }
     @media (min-width: $tablet-widths) {
-      margin-left: -50px;
+      margin-left: -70px;
+      margin-top: 5px;
     }
     @media (min-width: $desktop-widths) {
-      margin-left: -70px;
+      margin-left: -95px;
+      margin-top: -10px;
     }
 }
 
@@ -97,10 +116,10 @@
       margin: 0px 2px 0px -13px;
     }
     @media (min-width: $tablet-widths) {
-      margin: 0px 15px 0px -5px;
+      margin: 5px 15px 0px -5px;
     }
     @media (min-width: $desktop-widths) {
-      margin: 0px 15px 0px -25px;
+      margin: -10px 20px 0px -30px;
     }
 }
 

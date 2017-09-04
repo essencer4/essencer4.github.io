@@ -247,7 +247,7 @@ body {
   color: #bdbbbc; }
 
 .game-preview__title {
-  padding: 0px 15px;
+  padding: 0px 10px;
   line-height: 1.25;
   margin: 10px 0px 12px 0px;
   text-align: center;
@@ -597,8 +597,14 @@ hr::after {
   text-align: center; }
 
 .white-text-with-background--short-twit {
-  width: 1150px;
-  z-index: 100; }
+  width: 1100px;
+  z-index: 100;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-align: center;
+      align-items: center; }
 
 .text-with-twit-animation {
   display: -ms-flexbox;
@@ -609,13 +615,14 @@ hr::after {
       align-items: center; }
 
 .twit-animation {
-  height: 50px;
-  width: 50px;
+  height: 70px;
+  width: 87px;
   background-image: url("../img/twitter_icon.png");
   background-size: 100% 100%;
   background-repeat: no-repeat;
   z-index: 1;
-  transition: all 0.5s ease; }
+  transition: all 0.5s ease;
+  margin-top: -5px; }
 
 .page {
   background-color: #00472E;
@@ -1227,11 +1234,15 @@ hr::after {
   .white-text-with-background--short{
     margin: 30px 16px; }
   .white-text-with-background--short-twit{
-    margin: 30px 16px; }
+    margin: 30px 16px;
+    min-height: 50px; }
+  .white-text-with-background--short-twit-rus{
+    min-height: 90px; }
   .twit-animation{
-    margin-left: -50px; }
+    margin-left: -70px;
+    margin-top: 5px; }
   .twit-animation:hover{
-    margin: 0px 15px 0px -5px; }
+    margin: 5px 15px 0px -5px; }
   .white-text-with-background-h2{
     font-size: 21px;
     font-family: PT Sans;
@@ -1416,11 +1427,13 @@ hr::after {
   .white-text-with-background--short{
     margin: 30px 42px; }
   .white-text-with-background--short-twit{
-    margin: 30px 42px; }
+    margin: 30px 42px;
+    min-height: 50px; }
   .twit-animation{
-    margin-left: -70px; }
+    margin-left: -95px;
+    margin-top: -10px; }
   .twit-animation:hover{
-    margin: 0px 15px 0px -25px; }
+    margin: -10px 20px 0px -30px; }
   .white-text-with-background-h2{
     font-size: 21px;
     font-family: PT Sans;
@@ -1633,9 +1646,13 @@ hr::after {
   .white-text-with-background--short{
     margin: 30px 16px; }
   .white-text-with-background--short-twit{
-    margin: 30px 16px; }
+    margin: 30px 16px;
+    min-height: 160px; }
+  .white-text-with-background--short-twit-rus{
+    min-height: 200px; }
   .twit-animation{
-    margin-left: -50px; }
+    margin-left: -80px;
+    margin-top: 0px; }
   .twit-animation:hover{
     margin: 0px 2px 0px -13px; }
   .white-text-no-background{
