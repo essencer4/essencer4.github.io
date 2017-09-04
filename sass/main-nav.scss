@@ -188,11 +188,11 @@
   .main-nav {
     height: 60px;
     position: fixed;
-    z-index: 10;
+    z-index: 10000;
     border: 1px solid black;
     border-top-style: none;
     border-bottom-style: none;
-  }
+}
 
   .main-nav__item a {
     padding: 17.5px 21px;
@@ -270,6 +270,7 @@
     min-height: 59px;
     margin-bottom: -60px;
     background-color: $white;
+    z-index: 10000;
 }
 
   .main-nav__wrapper {
@@ -329,6 +330,7 @@
 @media (min-width: $desktop-widths) {
   .main-nav {
     margin-bottom: -60px;
+    z-index: 10000;
 }
 
   .main-nav__wrapper {
@@ -341,7 +343,7 @@
     border-top-style: none;
     border-bottom-style: none;
     box-sizing: border-box;
-  }
+}
 
   .main-nav__item a {
     display: block;

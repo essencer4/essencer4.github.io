@@ -1179,7 +1179,8 @@ hr::after {
     width: auto;
     min-height: 59px;
     margin-bottom: -60px;
-    background-color: #ffffff; }
+    background-color: #ffffff;
+    z-index: 10000; }
   .main-nav__wrapper{
     width: 768px;
     position: fixed;
@@ -1378,7 +1379,8 @@ hr::after {
   .main-nav__indicator{
     display: none; }
   .main-nav{
-    margin-bottom: -60px; }
+    margin-bottom: -60px;
+    z-index: 10000; }
   .main-nav__wrapper{
     width: 1200px;
     position: fixed;
@@ -1594,7 +1596,7 @@ hr::after {
   .main-nav{
     height: 60px;
     position: fixed;
-    z-index: 10;
+    z-index: 10000;
     border: 1px solid black;
     border-top-style: none;
     border-bottom-style: none; }
