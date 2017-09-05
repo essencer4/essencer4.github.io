@@ -211,6 +211,9 @@
   border-radius: 10px;
   width: 245px;
   height: 147px;
+  transition-property: border-top, border-left, border-bottom, border-right, box-sizing, border-radius;
+  transition-duration: 0.5s;
+  transition-timing-function: linear;
     @media (max-width: $mobile-widths) {
       width: 234px;
       height: 140px;
@@ -222,6 +225,33 @@
     @media (min-width: $desktop-widths) {
       width: 257px;
       height: 154px;
+    }
+}
+
+.game-preview__photo:hover {
+    @media (max-width: $mobile-widths) {
+      border-top: 2px solid white;
+      border-left: 2px solid white;
+      border-bottom: 6px solid white;
+      border-right: 6px solid white;
+      box-sizing: border-box;
+      border-radius: 60px 10px;
+    }
+    @media (min-width: $tablet-widths) {
+      border-top: 2px solid white;
+      border-left: 2px solid white;
+      border-bottom: 6px solid white;
+      border-right: 6px solid white;
+      box-sizing: border-box;
+      border-radius: 60px 10px;
+    }
+    @media (min-width: $desktop-widths) {
+      border-top: 2px solid white;
+      border-left: 2px solid white;
+      border-bottom: 6px solid white;
+      border-right: 6px solid white;
+      box-sizing: border-box;
+      border-radius: 60px 10px;
     }
 }
 

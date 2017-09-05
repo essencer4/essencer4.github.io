@@ -7,7 +7,7 @@
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 10;
+  z-index: 10000;
   display: none;
 /* фон затемнения */
   background-color: rgba(0, 0, 0, 0.65);
@@ -26,7 +26,7 @@
   right: 0;
   left: 50%;
   font-size: 14px;
-  z-index: 20;
+  z-index: 20000;
   margin: 0;
   /*min-width: 320px;
   max-width: 720px;*/

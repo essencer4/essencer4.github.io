@@ -374,7 +374,10 @@ body {
 .game-preview__photo {
   border-radius: 10px;
   width: 245px;
-  height: 147px; }
+  height: 147px;
+  transition-property: border-top, border-left, border-bottom, border-right, box-sizing, border-radius;
+  transition-duration: 0.5s;
+  transition-timing-function: linear; }
 
 hr {
   padding: 0;
@@ -982,7 +985,7 @@ hr::after {
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 10;
+  z-index: 10000;
   display: none;
   /* фон затемнения */
   background-color: rgba(0, 0, 0, 0.65);
@@ -1001,7 +1004,7 @@ hr::after {
   right: 0;
   left: 50%;
   font-size: 14px;
-  z-index: 20;
+  z-index: 20000;
   margin: 0;
   /*min-width: 320px;
   max-width: 720px;*/
@@ -1167,6 +1170,13 @@ hr::after {
   .game-preview__photo{
     width: 234px;
     height: 140px; }
+  .game-preview__photo:hover{
+    border-top: 2px solid white;
+    border-left: 2px solid white;
+    border-bottom: 6px solid white;
+    border-right: 6px solid white;
+    box-sizing: border-box;
+    border-radius: 60px 10px; }
   .game-preview__photo-block a:nth-child(3),
   .game-preview__photo-block a:nth-child(4){
     display: block; }
@@ -1371,6 +1381,13 @@ hr::after {
   .game-preview__photo{
     width: 257px;
     height: 154px; }
+  .game-preview__photo:hover{
+    border-top: 2px solid white;
+    border-left: 2px solid white;
+    border-bottom: 6px solid white;
+    border-right: 6px solid white;
+    box-sizing: border-box;
+    border-radius: 60px 10px; }
   .game-preview__photo-block a:nth-child(3),
   .game-preview__photo-block a:nth-child(4),
   .game-preview__photo-block a:nth-child(5),
@@ -1588,6 +1605,13 @@ hr::after {
   .game-preview__photo{
     width: 234px;
     height: 140px; }
+  .game-preview__photo:hover{
+    border-top: 2px solid white;
+    border-left: 2px solid white;
+    border-bottom: 6px solid white;
+    border-right: 6px solid white;
+    box-sizing: border-box;
+    border-radius: 60px 10px; }
   .game-preview__photo-block a:nth-child(3),
   .game-preview__photo-block a:nth-child(4),
   .game-preview__photo-block a:nth-child(5),
