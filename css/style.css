@@ -1714,7 +1714,7 @@ hr::after {
   .page-header{
     border: 1px solid black;
     min-height: 340px;
-    background-position: 60% 100%; }
+    background-position: 60% 101%; }
   .page-header__index{
     background-image: url("../img/header-index-mobile@1x.jpg"); }
   .page-header__games{
@@ -1724,11 +1724,9 @@ hr::after {
   .page-header__team{
     background-image: url("../img/header-team-mobile@1x.jpg"); }
   .page-header__contacts{
-    background-image: url("../img/header-contacts-mobile@1x.jpg");
-    background-position: 60% 101%; }
+    background-image: url("../img/header-contacts-mobile@1x.jpg"); }
   .page-header__others{
-    background-image: url("../img/header-others-mobile@1x.jpg");
-    background-position: 60% 101%; }
+    background-image: url("../img/header-others-mobile@1x.jpg"); }
   .switch-lang__block{
     width: 294px;
     height: 70px;
