@@ -889,12 +889,21 @@ hr::after {
   border-radius: 10px; }
 
 .white-block__steam-widget {
+  margin-top: 30px;
+  height: 200px; }
+
+.white-block__steam-widget-position {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
-      justify-content: center;
-  margin-top: 30px;
-  height: 200px; }
+      justify-content: center; }
+
+.white-block__steam-widget-position--mobile-hidden {
+  display: -ms-flexbox;
+  display: flex; }
+
+.white-block__button--mobile-displayed {
+  display: none; }
 
 /* Блок для страницы прочее */
 .white-block__donation-block-1 {
@@ -1336,6 +1345,8 @@ hr::after {
     height: 135px; }
   .white-block__steam-widget iframe{
     width: 600px; }
+  .white-block__steam-widget{
+    width: 600px; }
   .white-block__donation-block-1-big{
     display: block; }
   .white-block__donation-block-1-small{
@@ -1541,6 +1552,8 @@ hr::after {
     height: 195px; }
   .white-block__steam-widget iframe{
     width: 650px; }
+  .white-block__steam-widget{
+    width: 650px; }
   .white-block__donation-block-1-big{
     display: block; }
   .white-block__donation-block-1-small{
@@ -1741,6 +1754,10 @@ hr::after {
   .vk-group-section__widget-position{
     width: 284px;
     margin: 0 auto; }
+  .white-block__steam-widget-position--mobile-hidden{
+    display: none; }
+  .white-block__button--mobile-displayed{
+    display: block; }
   .white-block__button{
     width: 194px; }
   .white-block__h2--right{
@@ -1799,6 +1816,8 @@ hr::after {
   .white-block__list{
     padding-left: 15px; }
   .white-block__steam-widget iframe{
+    width: 235px; }
+  .white-block__steam-widget{
     width: 235px; }
   .white-block--flex-row{
     -ms-flex-direction: column;

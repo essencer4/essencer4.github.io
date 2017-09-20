@@ -186,10 +186,27 @@
 }
 
 .white-block__steam-widget {
-  display: flex;
-  justify-content: center;
   margin-top: 30px;
   height: 200px;
+}
+
+.white-block__steam-widget-position {
+  display: flex;
+  justify-content: center;
+}
+
+.white-block__steam-widget-position--mobile-hidden {
+  display: flex;
+    @media (max-width: $mobile-widths) {
+      display: none;
+    }
+}
+
+.white-block__button--mobile-displayed {
+  display: none;
+    @media (max-width: $mobile-widths) {
+      display: block;
+    }
 }
 
 /* Блок для страницы прочее */
@@ -369,6 +386,10 @@
     width: 235px;
 }
 
+  .white-block__steam-widget {
+    width: 235px;
+}
+
   .white-block--flex-row {
     flex-direction: column;
   }
@@ -463,6 +484,10 @@
     width: 600px;
 }
 
+  .white-block__steam-widget {
+    width: 600px;
+}
+
   .white-block__donation-block-1-big {
     display: block;
   }
@@ -546,6 +571,10 @@
 }
 
   .white-block__steam-widget iframe {
+    width: 650px;
+}
+
+  .white-block__steam-widget {
     width: 650px;
 }
 
