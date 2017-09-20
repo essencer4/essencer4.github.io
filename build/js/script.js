@@ -1,5 +1,6 @@
 
-// Menu toggle
+// Menu toggle || Короче эта фигня для анимации
+// сворачивания-разворачивания мобильного nav-menu
 var navMain = document.querySelector('.main-nav');
 var navToggle = document.querySelector('.main-nav__toggle');
 
@@ -15,16 +16,20 @@ navToggle.addEventListener('click', function() {
   }
 });
 
+// Код для анимации исчезновения nav-menu при скролле вниз и
+// его появление при скролле вверх
+
 $(document).ready(function() {
-  
-  var header = $(".main-nav"); // Меню
+
+  //var header = $(".main-nav"); // Меню || Сейчас анимация отключена. Чтобы
+  //включить ее расскоментируйте эту строку.
   var scrollPrev = 0 // Предыдущее значение скролла
-  
+
   $(window).scroll(function() {
     var scrolled = $(window).scrollTop(); // Высота скролла в px
     var firstScrollUp = false; // Параметр начала сколла вверх
     var firstScrollDown = false; // Параметр начала сколла вниз
-    
+
     // Если скроллим
     if ( scrolled > 0 ) {
       // Если текущее значение скролла > предыдущего, т.е. скроллим вниз
@@ -52,7 +57,7 @@ $(document).ready(function() {
             "top": "-" + header.height() + "px"
           });
         }
-        
+
       // Если текущее значение скролла < предыдущего, т.е. скроллим вверх
       } else {
         firstScrollDown = false; // Обнуляем параметр начала скролла вниз
@@ -77,6 +82,6 @@ $(document).ready(function() {
       }
       // Присваеваем текущее значение скролла предыдущему
       scrollPrev = scrolled;
-    } 
-  });     
+    }
+  });
 });
