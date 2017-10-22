@@ -5,7 +5,7 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  width: 1200px;
+  width: 1180px;
   margin: auto;
   margin-bottom: 20px;
   background: #0F25AE;
@@ -163,7 +163,7 @@
 }
 
   .main-footer-page {
-    width: 318px;
+    width: 300px;
     flex-direction: column;
     border: 1px solid black;
 }
@@ -183,7 +183,7 @@
 
 @media (min-width: $tablet-widths) {
   .main-footer-page {
-    width: 768px;
+    width: 750px;
 }
 
   .metrika {
@@ -193,7 +193,7 @@
 
 @media (min-width: $desktop-widths) {
   .main-footer-page {
-    width: 1200px;
+    width: 1180px;
 }
 
   .metrika {

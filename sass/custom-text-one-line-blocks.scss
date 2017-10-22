@@ -125,8 +125,8 @@
 
 @media (max-width: $mobile-widths) {
   .white-text-no-background {
-    width: 87%;
-    padding: 0px 20px;
+    width: 90%;
+    padding: 0px 15px;
 }
   .white-text-with-background-h2 {
     @include title-medium;

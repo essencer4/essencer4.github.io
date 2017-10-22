@@ -289,6 +289,10 @@
 }
 
 @media (max-width: $mobile-widths) {
+  .white-block {
+    padding: 6px;
+}
+
   .white-block__button {
     width: 194px;
 }
@@ -348,7 +352,7 @@
 
   .twit-group_index-page {
     width: 285px;
-    margin: 0px 14.5px;
+    margin: 0px 6.5px;
 }
 
   .youtube-group {
@@ -379,7 +383,7 @@
 }
 
   .white-block__list {
-    padding-left: 15px;
+    padding-left: 20px;
 }
 
   .white-block__steam-widget iframe {
@@ -392,7 +396,7 @@
 
   .white-block--flex-row {
     flex-direction: column;
-  }
+}
 
   .white-block__donation-block-1 {
     width: 245px;
@@ -402,20 +406,20 @@
 
   .white-block__donation-block-1-big {
     display: none;
-  }
+}
 
   .white-block__donation-block-1-small {
     display: block;
     margin: 20px 0px;
-  }
+}
 
   .white-block__text {
     font-size: 16px;
-  }
+}
 
   .white-block__list {
     font-size: 16px;
-  }
+}
 
   .white-block__background-others-monster {
     background-position: 34% 50%;
@@ -464,7 +468,7 @@
 
   .twit-group_index-page {
     width: 727px;
-    margin: 0px 17px;
+    margin: 0px 8px;
 }
 
   .youtube-group {
@@ -550,7 +554,7 @@
 
   .twit-group_index-page {
     width: 820px;
-    margin: 0px 187px;
+    margin: 0px 177px;
 }
 
   .youtube-group {

@@ -24,7 +24,7 @@ body {
 
 .container {
   margin: auto;
-  width: 318px;
+  width: 300px;
   background: #fff;
   border-radius: 1px 1px 50px 50px; }
 
@@ -54,7 +54,7 @@ body {
       justify-content: space-around;
   -ms-flex-align: center;
       align-items: center;
-  width: 1200px;
+  width: 1180px;
   margin: auto;
   margin-bottom: 20px;
   background: #0F25AE;
@@ -408,7 +408,7 @@ hr::after {
 
 .main-nav {
   position: relative;
-  width: 316px;
+  width: 298px;
   height: 55px;
   min-height: 50px;
   margin: 0 auto;
@@ -416,7 +416,7 @@ hr::after {
 
 .main-nav__indicator {
   display: block;
-  width: 246px;
+  width: 228px;
   height: 60px;
   padding: 20px 0px;
   text-decoration: none;
@@ -1162,11 +1162,11 @@ hr::after {
 
 @media (min-width: 768px){
   .container{
-    width: 768px; }
+    width: 750px; }
   .container-page{
-    width: 768px; }
+    width: 750px; }
   .main-footer-page{
-    width: 768px; }
+    width: 750px; }
   .metrika{
     margin: 6px 0px 0px 8px; }
   .game-preview:nth-of-type(2){
@@ -1201,7 +1201,7 @@ hr::after {
     background-color: #ffffff;
     z-index: 10000; }
   .main-nav__wrapper{
-    width: 768px;
+    width: 750px;
     position: fixed;
     background: #0F25AE;
     opacity: 0.85;
@@ -1335,7 +1335,7 @@ hr::after {
     width: 300px; }
   .twit-group_index-page{
     width: 727px;
-    margin: 0px 17px; }
+    margin: 0px 8px; }
   .youtube-group{
     width: 300px; }
   .vk-group-section__widget-position-contacts{
@@ -1373,11 +1373,11 @@ hr::after {
 
 @media (min-width: 1200px){
   .container{
-    width: 1200px; }
+    width: 1180px; }
   .container-page{
-    width: 1200px; }
+    width: 1180px; }
   .main-footer-page{
-    width: 1200px; }
+    width: 1180px; }
   .metrika{
     margin: 6px 0px 0px 8px; }
   .game-preview{
@@ -1410,7 +1410,7 @@ hr::after {
     margin-bottom: -60px;
     z-index: 10000; }
   .main-nav__wrapper{
-    width: 1200px;
+    width: 1180px;
     position: fixed;
     background: #0F25AE;
     opacity: 0.85;
@@ -1539,7 +1539,7 @@ hr::after {
     width: 500px; }
   .twit-group_index-page{
     width: 820px;
-    margin: 0px 187px; }
+    margin: 0px 177px; }
   .youtube-group{
     width: 500px; }
   .vk-group-section__widget-position-contacts{
@@ -1584,7 +1584,7 @@ hr::after {
 
 @media (max-width: 767px){
   .container-page{
-    width: 318px;
+    width: 300px;
     border: 1px solid black; }
   .main-footer-page__main-block{
     -ms-flex-direction: column;
@@ -1594,7 +1594,7 @@ hr::after {
     height: 200px;
     margin-top: 0px; }
   .main-footer-page{
-    width: 318px;
+    width: 300px;
     -ms-flex-direction: column;
     flex-direction: column;
     border: 1px solid black; }
@@ -1639,7 +1639,7 @@ hr::after {
     border-bottom-style: none; }
   .main-nav__item a{
     padding: 17.5px 21px;
-    width: 316px;
+    width: 298px;
     border-bottom: 2px solid #051471;
     border-top: 1px solid #051471; }
   .main-nav--closed .main-nav__item{
@@ -1695,8 +1695,8 @@ hr::after {
   .twit-animation:hover{
     margin: 0px 2px 0px -13px; }
   .white-text-no-background{
-    width: 87%;
-    padding: 0px 20px; }
+    width: 90%;
+    padding: 0px 15px; }
   .white-text-with-background-h2{
     font-size: 18px;
     line-height: 1.25;
@@ -1756,6 +1756,8 @@ hr::after {
     display: none; }
   .white-block__button--mobile-displayed{
     display: block; }
+  .white-block{
+    padding: 6px; }
   .white-block__button{
     width: 194px; }
   .white-block__h2--right{
@@ -1792,7 +1794,7 @@ hr::after {
     margin-top: 0px; }
   .twit-group_index-page{
     width: 285px;
-    margin: 0px 14.5px; }
+    margin: 0px 6.5px; }
   .youtube-group{
     width: 245px;
     margin-left: 0px;
@@ -1812,7 +1814,7 @@ hr::after {
   .photo-three-line__in-white-block a:nth-child(3) img{
     display: none; }
   .white-block__list{
-    padding-left: 15px; }
+    padding-left: 20px; }
   .white-block__steam-widget iframe{
     width: 235px; }
   .white-block__steam-widget{

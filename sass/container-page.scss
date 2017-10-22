@@ -15,19 +15,19 @@
 
 @media (max-width: $mobile-widths) {
   .container-page {
-    width: 318px;
+    width: 300px;
     border: 1px solid black;
 }
 }
 
 @media (min-width: $tablet-widths) {
   .container-page {
-    width: 768px;
+    width: 750px;
 }
 }
 
 @media (min-width: $desktop-widths) {
   .container-page {
-    width: 1200px;
+    width: 1180px;
 }
 }

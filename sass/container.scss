@@ -1,18 +1,18 @@
   .container {
     margin: auto;
-    width: 318px;
+    width: 300px;
     background: #fff;
     border-radius: 1px 1px 50px 50px;
 }
 
 @media (min-width: $tablet-widths) {
   .container {
-    width: 768px;
+    width: 750px;
 }
 }
 
 @media (min-width: $desktop-widths) {
   .container {
-    width: 1200px;
+    width: 1180px;
 }
 }
