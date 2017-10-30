@@ -1,4 +1,3 @@
-
 // Menu toggle || Короче эта фигня для анимации
 // сворачивания-разворачивания мобильного nav-menu
 var navMain = document.querySelector('.main-nav');
