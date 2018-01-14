@@ -1192,7 +1192,8 @@ hr::after {
     min-height: 340px;
     background-position: 60% 101%; }
   .page-header__index {
-    background-image: url("../img/header-index-mobile@1x.jpg"); }
+    background-image: url("../img/header-index-mobile@1x.jpg");
+    background-position: 95% 102%; }
   .page-header__games {
     background-image: url("../img/header-games-mobile@1x.jpg"); }
   .page-header__soft {
@@ -1236,7 +1237,7 @@ hr::after {
     background-size: 1200px auto; }
   .page-header__index {
     background-image: url("../img/header-index-desktop@1x.jpg");
-    background-position: 50% 15%; }
+    background-position: 50% 0%; }
   .page-header__games {
     background-image: url("../img/header-games-desktop@1x.jpg"); }
   .page-header__soft {
