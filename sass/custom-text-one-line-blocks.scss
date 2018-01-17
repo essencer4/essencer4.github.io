@@ -88,6 +88,19 @@
   align-items: center;
 }
 
+.text-about-new-red-hat {
+  display: flex;
+  @media (max-width: $mobile-widths) {
+    margin-top: -50px;
+  }
+  @media (min-width: $tablet-widths) {
+    margin-top: -50px;
+  }
+  @media (min-width: $desktop-widths) {
+    margin-top: -55px;
+  }
+}
+
 .twit-animation {
   height: 70px;
   width: 87px;
@@ -161,4 +174,27 @@
     @include title-medium;
     margin-bottom: 40px;
 }
+}
+
+.link-new-red-hat {
+  color: white;
+  text-decoration: none;
+  text-indent: 10px;
+}
+
+.link-new-red-hat:hover {
+  color: #6b7ad6;
+}
+
+.white-text-with-background--new-red-hat {
+  display: block;
+  @media (max-width: $mobile-widths) {
+    min-height: 80px;
+  }
+  @media (min-width: $tablet-widths) {
+    min-height: 45px;
+  }
+  @media (min-width: $desktop-widths) {
+    min-height: 30px;
+  }
 }
