@@ -336,7 +336,7 @@ body {
     .game-preview {
       width: 1100px;
       padding: 20px 5px; }
-      .game-preview:nth-of-type(2) {
+      .game-preview:nth-of-type(2n) {
         -webkit-box-orient: horizontal;
         -webkit-box-direction: reverse;
             -ms-flex-direction: row-reverse;
