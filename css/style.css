@@ -1702,6 +1702,11 @@ hr::after {
   background-color: #4458D6;
   color: white !important; }
 
+.white-block__background-others-adventurous {
+  background-image: url("../img/games-adventurous-background.jpg");
+  background-size: cover;
+  background-position: 50% 50%; }
+
 .white-block__background-others-monster {
   background-image: url("../img/others-games-1-background.jpg");
   background-size: cover; }
