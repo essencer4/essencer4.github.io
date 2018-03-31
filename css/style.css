@@ -895,7 +895,7 @@ hr::after {
     display: none; }
   .main-nav__item a {
     display: block;
-    width: 105px;
+    width: 90px;
     padding: 17px 0px;
     text-decoration: none;
     color: white;
@@ -933,7 +933,7 @@ hr::after {
             box-sizing: border-box; }
   .main-nav__item a {
     display: block;
-    width: 170px;
+    width: 145px;
     padding: 15px 0px;
     text-decoration: none;
     color: white;
